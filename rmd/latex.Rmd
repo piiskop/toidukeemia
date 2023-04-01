@@ -1,0 +1,900 @@
+# LaTeX
+
+## Page Orientation
+
+```{verbatim label = "landscape"}
+\begin{landscape}
+
+Here is anything that needs to be displayed in landscape mode.
+
+\end{landscape}
+
+```
+
+\begin{landscape}
+
+Here is anything that needs to be displayed in the landscape mode.
+
+\end{landscape}
+
+## List of tables and figures  
+  
+Normally, the caption for a list of tables and a list of figures is shown no matter whether tables or figures exist. i found a solution for only displaying a list if there's an item available for that [@table]. That code is in *preamble.`r render_nonmath_LaTeX_string_universal("\\TeX{}")`* under the corresponding caption as a comment. Using the package *xassoccnt* triggers the warning:  
+  
+> Warning: Package xassoccnt Warning: Warning: Package "calc" is loaded -- this is not\  
+> Warning: (xassoccnt)                recommended for xassoccnt\  
+> Warning: (xassoccnt)                  
+  
+*calc* is being called directly from *default.`r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`* and as i don't want to modify the contents of *default.`r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`*, i have to live with the warning.
+
+## Reference to a page
+
+If a referenced equation, figure, table or other item is on a different page, i also reference the page number:
+
+```{verbatim label = "pageref"}
+`r render_pageref(reference = "fig:workflow")`
+
+```
+
+... on the page `r render_pageref(reference = "fig:workflow")`.
+
+This only works for the print output as there are no pages on a webpage.
+
+## The non-math `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")` string  
+  
+````{verbatim label = "non-math-string"}  
+`r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`  
+  
+````  
+  
+`r render_nonmath_LaTeX_string_universal("\\LaTeX{}")`  
+  
+## Spacing  
+
+### Space after macro
+
+Using a macro without braces at the end removes the possible spacing from after it in PDF [@a2022_l, p. 181]:  
+  
+````{verbatim label = "latex-macro-spacing"}  
+`r render_nonmath_LaTeX_string_universal("\\LaTeX{}")` <text after space>  
+    
+`r render_nonmath_LaTeX_string_universal("\\LaTeX")` <text after space>  
+  
+````  
+  
+`r render_nonmath_LaTeX_string_universal("\\LaTeX{}")` \<text after space>  
+    
+`r render_nonmath_LaTeX_string_universal("\\LaTeX")` \<text after space>  
+  
+### Horizontal fill
+
+For a horizontal fill, `hfill` can be used [@how]:
+
+```{verbatim label = "hfill", language = "tex"}
+Harku
+\hfill
+2022-2023
+
+```
+
+Harku
+\hfill
+2022-2023
+  
+### Vertical fill
+
+For a vertical fill, `vfill` can be used:
+
+```{verbatim label = "vfill", language = "tex"}
+Harku
+\vfill
+2022-2023
+
+```
+
+\newpage
+Harku
+\vfill
+2022-2023
+
+## Columns  
+  
+If i want the following text to be in two columns i write:  
+  
+````{verbatim label = "twocolumn", language = "tex"}  
+\twocolumn  
+  
+````  
+  
+```{=latex}  
+\twocolumn  
+```  
+  
+i'm just writing some text that will be placed in two columns because it's easier to read if the text is in two columns.  
+  
+If i want the following text to be in one column, i write:  
+  
+````{verbatim label = "onecolumn", language = "tex"}  
+\onecolumn  
+  
+````  
+  
+  
+```{=latex}  
+\onecolumn  
+```  
+  
+i'm just writing some text that will be placed in one column because it can contain a figure or equation that doesn't fit in a narrower column.  
+  
+## Preventing hyphenation  
+  
+After the following command, no hyphenation takes place:  
+  
+```{verbatim label = "hyphenpenalty", language = "latex"}  
+\hyphenpenalty=10000  
+  
+```  
+  
+## Chinese characters  
+  
+In order to display Chinese characters an appropriate [main](#mainfont)  and mono font must be set in *preamble.`r render_nonmath_LaTeX_string_universal("\\TeX")`*. @the_2016_which lists suitable fonts, for example:  
+  
+```{verbatim label = "setCJKmonofont"}  
+\setCJKmonofont{Noto Sans Mono CJK SC}  
+  
+```  
+  
+That font wasn't available in my system, so i installed it:  
+  
+```{bash eval = FALSE}  
+sudo apt install fonts-noto-cjk  
+  
+```  
+  
+After that, i was looking for Chinese fonts:  
+
+```{bash eval = FALSE}  
+fc-list :lang=zh  
+  
+```  
+  
+That resulted with:  
+  
+> /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK SC:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK TC:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK JP:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc: Noto Serif CJK KR:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK JP:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK HK:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK KR:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK SC:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans CJK TC:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK SC:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK TC:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK JP:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc: Noto Serif CJK KR:style=Regular  
+/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf: Droid Sans Fallback:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK TC:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK SC:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK KR:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK HK:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans Mono CJK JP:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: `r render_font(text = "Noto Sans Mono CJK SC", to_italic = FALSE)`:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK TC:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK HK:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK KR:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc: Noto Sans Mono CJK JP:style=Regular  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK JP:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK KR:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK HK:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK TC:style=Bold  
+/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc: Noto Sans CJK SC:style=Bold  
+
+where i chose `r render_font(text = "Noto Sans Mono CJK SC")` from the way as pointed out in @jdhao_2018_how.
+
+## Equations
+
+### Introduction
+
+Equations can be used in math mode, id est either between `$` or `\[` and `\]`. i prefer the bug signs.
+
+### Text
+
+In order to display the text in roman, i use `\text`:
+
+```{verbatim label = "text"}
+\text{d}
+
+```
+
+$$\text{d}$$
+
+### Subscript
+
+Subscript can be used with `_`:
+
+```{verbatim label = "subscript"}
+t_\text{d}
+
+```
+
+$$t_\text{d}$$
+
+### Superscript
+
+```{verbatim label = "superscript"}
+10^3
+
+```
+
+$$10^3$$
+
+### Vector
+
+For one-letter-vectors:
+
+```{verbatim label = "vec"}
+\vec{F}
+
+```
+
+$$\vec{F}$$
+
+For multiple-letter-vectors:
+
+```{verbatim label = "overrightarrow"}
+\overrightarrow{\frac{E \cdot Q}{\mathrm{d}(s)}}
+
+```
+
+$$\overrightarrow{\frac{E \cdot Q}{\mathrm{d}(s)}}$$
+
+### Multiplication
+
+i like to use the dot for a comma. If there are decimals inside the equation according to rules of System Internationale des Unités cross must be used instead of dot:
+
+```{verbatim label = "times"}
+C_i \times (t + 273.15)^{i - 9}
+
+```
+
+$$C_i \times (t + 273.15)^{i - 9}$$
+
+Otherwise, a center dot is a better solution as cross symbolises vector multiplication as well:
+
+```{verbatim label = "cdot"}
+m \cdot \vec{a}
+
+```
+
+$$m \cdot \vec{a}$$
+
+### Fraction
+
+```{verbatim label = "frac"}
+\frac{m \cdot a}{A}
+
+```
+
+$$\frac{m \cdot a}{A}$$
+
+### Functions
+
+As functions must be written in roman then:
+
+```{verbatim label = "mathrm"}
+$\mathrm{ln}(T)$
+
+```
+
+$$\mathrm{ln}(T)$$
+
+### Sum
+
+```{verbatim label = "sum"}
+\sum_{i := 8}^{n}{C_i}
+
+```
+
+$$\sum_{i := 8}^{n}{C_i}$$
+
+### Aligning
+
+It's reasonable to align all the tables:
+
+```{verbatim label = "align"}
+\begin{align}
+\frac{R_{sisemine}}{(R + R_{sisemine})^2} &= 0, R \nequal R_{sisemine} (\#eq:extrema-of-eta-R-initial)\\ 
+R_{sisemine} &= 0
+(\#eq:extrema-of-eta-R)
+\end{align}
+
+```
+
+```{=latex}
+\begin{align}
+\frac{R_{sisemine}}{(R + R_{sisemine})^2} &= 0, R \nequal R_{sisemine} (\#eq:extrema-of-eta-R-initial)\\ 
+R_{sisemine} &= 0
+(\#eq:extrema-of-eta-R)
+\end{align}
+
+```
+
+Here, `\\` and line break means a real line break.
+
+Additional labels must be placed in the end of the corresponding row just before the double slashes before the line break. Additional labels are displayed on the web page however not linked.
+
+Referencing an equation is also visible in the equation \@ref(eq:extrema-of-eta-R-initial):
+
+```{verbatim label = "ref"}
+\@ref(eq:extrema-of-eta-R-initial)
+
+```
+
+Empty lines aren't allowed.
+
+### Units
+
+For units, there's the package *siunitx* that only works for PDF output. As it does some automation i like to use it. It keeps the spacing between the scalar and its unit smaller than around it. However, there's no working implementation for *MathJax* that translates between `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")` and HyperText Markup Language (HTML).
+
+```{verbatim label = "qty"}
+$\qty{5}{\percent}$ $\ce{K2Cr2O7}$
+
+```
+
+$\qty{5}{\percent}$ $\ce{K2Cr2O7}$.
+
+```{verbatim label = "num"}
+$\num{5}$-$\unit{\percent}$ $\ce{CuSO4}$ lahust.
+
+```
+
+$\num{5}$-$\unit{\percent}$ $\ce{CuSO4}$ lahust.
+
+```{verbatim label = "numproduct"}
+Minu näites tahan ma teada kataloogis *~/eclipse-workspace/test2* asuva faili *children-computers.jpg* omadusi. Näeme, et selle faili tihedus on $\numproduct{96 x 96}$ dpi ja mõõdud on $\numproduct{668 x 371}$ px.
+
+```
+
+Minu näites tahan ma teada kataloogis *~/eclipse-workspace/test2* asuva faili *children-computers.jpg* omadusi. Näeme, et selle faili tihedus on $\numproduct{96 x 96}$ dpi ja mõõdud on $\numproduct{668 x 371}$ px.
+
+```{verbatim label = "degree"}
+$$\qty{120}{\degree}$$
+
+```
+
+$$\qty{120}{\degree}.$$
+
+```{verbatim label = "cm"}
+$$\qty{40.5}{\cm}.$$
+
+```
+
+$$\qty{40.5}{\cm}.$$
+
+```{verbatim label = "ml"}
+$$\qty{1}{\ml}.$$
+
+```
+
+$$\qty{1}{\ml}.$$
+
+```{verbatim label = "Hz"}
+$$\qty{14417}{\Hz}.$$
+
+```
+
+$$\qty{14417}{\Hz}.$$
+
+```{verbatim label = "min"}
+Miks katsetes 3.4 ja 3.5 lahuse värvus ei muutunud (vähemalt $\qty{1}{\min}$ kestel)?
+
+```
+
+Miks katsetes 3.4 ja 3.5 lahuse värvus ei muutunud (vähemalt $\qty{1}{\min}$ kestel)?
+
+```{verbatim label = "hour"}
+Standardtasu, kui pole ahvatlevamat ettepanekut, on $\num{40} \frac{\epsilon}{\unit{\hour}}$ ja tavaliselt tegutseme $\qty{1.5}{\hour}$ järjest tehes iga tund $\qtyrange{5}{15}{\min}$ silmadele ja mõistusele pause.
+
+```
+
+Standardtasu, kui pole ahvatlevamat ettepanekut, on $\num{40} \frac{\epsilon}{\unit{\hour}}$ ja tavaliselt tegutseme $\qty{1.5}{\hour}$ järjest tehes iga tund $\qtyrange{5}{15}{\min}$ silmadele ja mõistusele pause.
+
+```{verbatim label = "K"}
+Kuusnurkset alfat saab konverteerida mehhaaniliselt beetaks ja beeta taastub alfaks, kui seda kuumutada kõrgemal temperatuuril kui $\qty{1273,15}{\K}$.
+
+```
+
+Kuusnurkset alfat saab konverteerida mehhaaniliselt beetaks ja beeta taastub alfaks, kui seda kuumutada kõrgemal temperatuuril kui $\qty{1273,15}{\K}$.
+
+```{verbatim label = "per"}
+$$\unit{\mole\per\cubic\meter}.$$
+
+```
+
+$$\unit{\mole\per\cubic\meter}.$$
+
+```{verbatim label = "mol"}
+$$\unit{\kg\per\mol}$$.
+```
+
+$$\unit{\kg\per\mol}$$.
+
+```{verbatim label = "nm"}
+Juhendis on esitatud, et selle aine
+molaarne ekstinktsioonitegur lainepikkuse $\qty{330}{\nm}$ juures on
+$\num{34300}$.
+
+```
+
+Juhendis on esitatud, et selle aine
+molaarne ekstinktsioonitegur lainepikkuse $\qty{330}{\nm}$ juures on
+$\num{34300}$.
+
+```{verbatim label = "l"}
+õpetaja siiski ütles, et ühik oli hoopis $\unit{\l\per\mol\per\cm}$.
+
+```
+
+õpetaja siiski ütles, et ühik oli hoopis $\unit{\l\per\mol\per\cm}$.
+
+```{verbatim label = "g"}
+Lisasime katseklaasi ~$\qty{0,05}{\g}$ lahustatavat ainet (spaatli/pipeti otsatäis).
+```
+
+Lisasime katseklaasi ~$\qty{0,05}{\g}$ lahustatavat ainet (spaatli/pipeti otsatäis).
+
+```{verbatim label = "pm"}
+$\qty{56,08 \pm 0,07}{\degreeCelsius}$.
+
+```
+
+$\qty{56,08 \pm 0,07}{\degreeCelsius}$.
+
+```{verbatim label = "qtyrange"}
+Alkoholi olemasolu puhul muutub kroomisegu oranž värvus $\qtyrange{2}{3}{\second}$ kestel roheliseks.
+
+```
+
+Alkoholi olemasolu puhul muutub kroomisegu oranž värvus $\qtyrange{2}{3}{\second}$ kestel roheliseks.
+
+For including R's values for `qty`, they need to be converted into characters:
+
+Valguse kiirus vaakumis:
+
+```{r label = "speed-of-light"}
+speed_of_light_in_vacuum <- 299792458
+
+```
+
+```{verbatim label = "R-for-qty", language = "latex"}
+\begin{align}
+c = \qty{`r as.character(speed_of_light_in_vacuum)`}{\m\per\s}
+(\#eq:speed-of-light-in-vacuum)
+\end{align}
+
+```
+
+```{=tex}
+\begin{align}
+c = \qty{`r as.character(speed_of_light_in_vacuum)`}{\m\per\s}
+(\#eq:speed-of-light-in-vacuum)
+\end{align}
+
+```
+
+[@bureau_1974_the, p. 127].
+
+Some quantities are not present in `siunitx`, for instance the short for year in Estonian - a. If the number is an ordinal then in Estonian, there is a period after the scalar which the parser recognizes as the period for a list element. For that not happen, the period must be preceded by a backslash:
+
+```{verbatim label = "escaping-period"}
+1961\. a sätestati...
+
+```
+
+1961\. a sätestati...
+
+### Calculus
+
+```{verbatim label = "partial"}
+\partial{H}
+
+```
+
+$$\partial{H}$$
+
+### Cancelling
+
+```{verbatim label = "cancel", language = "latex"}
+\begin{align}
+`r if (knitr::is_html_output()) { "\\require{cancel}" }`\frac{\frac{\mathrm{\frac{L^2 \cdot \cancel{M}}{T^2}}}{\mathrm{\cancel{N}} \cdot \Theta}}{\mathrm{\frac{\cancel{M}}{\cancel{N}}}} = \frac{\mathrm{L^2}}{\mathrm{T^2} \cdot \Theta},
+(\#eq:dimensional-analysis-for-specific-gas-constant)
+\end{align}
+
+```
+
+```{=tex}
+\begin{align}
+`r if (knitr::is_html_output()) { "\\require{cancel}" }`\frac{\frac{\mathrm{\frac{L^2 \cdot \cancel{M}}{T^2}}}{\mathrm{\cancel{N}} \cdot \Theta}}{\mathrm{\frac{\cancel{M}}{\cancel{N}}}} = \frac{\mathrm{L^2}}{\mathrm{T^2} \cdot \Theta},
+(\#eq:dimensional-analysis-for-specific-gas-constant)
+\end{align}
+
+```
+
+### Underbrace
+
+```{verbatim label = "underbrace", language = "latex"}
+\underbrace{c_p \cdot (T_\text{out} - T_\text{d})}_{\text{mõistlik soojuskadu õhus}}
+
+```
+
+$$\underbrace{c_p \cdot (T_\text{out} - T_\text{d})}_{\text{mõistlik soojuskadu õhus}}$$
+
+### Integral
+
+```{verbatim label = "int", language = "latex"}
+\int{\overrightarrow{\frac{E \cdot Q}{\mathrm{d}(s)}}} \cdot \mathrm{d}(s).
+
+```
+
+$$\int{\overrightarrow{\frac{E \cdot Q}{\mathrm{d}(s)}}} \cdot \mathrm{d}(s).$$
+
+### Percent
+
+```{verbatim label = "percent", language = "latex"}
+\%.
+
+```
+
+$$\%.$$
+
+### Comparison
+
+```{verbatim label = "ll", language = "latex"}
+p \ll .05.
+
+```
+
+$$p \ll .05.$$
+
+### Greek letters
+
+```{verbatim label = "eta", language = "latex"}
+$$\Delta, \epsilon, \eta, \nu.$$
+
+```
+
+$$\Delta, \epsilon, \eta, \nu.$$
+
+## Text
+
+### Non-breaking space
+
+Without a non-breaking space:
+
+```{verbatim label = "nobreakingspace-without", language = "latex"}
+Joonistan Lewise skeemi, millele on märgitud ainult elektronid, mitte elemendi sümbol.
+
+```
+
+Joonistan Lewise skeemi, millele on märgitud ainult elektronid, mitte elemendi sümbol.
+
+With a non-breaking space [@latex]:
+
+```{verbatim label = "nobreakingspace-with", language = "latex"}
+Joonistan Lewise skeemi, millele on märgitud ainult elektronid, mitte elemendi\nobreakspace{}sümbol.
+
+```
+
+Joonistan Lewise skeemi, millele on märgitud ainult elektronid, mitte elemendi\nobreakspace{}sümbol.
+
+### Colour
+
+```{verbatim label = "textcolor", language = "latex"}
+$$\color{red}{\text{Augusti psühhomeetriga}}.$$
+
+```
+
+$$\color{red}{\text{Augusti psühhomeetriga}}.$$
+
+### Size
+
+```{verbatim label = "huge", language = "latex"}
+$$\huge{\text{Augusti psühhomeetriga}}$$
+
+```
+
+$$\huge{\text{Augusti psühhomeetriga}}$$
+
+## Chemistry
+
+### Chemical symbols
+
+```{verbatim label = "ce"}
+`r if (knitr::is_html_output()) { "\\require{mhchem}" }`\ce{N_2}
+
+```
+
+$$`r if (knitr::is_html_output()) { "\\require{mhchem}" }`\ce{N_2}$$
+
+```{verbatim label = "ce_isotope"}
+Puidu ja arheoloogiliste proovide dateerimiseks kasutatakse $\ce{^{14}C}$'d, mille poolestusaeg on 5715 a.
+
+```
+
+Puidu ja arheoloogiliste proovide dateerimiseks kasutatakse $\ce{^{14}C}$'d, mille poolestusaeg on 5715 a.
+
+```{verbatim label = "ce_with_arrow"}
+$$\color{green}{5}\ce{Na}\color{green}{\ce{Cl}}\ce{O2} + \color{blue}{4}\ce{H}\color{blue}{\ce{Cl}} \ce{->}\\
+\color{blue}{\ce{4Cl}}\ce{O2} + \color{green}{5}\ce{Na}\color{green}{\ce{Cl}} + \ce{2H2O}$$
+
+```
+
+$$\color{green}{5}\ce{Na}\color{green}{\ce{Cl}}\ce{O2} + \color{blue}{4}\ce{H}\color{blue}{\ce{Cl}} \ce{->}\\
+\color{blue}{\ce{4Cl}}\ce{O2} + \color{green}{5}\ce{Na}\color{green}{\ce{Cl}} + \ce{2H2O}$$
+
+```{verbatim label = "ce_with_superscript_subscript"}
+Aldehüüd on redutseerija ja redutseerib komplekseeritud vask(II)iooni
+vask(I)oksiidiks:
+
+$$\ce{2Cu^2+}_\text{complexed}\ce{+2OH- + 2e- -> Cu2O + H2O}.$$
+
+```
+
+Aldehüüd on redutseerija ja redutseerib komplekseeritud vask(II)iooni
+vask(I)oksiidiks:
+
+$$\ce{2Cu^2+}_\text{complexed}\ce{+2OH- + 2e- -> Cu2O + H2O}.$$
+
+### Electron configuration
+
+For automatically displaying electron configuration, one can [use the package](#preamble_file) *elements* [@Niederberger_undated-ba].
+
+Electron configuration for carbon which is the sixth element in the periodic system of chemical elements:
+
+```{verbatim label = "elconf", language = "latex"}
+\elconf{6}
+
+```
+
+```{=latex}
+\elconf{6}
+```
+
+### Orbital energy level diagram
+
+For generating orbital energy level diagrams, one can [use the package](#preamble_file) *modiagram* [@Niederberger_undated-fx]. It only works up to the second energy level.
+
+This is how to display an orbital energy levels diagram for carbon:
+
+```{verbatim label = "modiagram", language = "latex"}
+
+\begin{modiagram}[style = square, labels]
+    \atom{left}{1s, 2s, 2p = {; up, up}}
+    \EnergyAxis[title]
+\end{modiagram}
+
+```
+
+```{=latex}
+
+\begin{modiagram}[style = square, labels]
+    \atom{left}{1s, 2s, 2p = {; up, up}}
+    \EnergyAxis[title]
+\end{modiagram}
+
+```
+
+It's still possible to hack in the third levels' s- and p-levels but not further levels as seen for sulfur:
+
+```{verbatim label = "modiagram-s", language = "latex"}
+
+\begin{modiagram}[style = square, labels]
+    \atom{left}{1s, 2s, 2p}
+    \AO{s}[label = {3s}]{6; pair}
+    \AO{p}[label[x] = $3\mathrm{p}_x$, label[y] = $3\mathrm{p}_y$,label[z]= $3\mathrm{p}_z$]{8; pair, up, up}
+    \EnergyAxis[title]
+\end{modiagram}
+
+```
+
+```{=latex}
+
+\begin{modiagram}[style = square, labels]
+    \atom{left}{1s, 2s, 2p}
+    \AO{s}[label = {3s}]{6; pair}
+    \AO{p}[label[x] = $3\mathrm{p}_x$, label[y] = $3\mathrm{p}_y$,label[z]= $3\mathrm{p}_z$]{8; pair, up, up}
+    \EnergyAxis[title]
+\end{modiagram}
+
+```
+
+### Lewis dot diagram
+
+For generating Lewis dot diagrams, one can [use the package](#preamble_file) *chemfig* [@Tellechea_undated-bq].
+
+This is how to display the Lewis dot diagram for sulfur using angles:
+
+```{verbatim label = "charge", language = "latex"}
+\Charge{0 = \:, 90 = \:, 180 = \., 270 = \.}{S}
+
+```
+
+```{=latex}
+\Charge{0 = \:, 90 = \:, 180 = \., 270 = \.}{S}
+
+```
+
+### Molecular schemas
+
+*chemfig* is useful for drawing molecular schemas as seen in the schema \@ref(eq:copper-glycerate) on the page `r render_pageref(reference = "eq:copper-glycerate")`.
+
+```{verbatim label = "molecular-diagram", language = "latex"}
+\begin{align}
+\chemfig{
+    H-[:30]
+    O-[:-30]
+    -[:30](-[:90]O-[:150]H)
+    -[:-30](=[:-90]O)
+    -[:30]
+    O(-[:90]H)
+    -[:-30,,,,dash pattern=on 1pt off 1pt]
+    Cu-[:30,,,,dash pattern=on 1pt off 1pt]
+    O(-[:90]H)
+    -[:-30](=[:-90]O)
+    -[:30](-[:90]O-[:30]H)
+    -[:-30]
+    -[:30]
+    O-[:-30]
+    H
+}
+(\#eq:copper-glycerate)
+\end{align}
+
+[@pubchem_copper].
+
+```
+
+```{=latex}
+\begin{align}
+\chemfig{
+    H-[:30]
+    O-[:-30]
+    -[:30](-[:90]O-[:150]H)
+    -[:-30](=[:-90]O)
+    -[:30]
+    O(-[:90]H)
+    -[:-30,,,,dash pattern=on 1pt off 1pt]
+    Cu-[:30,,,,dash pattern=on 1pt off 1pt]
+    O(-[:90]H)
+    -[:-30](=[:-90]O)
+    -[:30](-[:90]O-[:30]H)
+    -[:-30]
+    -[:30]
+    O-[:-30]
+    H
+}
+(\#eq:copper-glycerate)
+\end{align}
+
+```
+
+[@pubchem_copper].
+
+A more complicated molecular diagram is represented as the schema \@ref(eq:Cu-II-glycerate) on the page `r render_pageref(reference = "eq:Cu-II-glycerate")`.
+
+```{verbatim label = "more-complicated-molecular-diagram", language = "latex"}
+\begin{align}
+\chemfig{
+\underbrace{\chemfig{H-[:180]O-[:180]-[:-90](-[:-90]-O(-[:30,,,,dash pattern=on 1pt off 1pt])-[:-90]H)-O-[:-30]Cu-[:-30]O-(-[:90]-[:180]O(-[:-150,,,,dash pattern=on 1pt off 1pt])-[:90]H)-[:-90]-[:180]O-[:180]H}}_\text{vask(II)glütseraat}.
+(\#eq:Cu-II-glycerate)
+\end{align}
+
+```
+
+```{=latex}
+\begin{align}
+\underbrace{\chemfig{H-[:180]O-[:180]-[:-90](-[:-90]-O(-[:30,,,,dash pattern=on 1pt off 1pt])-[:-90]H)-O-[:-30]Cu-[:-30]O-(-[:90]-[:180]O(-[:-150,,,,dash pattern=on 1pt off 1pt])-[:90]H)-[:-90]-[:180]O-[:180]H}}_\text{vask(II)glütseraat}.
+(\#eq:Cu-II-glycerate)
+\end{align}
+
+```
+
+```{verbatim label = "cyclic-structure", language = "latex"}
+Vesi ja hüdroksübenseen (fenool [@haynes_2014_crc, p. 3-446], $\chemfig{*6(-=-=(-OH)-=)}\qquad$ [@haynes_2014_crc, p. 3-447], tsükloalkeen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+```
+
+Vesi ja hüdroksübenseen (fenool [@haynes_2014_crc, p. 3-446], $\chemfig{*6(-=-=(-OH)-=)}\qquad$ [@haynes_2014_crc, p. 3-447], tsükloalkeen) omavahel ei lahustu, sest hüdrofoobseid süsinikke on võrdlemisi palju.
+
+```{verbatim label = "more-complicated-cyclic-structure", language = "latex"}
+1,3-benseendiool ($\chemfig{*6(-=(-\ce{OH})-=(-\ce{OH})-=)}$, resortsiin `r render_with_emojis(text = "(ref:haynes-2014-crc), p. 3-480")`).
+
+```
+
+1,3-benseendiool ($\chemfig{*6(-=(-\ce{OH})-=(-\ce{OH})-=)}$, resortsiin [@haynes_2014_crc, p. 3-480]).
+
+```{verbatim label = "complex-equality", language = "latex"}
+Hüdroksübenseen reageeris raudkloriidiga niimoodi:
+
+$$\ce{3} \chemfig{*6(-=-=(-\ce{OH})-=)} \ce{+ FeCl3 ->}
+\chemfig{
+    *6(-=-(-O-[:30]Fe(-[:90]O(-[:90]*6(-=-=-=)))-[:-30]O-[:-30]*6(-=-=-=))=-=)
+}
+\ce{+ 3HCl}.$$
+
+```
+
+Hüdroksübenseen reageeris raudkloriidiga niimoodi:
+
+$$\ce{3} \chemfig{*6(-=-=(-\ce{OH})-=)} \ce{+ FeCl3 ->}
+\chemfig{
+    *6(-=-(-O-[:30]Fe(-[:90]O(-[:90]*6(-=-=-=)))-[:-30]O-[:-30]*6(-=-=-=))=-=)
+}
+\ce{+ 3HCl}.$$
+
+## Physics
+
+Current diagrams are only shown in the print form. For a current diagram, i need to add the following line into *preamble.tex*:
+
+```{verbatim label = "including-circuitikz", language = "latex"}
+\usepackage{circuitikz}
+
+```
+
+```{verbatim label = "circuitikz", language = "latex"}
+
+\begin{figure}
+\begin{circuitikz}[european]
+	\draw
+	(0, 0)	to[dcvsource, l = $E$, v_ = $r$] (0, 2)
+			to[ammeter] (2, 2)
+			to[vR, l = $R$, *-*] (2, 0) -- (0, 0);
+	\draw
+		(2, 2)	to[voltmeter] (4, 2) -- (4, 0) -- (2, 0)
+	;
+\end{circuitikz}
+  \caption{Skeem, mille järgi toimetasime.} \label{fig:schema} 
+\end{figure}
+
+```
+
+```{=latex}
+\begin{figure}
+\begin{circuitikz}[european]
+	\draw
+	(0, 0)	to[dcvsource, l = $E$, v_ = $r$] (0, 2)
+			to[ammeter] (2, 2)
+			to[vR, l = $R$, *-*] (2, 0) -- (0, 0);
+	\draw
+		(2, 2)	to[voltmeter] (4, 2) -- (4, 0) -- (2, 0)
+	;
+\end{circuitikz}
+  \caption{Skeem, mille järgi toimetasime.} \label{fig:schema} 
+\end{figure}
+
+```
+
+## New page
+
+The following snippet is the code for a page break:
+
+```{verbatim label = "newpage", language = "latex"}
+\newpage
+
+```
+
+\newpage
+
+If the new page must be empty then the following code snippet is useful:
+
+```{verbatim label = "empty-newpage", language = "latex"}
+\newpage
+\mbox{}
+\pagebreak
+
+```
+
+\newpage
+\mbox{}
+\pagebreak

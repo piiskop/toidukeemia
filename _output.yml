@@ -1,0 +1,11 @@
+bookdown::bs4_book:
+  css: style.css
+  includes:
+    in_header: js.html
+  repo: https://github.com/piiskop/manual-for-rstudio
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  keep_tex: yes
+  latex_engine: xelatex
+  template: default.latex

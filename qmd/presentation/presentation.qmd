@@ -1,0 +1,265 @@
+---
+author:
+  - name: 'peacecop kalmer:'
+bibliography: presentation.bib
+csl: ../../apa-numeric-superscript-brackets.csl
+title: |
+    | Individual experiences with
+    | chlorine dioxide solution
+    | (CDS)
+output-file: presentation.html
+format:
+  revealjs:
+    # chalkboard: true
+    incremental: true
+    multiplex:
+      url: 'http://manual-for-rstudio.tennis24.ee:1948/'
+      secret: "16759825730498538629"
+      socketId: "f3edf0ff0d09982e"
+    # revealjs-plugins:
+    #   - seminar
+    # attributes:
+    #   quarto-reveal:
+    #     data-seminar-remote: true
+    #     data-seminar-controls: true
+
+---
+
+## *Quarto*
+
+- does not link between files,
+- every presentation is separate,
+- looks so much better than *bookdown*-presentations.
+
+What version of *Quarto* do I have[@how]?
+
+```
+quarto check
+
+```
+
+## Setup
+
+1. For every presentation a subfolder inside the subfolder *qmd*.
+
+2. Link to the presentation in *js.js*:
+
+```
+  let nameOfPresentation = "<name-of-presentation>";
+  createLink(div, "presentation-" + nameOfPresentation, nameOfPresentation + ".html", "<The title of the presentation>");
+
+```
+
+## Preparing for remote controlling
+
+1. Cloning *multiplex* [@a2023_multiplex].
+
+2.  In the *multiplex*'s folder:
+
+    ```
+    npm install reveal-multiplex
+    
+    ```
+    
+3.  Creating the service:
+
+    ```
+    sudo emacs /etc/systemd/system/multiplex.service
+    
+    ```
+    
+4.  Starting the server:
+
+    ```
+    sudo systemctl start multiplex.service
+    
+    ```
+
+5. Directing traffic to port 1948 into the server machine.
+
+## Remote controlling
+
+1.  Configuring:
+
+    ```
+    format:
+  revealjs:
+    multiplex:
+      url: 'http://manual-for-rstudio.tennis24.ee:1948/'
+      secret: "16759825730498538629"
+      socketId: "f3edf0ff0d09982e"
+      
+    ```
+
+2. Opening the main presentation HyperText Markup Language file for the audience.
+
+3. Opening the file with the ending "-speaker.html" for remote controlling.
+
+## Metadata: author
+
+```
+    author:
+      - name: <the name of the first author>
+      - name: '<the name of the second author>'
+    <further names if necessary>
+
+```
+
+## Metadata: title
+
+```
+title: |
+    | <first line of the title>
+    | <second line of the title>
+
+```
+
+## Metadata: output file
+
+```
+    output-file: ../../_book/<the-name-of-the-output-file>.html
+
+```
+
+## Metadata: format
+
+```
+    format:
+      revealjs:
+        incremental: true
+        self-contained: true
+
+```
+
+`incremental: true` displays list items one by one [@quarto]
+
+`self-contained: false` results with missing files or undated content
+
+## Table
+
+```
+| Product | Price |
+|---------|-----:|
+| SET: NaClO2 Mouth Rinse and HCl Hair Rinse      | 25.00   |
+| DMSO (DIMETHYLSULFOXIDE)     | 24.00  |
+
+: The reagents for making CDS with their prices were bought on 2021/05/04.
+
+```
+
+| Product | Price |
+|---------|-----:|
+| SET: NaClO2 Mouth Rinse and HCl Hair Rinse      | 25.00   |
+| DMSO (DIMETHYLSULFOXIDE)     | 24.00  |
+
+: The reagents for making CDS with their prices were bought on 2021/05/04.
+
+## Figures
+
+With a caption:
+
+```
+![Pillikeel ja lainepikkus.](vibstr1.gif)
+
+```
+
+![Pillikeel ja lainepikkus.](vibstr1.gif)
+
+Without a caption:
+
+```
+![](vibstr1.gif)
+
+```
+
+![](vibstr1.gif)
+
+## Managing external references
+
+A separate BIB-file in the subfolder of the presentation with records like this:
+
+```
+@misc{silent,
+  title = {Silent Teacher},
+  url = {https://silentteacher.toxicode.fr/},
+  urldate = {2022-09-29},
+  organization = {silentteacher.toxicode.fr}
+}
+
+```
+
+In the metadata:
+
+```
+    bibliography: <the-name-of-the-presentation>.bib
+
+```
+
+A reference:
+
+```
+@quarto
+
+```
+
+@quarto
+
+```
+[@quarto]
+
+```
+
+[@quarto]
+
+```
+[@quarto(p. 41)]
+
+```
+
+[@quarto(p. 41)]
+
+## List of references at the end
+
+````
+[<The name of the main site>](/)
+
+## External references
+
+```{=tex}
+\hyphenpenalty=10000
+\fontspec{Symbola}
+
+```
+
+````
+
+## List
+
+```
+-   no instructions:
+
+    - no formulas,
+  
+    - no theorems,
+
+-   no explanations
+
+```
+
+-   no instructions:
+
+    - no formulas,
+  
+    - no theorems,
+
+-   no explanations
+
+[Manual for RStudio Server](/)
+
+## External references
+
+```{=tex}
+\hyphenpenalty=10000
+\fontspec{Symbola}
+
+```

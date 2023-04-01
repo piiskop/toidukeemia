@@ -1,0 +1,76 @@
+\onecolumn
+
+# References {.unnumbered}
+
+\hyphenpenalty=10000
+\fontspec{Symbola}
+
+<!-- (ref:MyBib) @a1970_ -->
+
+<!-- (ref:Niederberger-undated-ba) @Niederberger_undated-ba -->
+
+<!-- (ref:Niederberger-undated-fx) @Niederberger_undated-fx -->
+
+<!-- (ref:Tellechea-undated-bq) @Tellechea_undated-bq -->
+
+<!-- (ref:a2022-l) @a2022_l -->
+
+<!-- (ref:add-header-above) @add_header_above -->
+
+<!-- (ref:adorn-totals) @adorn_totals -->
+
+<!-- (ref:bureau-1974-the) @bureau_1974_the -->
+
+<!-- (ref:cell-spec) @cell_spec -->
+
+<!-- (ref:create) @create -->
+
+<!-- (ref:dplyr) @dplyr -->
+
+<!-- (ref:footnote) @footnote -->
+
+<!-- (ref:ggplot2) @ggplot2 -->
+
+<!-- (ref:haynes-2014-crc) @haynes_2014_crc -->
+
+<!-- (ref:inserting) @inserting -->
+
+<!-- (ref:jdhao-2018-how) @jdhao_2018_how -->
+
+<!-- (ref:kim) @kim -->
+
+<!-- (ref:lathiya-2022-sapply) @lathiya_2022_sapply -->
+
+<!-- (ref:lubridate) @lubridate -->
+
+<!-- (ref:macfarlane-2022-pandoc) @macfarlane_2022_pandoc -->
+
+<!-- (ref:markdown) @markdown -->
+
+<!-- (ref:options) @options -->
+
+<!-- (ref:pubchem-copper) @pubchem_copper -->
+
+<!-- (ref:r) @r -->
+
+<!-- (ref:r-language) @r_language -->
+
+<!-- (ref:riederer-21) @riederer_21 -->
+
+<!-- (ref:riederer-56) @riederer_56 -->
+
+<!-- (ref:riederer-611) @riederer_611 -->
+
+<!-- (ref:subset) @subset -->
+
+<!-- (ref:table) @table -->
+
+<!-- (ref:the-2012-latex) @the_2012_latex -->
+
+<!-- (ref:the-2016-which) @the_2016_which -->
+
+<!-- (ref:with) @with -->
+
+<!-- (ref:xetex) @xetex -->
+
+<!-- (ref:zach-2021-how) @zach_2021_how -->

@@ -1,0 +1,761 @@
+# R
+
+## Assignment
+
+For assigning a value to a variable, i use `<-` unless the variable is a parameter or an argument - then i use `=`:
+
+```{r label = "assignment"}
+variable <- "value"
+
+name_of_function <- function(parameter = "value") {
+  
+}
+
+```
+
+## Debugging
+
+### Printing out a value
+
+```{r label = "print"}
+print(2)
+
+```
+
+### Datatype
+
+For figuring out the datatype [@zach_2021_how]:
+
+```{r label = "datatype"}
+class(2)
+
+```
+
+### Datatype and value
+
+```{r label = "str"}
+str(2)
+
+```
+
+### Is the value not set?
+
+```{r label = "is-null"}
+is.null(variable)
+
+```
+
+### Stopping execution
+
+```{r label = "stop", eval = FALSE}
+stop("error message")
+
+```
+
+## Numbers
+
+### Converting a string to a number
+
+```{r label = "as-numeric"}
+number = "3"
+str(number)
+
+numeric_number <- as.numeric(number)
+str(numeric_number)
+
+```
+
+### Sequencing
+
+```{r label = "seq"}
+seq(0, 14, 2)
+
+```
+
+### Rounding
+
+#### Normal rounding
+
+```{r label = "round"}
+round(123.456, digits = 1)
+
+```
+
+#### Significant digits
+
+For printing only significant digits, there's the function `signif` which takes two parameters: the initial number `x` and the number of significant digits `digits`:
+
+```{r label = "signif"}
+number <- 123.456
+
+number_with_significant_digits <- signif(x = number, digits = 4)
+print(number_with_significant_digits)
+
+```
+
+## Time
+
+### Converting to time
+
+```{r label = "as-date"}
+string_of_time = "2020.7.08 16:43:59"
+str(string_of_time)
+
+librarian::shelf(c(
+  "lubridate"
+))
+
+string_of_time_as_time <- parse_date_time(string_of_time, c("%Y.%m.%d %H:%M", "%m.%d.%Y %H:%M", "%Y.%m.%d %H:%M:%S"))
+str(string_of_time_as_time)
+
+```
+
+[@lubridate].
+
+### Parts of time
+
+For *ms*, the package *lubridate* is needed. This function extracts the minutes and seconds.
+
+```{r label = "ms"}
+time <- "2:53"
+parsed_time <- ms(time)
+print(parsed_time)
+
+```
+
+The time in the last minute is $\qty{`r parsed_time`}{\s}$.
+
+```{r label = "ms-as-numeric"}
+s <- as.numeric(parsed_time)
+
+```
+
+The time is $\qty{`r s`}{\s}$.
+
+## Array
+
+### Creation
+
+An array can be created using the function `c`:
+
+```{r label = "array"}
+array <- c("value_1", "value_2")
+print(array)
+
+```
+
+### Referencing position
+
+Referencing a position inside the array takes place using brackets whereas the first position has the index `1`:
+
+```{r label = "array-referencing"}
+value_at_position_2 <- array[2]
+print(value_at_position_2)
+
+array[2] <- "value_3"
+print(array)
+
+```
+
+### Multidimensional
+
+Arrays with the same length can be connected into `data.frame`:
+
+```{r label = "data.frame"}
+array_2 <- c("value_3", "value_4")
+data_frame <- data.frame(array, array_2)
+print(data_frame)
+
+```
+
+### Column names
+
+A `data.frame` can have column names:
+
+```{r label = "colnames"}
+colnames(data_frame) <- c(
+  "array",
+  "array 2"
+)
+
+print(data_frame)
+
+```
+
+### Adding column
+
+```{r label = "cbind"}
+cbind(data_frame, array_2)
+
+```
+
+### Row names
+
+```{r label = "rownames"}
+rownames(data_frame) <- c(
+  "Caption of first row",
+  "Caption of second row"
+)
+
+print(data_frame)
+
+```
+
+### Importing data
+
+Data can be imported from a text file into a data frame:
+
+```{r label = "read-table", eval = FALSE}
+CO2_in_air <- read.table("co2_brw_surface-insitu_1_ccgg_DailyData.txt", header = TRUE, sep = "", dec = ".")
+
+```
+
+Data can also be imported from a comma-separated-values-(CSV-)file into a data frame:
+
+```{r label = "import-washing-cycles"}
+washing_cycles <- read.table("washing-cycles.csv", header = TRUE, sep = ",", dec = ".")
+
+```
+
+### Printing first rows
+
+```{r label = "head"}
+print(head(washing_cycles))
+
+```
+
+### Editing the look of a cell
+
+```{r label = "cell-spec"}
+librarian::shelf("kableExtra")
+coloured_cell <- cell_spec(data_frame[, 2], color = "red")
+
+```
+
+[@cell_spec].
+
+### Editing the content
+
+```{r label = "mutate"}
+librarian::shelf("dplyr")
+mutate(data_frame, "array 2" = "mutated")
+
+```
+
+[@create].
+
+### Size
+
+```{r label = "length"}
+length(data_frame)
+
+nrow(data_frame)
+
+```
+
+### Looping
+
+```{r label = "for"}
+
+for (index in 1:length(data_frame)) {
+  print(data_frame[index])
+}
+
+```
+
+### Referencing by column name
+
+```{r label = "bug"}
+print(data_frame$`array 2`)
+
+```
+
+[@r_language].
+
+### Subsetting
+
+As `washing_cycles` also contains records with missing data i want them removed:
+
+```{r label = "subset"}
+
+washing_cycles_with_full_records <- subset(washing_cycles, !is.na(`Veenäit.enne`) & "" != `Veenäit.pärast` & !is.na(`Veekulu..l.`) & !is.na(`kWh`))
+
+print(head(washing_cycles_with_full_records))
+
+```
+
+[@subset].
+
+This was how to remove incomplete records by manually setting the columns that contain empty records. There is a move convenient method to do that without specifying columns:
+
+```{r label = "complete"}
+washing_cycles_with_full_records <- washing_cycles[complete.cases(washing_cycles), ]
+
+```
+
+[@r_language].
+
+i only want to see the data in the column `Kava`:
+
+```{r label = "subset-column"}
+program_in_washing_cycles <- subset(washing_cycles_with_full_records, select = `Kava`)
+
+print(head(program_in_washing_cycles))
+
+```
+
+i only want to see cycles from the rows 2 to 4 in the second column:
+
+```{r label = "subset-limited-cycles"}
+print(washing_cycles_with_full_records[2:4, 2])
+
+```
+
+i only want to see hot cycles:
+
+```{r label = "subset-hot-cycles"}
+hot_cycles <- subset(washing_cycles_with_full_records, `Temperatuur` > 40)
+print(hot_cycles)
+
+```
+
+i only want to see the indices of the cycles at the temperature of $313.15 \times \mathrm{K}$:
+
+```{r label = "subset-cycles-at-40"}
+which(washing_cycles_with_full_records[3] == 40)
+
+```
+
+### Sorting
+
+Displaying the indices of the descending sorted values of a vector:
+
+```{r label = "sorting"}
+librarian::shelf("dplyr")
+desc(subset(head(washing_cycles_with_full_records), select = `Kava`))
+
+```
+
+[@dplyr, p. 7, 21].
+
+Sorting values in ascending order according to the program:
+
+```{r label = "arrange"}
+head(arrange(washing_cycles_with_full_records, `Kava`))
+
+```
+
+### Totals
+
+```{r label = "adorn-totals"}
+librarian::shelf("janitor")
+adorn_totals(dat = head(subset(x = washing_cycles_with_full_records, select = c(`Algus`, `Veekulu..l.`))), where = "row", fill = "", na.rm = TRUE, name = "Kokku", c(`Veekulu..l.`))
+
+```
+
+[@adorn_totals].
+
+## Functions
+
+Functions can be made using the keyword `function`:
+
+```{r label = "function"}
+add <- function(first, second, digits = 2) {
+  return(signif(first + second, digits = digits))
+}
+
+add(first = 123, second = 456) # using the default value 2 for digits
+
+sum <- add(first = 123, second = 456, digits = 1)
+
+```
+
+## Square root
+
+A square root can be calculated using the function `sqrt()`:
+
+```{r label = "sqrt"}
+input_for_square_root <- 4
+square_root <- sqrt(input_for_square_root)
+
+```
+
+The square root of $\num{`r as.character(input_for_square_root)`}$ is $\num{`r as.character(square_root)`}$.
+
+## Derivation
+
+```{r label = "derivative"}
+initial_function <- "x^3 + x^2"
+functionToUse <- parse(text = initial_function)
+
+librarian::shelf(c(
+  "Ryacas"
+))
+
+derivative = D(functionToUse, "x")
+string_of_derivative <- deparse(derivative)
+
+```
+
+The derivative of $`r initial_function`$ is $`r string_of_derivative`$.
+
+```{r label = "critical-places"}
+equality <- paste(string_of_derivative, "== 0")
+print(equality)
+print(paste("Solve(", equality, ", x)", sep = ""))
+print(y_rmvars(paste("Solve(", equality, ", x)", sep = "")))
+critical_places <- yac_str(y_rmvars(paste("Solve(", equality, ", x)", sep = "")))
+print(critical_places)
+critical_places_as_r <- as_r(critical_places)
+print(critical_places_as_r)
+critical_solution_1 <- (critical_places_as_r[1])
+critical_solution_2 <- critical_places_as_r[2]
+
+```
+
+The critical solutions of $`r initial_function`$ are `r critical_solution_1` and `r critical_solution_2`.
+
+## Comments
+
+Comments can be done with `#`:
+
+```{r label = "comment"}
+print(sum) # printing out the value of sum
+
+```
+
+## Strings
+
+Strings can be written using either apostrophes or quotation marks.
+
+For substituting something inside a string, `gsub` can be used [@r]:
+
+```{r label = "gsub"}
+gsub("_", "\\_", array, fixed = TRUE)
+
+```
+
+Here, in order to preserve a backslash, it has to be escaped as otherwise, it escapes the underscore. If i'd turn off `fixed`, the function would work like with regular expressions.
+
+## Branching
+
+```{r label = "ifelse"}
+ifelse(is.na(NA), "Not Available", "Available")
+
+```
+
+## Table
+
+A table that isn't just in R code but designed and all can be created using `kable` and `kableExtra`. i also build a wrapper function `print_table` for that purpose so that i don't have to rewrite some general things from table to table. i have to pay attention that there can't be any underscores inside the table unless they are part of an eqation. My sample table is table \@ref(tab:table).
+
+```{r label = "table"}
+print_table(
+  table = sapply(data_frame, function(value) gsub("_", "\\_", value, fixed = TRUE)),
+  caption = "Caption."
+)
+
+```
+
+If i want to apply a function to all the values inside a data frame, i use `sapply` [@lathiya_2022_sapply]:
+
+```{r label = "sapply"}
+sapply(data_frame, function(value) gsub("_", "\\_", value, fixed = TRUE))
+
+```
+
+
+Tables \@ref(tab:table-with-digits-default) and \@ref(tab:table-with-digits-nondefault) are for comparing the number of digits after comma. The table \@ref(tab:table-with-digits-default) has the default number of digits and the table \@ref(tab:table-with-digits-nondefault) has another number of digits in every number after comma.
+
+```{r label = "table-with-digits-default"}
+water_report <- head(subset(x = washing_cycles_with_full_records, select = c(`Algus`, `Veenäit.enne`, `Veenäit.pärast`)))
+
+librarian::shelf(c(
+  'dplyr'
+))
+
+water_report <- water_report %>%
+  mutate(`Veenäit.pärast` = as.numeric(`Veenäit.pärast`))
+
+colnames(water_report) <- c(
+  "Start",
+  "$\\mathrm{\\frac{\\text{Used water before}}{\\mathrm{m^3}}}$",
+  "$\\mathrm{\\frac{\\text{Used water after}}{\\mathrm{m^3}}}$"
+)
+
+print_table(
+  table = water_report,
+  caption = "Water report with numbers with up to two digits after comma."
+)
+
+```
+
+[@dplyr, p. 38 to 42].
+
+Inside the table, backslashes must be escaped.
+
+```{r label = "table-with-digits-nondefault"}
+print_table(
+  table = water_report,
+  caption = "Water report with numbers with up to four digits after comma.",
+  digits = 4
+)
+
+```
+
+It's also possible for the table to have an additional header whose columns span over multiple columns in the first header [@add_header_above]:
+
+```{r label = "table-with-additional-header"}
+print_table(
+  table = water_report,
+  caption = "Water report with additional header.",
+  additional_header = c("Spanned header" = 4)
+)
+
+```
+
+It's possible to change the look of a row:
+
+```{r label = "table-with-row-specification"}
+print_table(
+  table = water_report,
+  caption = "Water report with coloured row."
+) %>%
+  row_spec(2, color = "teal")
+
+```
+
+Here, `%>%` means piping.
+
+And it's possible to change the look of a column:
+
+```{r label = "table-with-column-specification"}
+print_table(
+  table = water_report,
+  caption = "Water report with wider column."
+) %>%
+  column_spec(1, width = "16em")
+
+```
+
+And what if the table is too wide:
+
+```{r label = "table-with-landscape"}
+print_table(
+  table = water_report,
+  caption = "Water report as landscape."
+) %>%
+  landscape()
+
+```
+
+Linked footnotes don't work with `kable`. Footnotes can be created like this:
+
+```{r label = "footnotes"}
+
+DATA_FRAME_OF_COMPARISON <- data.frame(
+  0.3
+)
+
+colnames(DATA_FRAME_OF_COMPARISON) <- c(
+  paste("$\\frac{T_\\text{dew}}{}$", footnote_marker_number(1))
+)
+
+print_table(
+  table = DATA_FRAME_OF_COMPARISON,
+  caption = "Water report with a footnote.",
+  footnotes = c(
+    "juhendi tabel 5.1" # 1
+  )
+)
+
+```
+
+`threeparttable` must be set to `TRUE` for just in case the footnote is too long for the width of the paper [@footnote].
+
+By default, i feed one-dimensional arrays to data frame and the values of these arrays will be displayed from to to down. If i want them to be displayed from left to right, i have to transform the table:
+
+```{r label = "t"}
+
+DATA_FRAME_OF_COMPARISON <- data.frame(
+  0.3
+)
+
+rownames(DATA_FRAME_OF_COMPARISON) <- c(
+  "\"Pasco\" ilmajaam"
+)
+
+colnames(DATA_FRAME_OF_COMPARISON) <- c(
+  paste("$\\frac{T_\\text{dew}}{}$", footnote_marker_number(1))
+)
+
+print_table(
+  DATA_FRAME_OF_COMPARISON,
+  caption = "Table with rows and columns exchanged.",
+  do_i_transpose = TRUE
+)
+
+```
+
+## Exponents and logarithms
+
+$$e^1$$
+
+```{r label = "e"}
+exp(1)
+
+```
+
+$$\mathrm{ln}(e)$$
+
+```{r label = "log"}
+log(exp(1))
+
+```
+
+
+## Plotting
+
+### One graph
+
+An example of plotting data is putting data points to the plot - visible on the figure \@ref(fig:ggplot) on the page `r render_pageref(reference = "fig:ggplot")`. The packages:
+
+`ggplot2`
+: for plotting [@ggplot2]
+
+`latex2exp`
+: for using `r render_nonmath_LaTeX_string_universal("\\LaTeX")` strings in labels
+
+The parameters:
+
+`data`
+: the data table
+
+`aes`
+: the function that describes axis
+
+`x`
+: data array for *x* axis
+
+`y`
+: data array for *y* axis
+
+`geom_point`
+: the function for plotting data points
+
+`shape`
+: the shape of points
+
+`size`
+: the size of points
+
+`color`
+: the border color
+
+`fill`
+: the fill color
+
+`labs`
+: the function for creating labels for axis
+
+`TeX`
+: the function for converting `r render_nonmath_LaTeX_string_universal("\\LaTeX")` strings in labels
+
+```{r label = "ggplot", fig.cap="Washing cycles."}
+
+librarian::shelf(c(
+  "ggplot2",
+  "latex2exp"
+))
+
+ggplot(data = washing_cycles_with_full_records, aes(x = `Temperatuur`, y = `Pöördeid.min`)) + geom_point(shape = 23, color = "#008000", fill = "#ff6600", size = 3) +
+  labs(x = TeX("$\\frac{\\textit{t}}{\\degree C}$"), y = TeX("$\\frac{\\textit{f}}{min}$"))
+
+```
+
+### Multiple graphs
+
+Multiple graphs can be displayed on a same figure as seen on the figure \@ref(fig:ggplot-multiple-graphs) on the page `r render_pageref(reference = "fig:ggplot-multiple-graphs")`.
+
+```{r label = "ggplot-multiple-graphs", fig.cap=paste("Water and electricity consumption between", min_time, "and", max_time, ".")}
+librarian::shelf(c(
+  "lubridate"
+))
+
+washing_cycles_with_full_records <- washing_cycles_with_full_records %>%
+  mutate(`Algus` = parse_date_time(x = washing_cycles_with_full_records$Algus, orders = c(
+  "%Y-%m-%d %H",
+  "%Y.%m.%d %H:%M",
+  "%Y.%m.%d %H:%M:%S",
+  "%m.%d.%Y %H:%M",
+  "%m.%d.%Y %H:%M:%S"
+))) %>%
+   mutate(`veekulu_dal` = (as.numeric(washing_cycles_with_full_records$Veenäit.pärast) - washing_cycles_with_full_records$Veenäit.enne) * 100)
+
+min_time = min(washing_cycles_with_full_records$Algus)
+max_time = max(washing_cycles_with_full_records$Algus)
+
+librarian::shelf(c(
+  "ggplot2",
+  "latex2exp"
+))
+
+ggplot(data = washing_cycles_with_full_records, mapping = aes(x = `Algus`, y = `veekulu_dal`)) +
+  geom_point(shape = 23, color = "#008000", fill = "#008000", size = 3) +
+  labs(x = "Algus", y = TeX("$\\frac{\\textit{V} \\times 10^2}{m^3}$")) +
+  geom_point(mapping = aes(x = `Algus`, y = `kWh`), color = "#ff6600", fill = "#ff6600", shape = 24, size = 3)  +
+  scale_y_continuous(sec.axis = sec_axis(~., name = TeX("\\frac{\\textit{W}}{kWh}"))) +
+  theme(axis.title.y = element_text(colour = "#008000"), axis.text.y = element_text(colour = "#008000"), axis.ticks.y = element_line(colour = "#008000"), axis.title.y.right = element_text(colour = "#ff6600"), axis.ticks.y.right = element_line(colour = "#ff6600"), axis.text.y.right = element_text(colour = "#ff6600"))
+
+```
+
+### Regression and correlation
+
+The figure \@ref(fig:stat-regline-cor) on the page `r render_pageref(reference = "fig:stat-regline-cor")` represents the correlation between the water and electricity consumption between `r min_time` and `r max_time`. The plot displays the correlation coefficient. There are also the data about the regression. Both labels have been positioned vertically.
+
+```{r label = "stat-regline-cor", fig.cap=paste("Correlation between the water and electricity consumption between", min_time, "and", max_time, ".")}
+
+librarian::shelf(c(
+  "ggplot2",
+  "ggpubr", # for stat_regline_equation
+  "latex2exp"
+))
+
+if (!decimal_separator_period) { # for stat_regline_equation and stat_cor
+  options(OutDec = ".")
+}
+ggplot(data = washing_cycles_with_full_records, mapping = aes(x = `Veekulu..l.`, y = `kWh`)) +
+  geom_point(shape = 23, color = "#ff6600", fill = "#ff6600", size = 3) +
+  labs(x = TeX("$\\frac{\\textit{V}}{m^3}$"), y = TeX("$\\frac{\\textit{W}}{kWh}$")) +
+  stat_regline_equation(mapping = aes(x = `Veekulu..l.`, y = `kWh`, label = paste(..eq.label.., ..rr.label.., ..adj.rr.label.., sep = "~~~~")), color = "#ff6600", label.y = 3) +
+  stat_cor(aes(x = `Veekulu..l.`, y = `kWh`), color = "#ff6600", label.y = 2.5)
+if (!decimal_separator_period) {
+  options(OutDec = ",")
+}
+
+```
+
+### Error bars
+
+The figure \@ref(fig:ggplot-errorbar) on the page `r render_pageref(reference = "fig:ggplot-errorbar")` represents the water and electricity consumption between `r min_time` and `r max_time` with errorbars.
+
+```{r label = "ggplot-errorbar", fig.cap=paste("Water and electricity consumption between", min_time, "and", max_time, " with errobars.")}
+
+librarian::shelf(c(
+  "ggplot2",
+  "latex2exp"
+))
+
+margin_of_V <- 1e-3 / 2 * 2 * 1e2
+margin_of_W <- .1 / 2
+
+color_x <- "#008000"
+color_y <- "#ff6600"
+
+ggplot(data = washing_cycles_with_full_records, mapping = aes(x = `veekulu_dal`, y = `kWh`)) +
+  geom_point(shape = 23, size = 1) +
+  labs(x = TeX("$\\frac{\\textit{V} \\times 10^2}{m^3}$"), y = TeX("$\\frac{\\textit{W}}{kWh}$")) +
+  geom_errorbarh(aes(xmin = `veekulu_dal` - margin_of_V, xmax = `veekulu_dal` + margin_of_V, y = `kWh`), color = color_x) +
+  geom_errorbar(aes(x = `veekulu_dal`, ymin = `kWh` - margin_of_W, ymax = `kWh` + margin_of_W), color = color_y) +
+  theme(axis.title.x = element_text(colour = color_x), axis.text.x = element_text(colour = color_x), axis.ticks.x = element_line(colour = color_x), axis.title.y = element_text(colour = color_y), axis.text.y = element_text(colour = color_y), axis.ticks.y = element_line(colour = color_y))
+
+```

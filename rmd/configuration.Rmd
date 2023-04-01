@@ -1,0 +1,415 @@
+# Configuration
+
+## Mandatory files
+
+The project has the following mandatory files:
+
+1. `r render_font(text = "<name-of-project>.Rproj")`,
+
+2. *\_bookdown.yml*,
+
+3. *\_output.yml*,
+
+4. *.git*,
+
+5. *.gitignore*,
+
+6. *README.md*,
+
+7. *default.latex*,
+
+8. *index.Rmd*,
+
+9. *js.html*,
+
+10. *js.js*,
+
+11. *preamble.`r render_nonmath_LaTeX_string_universal("\\TeX")`*,
+
+12. *references.Rmd*, and
+
+13. *references.bib*,
+
+14. *style.css*.
+
+i explain the purpose and content of each file.
+
+## *project.Rproj*
+
+This is the project metadata file for RStudio Server.
+
+## *\_bookdown.yml*
+
+This file is used because in *index.Rmd*, the value for `site` is `bookdown::bookdown_site`.
+
+Inside the file *\_bookdown.yml*, the following settings are:
+
+```
+book_filename: "<name-of-project>"
+
+```
+
+This was set already in the  [setup phase](#book-filename). Once i give RStudio Server the command *Build Book* it creates the output Portable Document Format (PDF) file with the given name for `book_filename` by adding the file extension *.pdf* inside the subfolder *\_book*. If i stop the build process then the auxiliary file must be deleted or any further build would fail.
+
+```
+new_session: false
+
+```
+
+For multi-chaptered or -sectioned outputs, every chapter or section is meant to be in a separate R markdown (Rmd) file. In order to be reference parts from one Rmd file to another Rmd file, the value for `new_session` must be `false`. Otherwise, a new session will be created for every file and referencing between the files isn't possible.
+
+```
+delete_merged_file: true
+
+```
+
+During building, all the included Rmd files will be merged into one Rmd file that will be used for generating `r render_nonmath_LaTeX_string_universal("\\TeX{}")` file. That merged Rmd file is usually unnecessary, so i let RStudio Server delete it automatically.
+
+```
+language:
+  label:
+    fig: 'Joonis '
+
+```
+
+If the language is Estonian then for web output the word *Figure* below each figure must be translated manually.
+
+```
+rmd_files: [
+  "index.Rmd",
+  <<rmd/...,>>
+  "references.Rmd"
+]
+
+```
+
+`rmd_files` contains the list of involved Rmd files. There must be involved *index.Rmd* as only that file can have `site` which is necessary for generating anything at all. *references.Rmd* contains references and usually, i have references, so i include the file. If `rmd_files` isn't present then all the files whose name doesn't start by *\_* will be included sorted according to their names. With `rmd_files`, i can also set the order of files.
+
+## *\_output.yml*
+
+### Introduction
+
+This file is used because in *index.Rmd*, the value for `site` is `bookdown::bookdown_site`.
+
+Inside the file *\_output.yml*, the output types can be set. i only use two of them: a web format `bs4_book` and a print format `pdf_book`.
+
+### `bookdown::bs4_book`
+
+The following settings are for `bookdown::bs4_book`:
+
+```
+css: style.css
+```
+
+In *style.css*, it's possible to restyle the website.
+
+```
+  includes:
+    in_header: js.html
+```
+
+i don't like if i lead the user from my site away once they click a link to an external site on my bibliography page. Therefore, i wrote a program in ECMAScript that adds `target = "_blank"` to every `a` in the bibliography after the whole page is loaded. i put the script into the file *js.js* as i want to keep scripts written in different languages in separate files. Then, i created the file *js.html* that reads the content of *js.js*. i want the script tag to be put into `head` - therefore `in_header`.
+
+```
+repo: https://github.com/<username-in-github>/<name-of-project>
+```
+
+The repository will be linked in three places. In the left column, there's the link for the main page of the repository. In the right column, there are two links regarding to the repo. The upper one refers the repo page of the current page and the lower link leads to the repo page where the current page can be edited. In GitHub, discussions can take place.
+
+### `bookdown::pdf_book`
+
+The following settings are for `bookdown::pdf_book`:
+
+[]{#preamble}
+```
+  includes:
+    in_header: preamble.tex
+
+```
+
+As the default `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")` template file is *default.tex*, i don't want to change that and instead, offer additions and modifications through `includes`. In the file whose name is given - *preamble.tex*, the additions and modifications can be made.
+
+```
+  keep_tex: yes
+
+```
+
+As PDF-file is generated according to `r render_nonmath_LaTeX_string_universal("\\TeX{}")` file, it's sometimes useful to see what `r render_nonmath_LaTeX_string_universal("\\TeX{}")` file consists of.
+
+```
+  latex_engine: xelatex
+
+```
+
+Actually, it's the format, not engine, one out of three available in *bookdown*. It allegedly has the best language and font support and is recent [@the_2012_latex]. The other current format is *lualatex* which doesn't work with chinese characters and while beign extendable and therefore, slow.
+
+```
+  template: default.latex
+
+```
+
+In order to make everything work, it's useful to use the default template downloaded from *pandoc*'s repository [@macfarlane_2022_pandoc]. Modifications can be done in [*preamble.tex*](#preamble) or as `extra_dependencies`. i never edit *default.latex*.
+
+## *.git*
+
+This folder is for *git* configuration regarding to this project.
+
+## *.gitignore*
+
+This file contains the list of files *git* should ignore.
+
+## *README.md*
+
+This file contains the human-friendly metainformation about the project.
+
+## *default.latex*[]{#default_latex}
+
+This is the default \LaTeX template downloaded from @macfarlane_2022_pandoc.
+
+## *index.Rmd*
+
+### Introduction
+
+This file must contain the site generator information in the metadata section and can contain other metadata there. In addition, it serves as the holder of common functions and commands and contains an introduction as if the number of Rmd files and first-level headings don't match, a warning will be given.
+
+### Metadata
+
+The optional metadata can be the following:
+
+```
+colorlinks: TRUE
+
+```
+
+i want that the user sees what part of the text is a link.
+
+```
+author: "<the name of the author>"
+
+```
+
+The author's name will be displayed in the footer of the web output.
+
+```
+description: "<description of the project>"
+
+```
+
+```
+lang: <two-letter lowercase language code>
+
+```
+
+Language is important for hyphenation.
+
+```
+include-before:
+    - \input{title-page.tex}
+
+```
+
+As the default template does not correspond to all the needs set in Tallinn University, i use an extra template for the title page that i command to include before the rest. Please pay attention that the header is not allowed to contain `title` because the default title page would be displayed otherwise as well. Therefore, i need the following line:
+
+```{verbatim label = "title"}
+title: "`r if (knitr::is_latex_output()) { '' } else { 'Manual for creating content<br/>using<br/>RStudio Server' }`"
+
+```
+
+For every linebreak, `<br/>` has to be used.
+
+```
+documentclass: <the document class>
+
+```
+
+There are five document classes. i use mainly `article` if i want to create a short lab report which doesn't have chapters but sections that flow after each other from page to page. Here, i use `book` because it's a book that has chapters whereas each chapter begins on a new page.
+
+```
+papersize: <paper format>
+
+```
+
+This can be set for instance to `a4`.
+
+```
+geometry: top=<top>cm, right=<right>cm, bottom=<bottom>cm, left=<left>cm
+
+```
+
+`geometry` takes the values for margins from the given directions in centimeters.
+
+```
+classoption: <options for the document class separated by commas>
+
+```
+
+These are the options for the document class. i want my text to be mainly in one column, therefore `onecolumn` and printed on both sides - therefore `twoside`.
+
+```
+linestretch: <line height: how many lines>
+
+```
+
+```
+fontsize: <size of the font in points>pt
+
+```
+
+[]{#mainfont}
+
+````{verbatim label = "mainfont"}
+mainfont: DejaVu Serif
+
+````
+
+```
+CJKmainfont: Droid Sans Fallback
+
+```
+
+`CJKmainfont` has to be set in order to show Chinese characters. i found the suitable font using:
+
+````{verbatim label = "fc-list", language = "bash"}
+```{bash}
+fc_list :lang=zh
+
+```
+
+````
+
+```
+bibliography: [references.bib]
+
+```
+
+This is the reference to the [bibliography file](#book_bib).
+
+```
+csl: apa-numeric-superscript-brackets.csl
+
+```
+
+This is the reference to the style of American Psychological Association. i decided to use the numeric style as it is more compact.
+
+```
+link-citations: yes
+
+```
+
+i want the references inside the text to be linked to the appropriate reference list items.
+
+```
+lof: yes
+
+```
+
+i want the list of figures to be displayed.
+
+```
+lot: yes
+
+```
+
+i want the list of tables to be displayed not the logo of the Polish airlines company that we can see on the background as Kim Wilde was delivering a concert in Sopot in 1988 [@kim].
+
+### *knitr*[]{#knitr}
+
+*knitr* on R'i teek, mis teeb Rmd failist md faili [@with]. i've made the following setting for that:
+
+```{r eval=FALSE}
+  collapse = TRUE
+
+```
+
+i want the result of running the source code to be printed into the same box instead of a separate box after the source code box [@options].
+
+```{r eval = FALSE}
+  echo = TRUE
+
+```
+
+i want the source code to be displayed.
+
+i want the code chunks to have line numbers displayed although it only works for print output:
+
+```{r eval = FALSE}
+  attr.source = '.numberLines'
+
+```
+
+Next, `librarian` is being loaded because i don't want to check manually if a particular package exists.
+
+There are the definitions of three helper functions for:
+
+1. including graphics,
+
+2. creating tables,
+
+3. rendering the `r render_nonmath_LaTeX_string_universal("\\LaTeX{}")` string universal regarding to the output format,
+
+4. rendering a text bold as there are different approaches regarding to the output mode and the main font because of the need for displaying emojis isn't able to display anything in bold [@inserting],
+
+5. rendering text that have emojis by switching the font to *Symbola* only for that part. *Symbola* must be the emoji font for having both Chinese characters as emojis displayed. If that font isn't present in the system, it can be installed [@xetex]:
+
+```{bash label = "fonts-symbola", eval = FALSE}
+sudo apt install fonts-symbola
+
+```
+
+It is important that all the parts of the same type look similar, so it is essential to use this function for all the external references outside presentations. we could use the font *Symbola* for everything however it does not support bold or italic text.
+
+There's also a set of commands for using units.
+
+### Content
+
+Finally, there can be entered the introductionary content.
+
+## *js.html*
+
+This file just includes the necessary ECMAScript script and can be used to include other ECMAScript scripts in the header of the webpage.
+
+## *js.js*
+
+This file contains ECMAScript script that must be included in the header of the webpage. The link for the Portable-Document-Format-(PDF)file must be changed here. In this file, the file names for the presentation(s) must be set if there are some presentations available.
+
+## *preamble.`r render_nonmath_LaTeX_string_universal("\\TeX{}")`* []{#preamble_file}
+
+This file contains \LaTeX inclusions for PDF output that doesn't exist in [*default.latex*](#default_latex).
+
+The decimal separator can be specified in `output-decimal-marker`:
+
+```{verbatim language = "latex"}
+\sisetup{
+  input-decimal-markers = {.,},
+  output-decimal-marker = {.},
+  separate-uncertainty,
+  separate-uncertainty-units = repeat
+}
+
+```
+
+## *references.Rmd*
+
+This file is meant for containing the list of references.
+
+## *references.bib*[]{#book_bib}
+
+This is the bibliography file.
+
+## *style.css*
+
+This file contains the styling for the web version that's not included by default.
+
+## *title-page.tex*[]{#title_page}
+
+This is the template for the title page and should be adopted according to the needs of the project.
+
+## Troubleshooting
+
+If shit hits the fan and there are overwhelming many conflicts to solve then it is easier to perform a hard reset[@marks_2020_how]:
+
+```{verbatim language = "sh"}
+git reset --hard <identifier of the commit>
+git push -f
+
+```

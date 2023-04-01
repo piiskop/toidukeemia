@@ -1,0 +1,59 @@
+\usepackage{cancel}
+\usepackage{coffee4}
+\usepackage[version=4]{mhchem}
+
+\usepackage{fvextra} % needed for code wrapping
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+
+\setCJKmonofont{Noto Sans Mono CJK SC}
+
+% Only displaying the list if there's an item available for that
+\usepackage{xassoccnt}
+\usepackage{listings}
+\NewTotalDocumentCounter{totalfigures}
+\NewTotalDocumentCounter{totaltables}
+\NewTotalDocumentCounter{totallistings}
+\DeclareAssociatedCounters{lstlisting}{totallistings}
+\DeclareAssociatedCounters{figure}{totalfigures}
+\DeclareAssociatedCounters{table}{totaltables}
+\makeatletter
+\renewcommand{\TotalValue}[1]{%
+  \value{xassoccnt@total@#1}%
+}
+\let\@@latex@@listoffigures\listoffigures
+\let\@@latex@@listoftables\listoftables
+\let\@@latex@@lstlistoflistings\lstlistoflistings
+\renewcommand{\listoffigures}{%
+  \ifnum\TotalValue{totalfigures} > 0 
+  \@@latex@@listoffigures%
+  \fi
+}
+\renewcommand{\listoftables}{%
+  \ifnum\TotalValue{totaltables} > 0 
+  \@@latex@@listoftables%
+  \fi
+}
+\renewcommand{\lstlistoflistings}{%
+  \ifnum\TotalValue{totallistings} > 0 
+  \@@latex@@lstlistoflistings%
+  \fi
+}
+\makeatother
+
+\usepackage{elements}
+\usepackage{modiagram}
+\usepackage{chemfig}
+\usepackage{fdsymbol} % for nequal
+\usepackage{circuitikz}
+
+\pretolerance 16384
+
+\usepackage{gensymb} % \celsius
+
+\usepackage{siunitx}
+\sisetup{
+  input-decimal-markers = {.,},
+  output-decimal-marker = {.},
+  separate-uncertainty,
+  separate-uncertainty-units = repeat
+}

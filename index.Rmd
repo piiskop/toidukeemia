@@ -1,0 +1,235 @@
+--- 
+site: bookdown::bookdown_site
+
+colorlinks: TRUE
+author: "peacecop kalmer:"
+description: "This is the manual for creating content using RStudio Server."
+lang: en
+include-before:
+    - \input{title-page.tex}
+title: "`r if (knitr::is_latex_output()) { '' } else { 'Manual for creating content<br/>using<br/>RStudio Server' }`"
+
+documentclass: book
+papersize: a4
+geometry: top=2cm, right=2cm, bottom=3cm, left=3cm
+classoption: onecolumn, twoside
+linestretch: 1.5
+
+fontsize: 12pt
+mainfont: DejaVu Serif # for displaying both Chinese symbols and emojis
+CJKmainfont: Droid Sans Fallback
+
+bibliography: [references.bib]
+csl: apa-numeric-superscript-brackets.csl
+link-citations: yes
+
+lof: yes
+lot: yes
+
+---
+
+```{r setup, echo=FALSE, message=FALSE}
+# example chunk options set globally
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = TRUE,
+  attr.source = '.numberLines'
+)
+
+options(OutDec = ".")
+decimal_separator_period = TRUE # for stat_regline_equation and stat_cor
+
+if (!require("librarian")) {
+  install.packages("librarian", dependencies = TRUE)
+}
+
+library(librarian)
+
+#' This function displays external graphics by making the appropriate conversion aforehead.
+#' 
+#' @param path the path to the image file
+include_external_graphics = function(path) {
+
+  if (knitr::is_latex_output() && ("pdf" != xfun::file_ext(path))) {
+    output = xfun::with_ext(path, 'pdf')
+    
+    if ("svg" == xfun::file_ext(path)) {
+      system2('rsvg-convert', c('-f', 'pdf', '-a', '-o', shQuote(c(output, path))))
+    } else {
+      system(paste('gm convert ', path, ' ', output), intern = FALSE, ignore.stdout = FALSE, ignore.stderr = FALSE, wait = TRUE)
+    }
+    
+  } else {
+    output = path
+  }
+  
+  knitr::include_graphics(output)
+}
+
+#' This function creates and displays a table.
+#' 
+#' @param table the data frame or matrix
+#' @param caption the caption
+#' @param digits the number of significant digits
+#' @param additional_header the additional header
+#' @param footnotes the array of footnotes
+#' @param do_i_transpose Do i transpose?
+#' 
+#' @returns the table
+print_table <- function(table, caption, digits = 2, additional_header = NULL, footnotes = NULL, do_i_transpose = FALSE) {
+
+  if (!is.null(knitr::opts_knit$get('rmarkdown.pandoc.to')) && (knitr::opts_knit$get('rmarkdown.pandoc.to') == "docx")) {
+    librarian::shelf("flextable")
+    table <- (flextable(table))
+  } else {
+    librarian::shelf("kableExtra")
+
+    if (do_i_transpose) {
+      transposed_table <- t(table)
+      rownames(transposed_table) <- colnames(table)
+      colnames(transposed_table) <- rownames(table)
+      table <- transposed_table
+    }
+    
+    table <- kable(table, booktabs = TRUE, escape = FALSE, caption = caption, digits = digits, longtable = TRUE)
+
+    if (!is.null(additional_header)) {
+      table <- add_header_above(kable_input = table, header = additional_header, escape = FALSE)
+    }
+    
+    table <- (kable_styling(
+      table,
+      bootstrap_options = c("striped", "bordered", "condensed", "responsive", "hover"),
+      latex_options = c("striped", "repeat_header"),
+      repeat_header_text = paste(caption, "$\\textit{(Continued...)}$"),
+      repeat_header_method = "replace",
+      repeat_header_continued = TRUE # "Tabel järgneb järgmisel leheküljel..."
+    ))
+    
+    if (!is.null(footnotes)) {
+      table <- footnote(kable_input = table, number = footnotes, escape = FALSE, threeparttable = TRUE)
+    }
+    
+  } 
+
+  return(table)
+}
+
+#' This function prints the non-math LaTeX text no matter the output mode is.
+#'
+#' @param text the LaTeX text where every command must have doublebackslash in front
+#' 
+#' @example print_latex("\\LaTeX")
+#' 
+#' @returns the formatted string that can be used for any output
+render_nonmath_LaTeX_string_universal <- function(text) {
+  
+  if (knitr::is_html_output()) {
+    formatted_string <- paste("$\\mathrm{", text, "}$")
+  } else {
+    formatted_string <- text
+  }
+
+  return(formatted_string)
+}
+
+#' This function renders the given text bold no matter what the output mode is. The function is needed if the main font has no ability to create bold symbols.
+#' 
+#' @param text the text to be rendered bold
+#' @param to_italic Do we render into italic? Or rather bold?
+#' 
+#' @returns the text in italic or bold
+render_font <- function(text, to_italic = TRUE) {
+  
+  if (knitr::is_html_output()) {
+    
+    if (to_italic) {
+      formatted_string <- paste("*", text, "*", sep = "")
+    } else {
+      formatted_string <- paste("**", text, "**", sep = "")
+    }
+    
+  } else {
+    
+    if (to_italic) {
+      formatted_string <- paste("\\fontspec{DejaVu Sans}{\\textit{", text, "}}", sep = "")
+    } else {
+      formatted_string <- paste("\\fontspec{DejaVu Sans}{\\textbf{", text, "}}", sep = "")
+    }
+    
+  }
+
+  return(formatted_string)
+}
+
+#' This function renders the given text having emojis correctly because it uses a font that supports them. That font can't display anything in bold nor italic.
+#' 
+#' @param text the given text that contains emojis
+#' @param escape Do we need to double-escape because we call the function from a table generation function?
+#' 
+#' @returns the input text with the emoji font
+render_with_emojis <- function(text, escape = FALSE) {
+  
+  if (escape) {
+    return(paste("\\\\fontspec{Symbola}", text, "\\\\fontspec{DejaVu Serif}{}", sep = ""))
+  } else {
+    return(paste("\\fontspec{Symbola}", text, "\\fontspec{DejaVu Serif}{}", sep = ""))
+  }
+
+}
+
+#' This function renders a reference to a page as it cannot be used in the web output.
+#' 
+#' @param reference the reference identifier
+#' 
+#' @returns the rendered page reference
+render_pageref <- function(reference) {
+  
+  if (knitr::is_html_output()) {
+    rendered_pageref <- ""
+  } else {
+    rendered_pageref <- paste(" $\\pageref{", reference, "}$", sep = "")
+  }
+
+  return(rendered_pageref)
+}
+
+#' This function colors text.
+#' 
+#' @param color the color code in hexadecimals
+#' @param text the text to be colored
+#' 
+#' @returns the colored text
+render_color <- function(color, text) {
+  
+  if (knitr::is_html_output()) {
+    rendered_color <- paste("$\\color{#", color, "}{", text, "}$", sep = "")
+  } else {
+    rendered_color <- paste("$\\textcolor[HTML]{", color, "}{", text, "}$", sep = "")
+  }
+
+  return(rendered_color)
+}
+
+```
+
+# Introduction {-}
+
+Once upon a time, a student asked me to help him in R. i had no experience with R, however i gave it a chance. i installed RStudio Server. Months passed after my first use until i needed it for my stuff. i was studying statistics in a university and our teacher wanted us to create our solutions using a spreadsheet program. i saw that using R, i could learn more useful stuff and moved on RStudio Server. i learnt to create output using *bookdown* which is a library that can be used for creating websites or e-books while including calculations and graphs. As *bookdown* has a steap learning curve, i want to elaborate it here. Template strings are marked with angle brackets.
+
+For me, regarding cross-references, the following things are important:
+
+1. It must be possible to cross-reference between files.
+
+2. R code in one file must be accessible in another file.
+
+3. Citations in table captions using `kableStyling` must be possible.
+
+Currently, *bookdown* supports all of them.
+
+we can see the workflow of from the written markdown to the ready output on the figure \@ref(fig:workflow).
+
+```{r label = "workflow", fig.cap = "The workflow from the written markdown to the ready output using *bookdown* [@riederer_21]."}
+include_external_graphics("rmd/workflow.png")
+
+```
