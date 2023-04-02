@@ -2,7 +2,7 @@ bookdown::bs4_book:
   css: style.css
   includes:
     in_header: js.html
-  repo: https://github.com/piiskop/manual-for-rstudio
+  repo: https://github.com/piiskop/toidukeemia
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

@@ -3,11 +3,11 @@ site: bookdown::bookdown_site
 
 colorlinks: TRUE
 author: "peacecop kalmer:"
-description: "This is the manual for creating content using RStudio Server."
-lang: en
+description: "Toidukeemia kursuse referaat inimesele sobilikust toitumisest."
+lang: et
 include-before:
     - \input{title-page.tex}
-title: "`r if (knitr::is_latex_output()) { '' } else { 'Manual for creating content<br/>using<br/>RStudio Server' }`"
+title: "`r if (knitr::is_latex_output()) { '' } else { 'Inimesele sobilik toitumine' }`"
 
 documentclass: book
 papersize: a4
@@ -213,23 +213,4 @@ render_color <- function(color, text) {
 
 ```
 
-# Introduction {-}
-
-Once upon a time, a student asked me to help him in R. i had no experience with R, however i gave it a chance. i installed RStudio Server. Months passed after my first use until i needed it for my stuff. i was studying statistics in a university and our teacher wanted us to create our solutions using a spreadsheet program. i saw that using R, i could learn more useful stuff and moved on RStudio Server. i learnt to create output using *bookdown* which is a library that can be used for creating websites or e-books while including calculations and graphs. As *bookdown* has a steap learning curve, i want to elaborate it here. Template strings are marked with angle brackets.
-
-For me, regarding cross-references, the following things are important:
-
-1. It must be possible to cross-reference between files.
-
-2. R code in one file must be accessible in another file.
-
-3. Citations in table captions using `kableStyling` must be possible.
-
-Currently, *bookdown* supports all of them.
-
-we can see the workflow of from the written markdown to the ready output on the figure \@ref(fig:workflow).
-
-```{r label = "workflow", fig.cap = "The workflow from the written markdown to the ready output using *bookdown* [@riederer_21]."}
-include_external_graphics("rmd/workflow.png")
-
-```
+# Sissejuhatus {-}
