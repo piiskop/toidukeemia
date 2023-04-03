@@ -36,7 +36,7 @@ knitr::opts_chunk$set(
   attr.source = '.numberLines'
 )
 
-options(OutDec = ".")
+options(OutDec = ",")
 decimal_separator_period = TRUE # for stat_regline_equation and stat_cor
 
 if (!require("librarian")) {

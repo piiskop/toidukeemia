@@ -1,0 +1,187 @@
+# Toitumine eluteadlaste tervishoiusüsteemi järgi
+
+## Eluteadlased
+
+Life Science ei teeni ärihuve, mistõttu puudub huvide konflikt valeõpetuse edastamiseks, küll aga on olemas kasu tõe tundmisest.
+
+Eluteadlased kritiseerivad peavoolu toitumissoovitusi järgmiselt:
+
+1. need toitumissoovitused sõltuvad uuringutest,
+
+2. vastavalt nendele toitumissoovitustele ületatakse inimkeha vajadusi mitmekordselt,
+
+3. need soovitused baseeruvad töödeldud söögil.
+
+Terve kehaga inimene, kes toitub puhtast inimesele loomulikult sobilikust toidust, vajab vaid murdosa toitu peavoolu soovitatust.
+
+## Toitumine
+
+> Toitumine on kõigi protsesside summa, mis varustavad, arendavad ja säilitavad organismi võimeid ja funktsioone optimaalsel eksisteerimistasemel[@fry_the].
+
+Toitumine sõltub tervisest ja tervis sõltub toitumisest. Toit on inimese kehale toormaterjal. Toit ei mõjuta inimese organismi ise, vaid inimese organism lõhub toidu mehhaaniliselt ja keemiliselt, et selle najal elus püsida. Seda saab inimese keha teha tõhusalt üksnes siis, kui tervis on korras. Kui tervis ei ole korras, tuleb toidu tarbimisest loobuda, sest sellises olekus ei suuda inimese organism toitu korralikult töödelda. Inimese keha toitub lisaks toidule muudest materjalidest, nt õhust.
+
+Tarbitav toit sõltub isendite liigist:
+
+1. Herbivoorid nagu nt lambad toituvad rohust ja juurviljadest.
+
+2. Graminisööjad nagu nt linnud toituvad teraviljadest.
+
+3. Putuktoidulised nagu nt nahkhiired toituvad putukatest.
+
+4. Frugivoorid nagu nt inimesed toituvad puuviljadest.
+
+5. Lihasööjad nagu nt kassid toituvad teiste loomade lihast, luudest, rupsist jm.
+
+6. Kõigesööjad nagu nt sead toituvad puu-, köögivilja-, teravilja-, liha-, rups- jne segatoidust.
+
+Toitu tarbib organism vastavalt vajadusele säilitades või väljutades ülejäägi.
+
+Johns Hopkins University' antropoloog Alan Walker uuris fossiilide hambaid ja jõudis järeldusele, et inimeste eelkäijad hominiidid olnud eksklusiivselt frugivoorid[@rensberger_1979_teeth]. Nendele järgnenud Homo erectused olnud aga eksklusiivselt omnivoorid. Taimede rakkudes vormuvad eri tüüpi ränidioksiidi kristallid fütoliidid, mis on hambavaabast tugevamad ning rohtu või lehti närides jätavad fütoliidid hammastele erinevaid silmale nähtamatuid kriime. Rohus olevad fütoliidid on tugevamad kui lehtedes olevad fütoliidid. Puuviljades fütoliidid peaaegu puuduvad. Seetõttu on frugivooride hambad kõrgelt poleeritud. Kuigi lihas fütoliidid puuduvad, on lihasööjate hammastel kahjustusi, mis on tingitud konti hammustamisest.
+
+Kuigi inimesed on võimelised sööma väljaspool oma toitumisharjumusi, ei ole toimunud füsioloogilist muutust, mis sellist eritoitumist toetaks[@fry_the].
+
+Looduslikud toidud inimestele vastavad järgmistele kriteeriumidele:
+
+1. ei tohi olla toksiline,
+
+2. peab olema seeditav toorena,
+
+3. peab sensoorselt meeldima,
+
+4. eraldi või õigesti kombineerituna süües peab toit olema kergesti seeditav,
+
+5. seedimine peab olema tõhus,
+
+6. peab sisaldama piisavalt valke,
+
+7. peab sisaldama piisavalt vitamiine,
+
+8. peab sisaldama piisavalt mineraalsoolasid,
+
+9. peab sisaldama asendamatuid rasvhappeid,
+
+10. peab rahuldama meie vajadusi energeetiliselt,
+
+11. sisaldavad piisavas koguses vett,
+
+12. peavad olema ainevahetusreaktsioonides aluselised.
+
+Toksiline on söök, mille seedimiseks ei leidu sobilikku ensüümi.
+
+Inimesel ei pea olema abivahendeid, et süüa.
+
+Toidu lõhn ja maitse peavad olema meeldivad.
+
+Energiakulu seedimisele peab olema minimaalne. Nt arbuusist $\num{400}$ kalori omastamiseks, närimiseks, imendumiseks, transportimiseks ja assimileerimiseks kulutab inimene $\num{30}$ kalorit energiat, aga sama koguse energia hõivamiseks lihast kulutab inimene seedimisele $\num{280}$ kalorit energiat. Arbuusi seedimiseks läheb vaja väga vähe närvienergiat, kuid söögi töötlemiseks, mis pole meile loomuomane, kulutame võrdlemisi palju närvienergiat.
+
+Inimene vajab proteiine vastavalt eluteadlaste tervishoiusüsteemile $\qty{25}{\gram\per\day}$, kuid vastavalt World Health Organizationile on see vajadus hoopis sõltuvuses inimese omadustest ja taustast $\qty{0,83}{\g\per\kg\per\day}$[@human_2007_protein, lk 126]. Valkude seedimise kohta toovad eluteadlased välja järgmised aspektid:
+
+1. keha saab taaskasutada enda vajaduste rahuldamiseks kaks kolmandikku valgujääke,
+
+2. valgu energiasisaldusest $\qty{70}{\percent}$ kulub valgu seedimisele,
+
+3. proteiini denatureerimise jääkproduktidest lahtisaamiseks kulutab keha tohutu hulga närvienergiat, mis sel ajal küll stimuleerib, kuid siiski kurnab keha.
+
+Peaaegu iga loomulik toit inimese jaoks sisaldab $\qty{4}{\percent}$ valke kuivkaaluna.
+
+Eri tüüpi vitamiine vajab inimese keha umbes $\num{30}$.
+
+Mineraalaineid peaks inimene saama ainult toidust.
+
+Toiduosad, mida keha vajab, aga ei suuda ise sünteesida, on asendamatud. Asendamatud rasvhapped:
+
+1. linool-,
+
+2. linoleen- ja
+
+3. arahhidoonhape.
+
+Asendamatud rasvhapped on küllastumata rasvad.
+
+Energia, mille keha kulutab, peab tulema toidust. Selleks sobib hästi suure monosahhariidide sisaldusega toit nagu magusad puuviljad.
+
+Frugivoorid tavaliselt vett ei joo, sest saavad kogu vajaliku vee puuviljadest.
+
+Isegi kui tarbitav toit on happeline, peab see toit muutuma aluseliseks nt seda toitu koos aluselise toiduga süües.
+
+Kõiki 12 inimese jaoks loodusliku toidu kriteeriumi rahuldavad üksnes puuviljad.
+
+Tegurid, mis mõjutavad inimese toitumist, kuid ei ole toit:
+
+1. päikese- ja loomulik valgus,
+
+2. värske õhk ja selles sisalduv hapnik,
+
+3. puhas vesi,
+
+4. treenimine, mängimine ja vaba aeg,
+
+5. puhkamine ja lõdvestumine,
+
+6. magamine,
+
+7. tundeline tasakaalukus,
+
+8. muud eluks vajalikud rekvisiidid ja
+
+9. üldised kehaseisundid.
+
+Inimesed kipuvad kasutama maitsete lisamiseks või muutmiseks maitseaineid. Viimaseid eraldi ja ainult tarbides ei pea keha kaua vastu, sest need ei ole toit. Kui segada kokku banaani- ja mangoviilud või juurviljasalatisse tomatit ja pähkleid, siis on tegemist tervikliku toiduga, kuna ka kõiki neid komponente eraldi süües on tegemist toitumisega. Kui aga lisada toidule suhkrut, sidrunimahla, soola, pipart, äädikat, sibulat, basiilikut, münti, küüslauku vms, siis koormatakse keha ainetega, mida vaja pole, kuid millest on vaja vabaneda.
+
+Kuumutatud toidu söömine võib põhjustada järgmise protsessi:
+
+1. toitainete häirimine ja hävitamine,
+
+2. häiritud toitainete muutumine keha jaoks mürgiseks,
+
+3. lisaenergia kulutamine mürkainetest vabanemiseks.
+
+Keha ei saa ehitada päris terveid rakke ja kudesid kehva kvaliteediga materjalist. Kuumutamine vähendab materjali kvaliteeti.
+
+Toitu kiputakse töötlema, et
+
+1. anda toidule pikem säilivusaeg,
+
+2. see muudetud struktuuriga paremini turustatavaks,
+
+3. teha seda maitsvamaks,
+
+4. tugevdada selle maitset
+
+jm.
+
+Toidu töötlemine tähendab selle muutmist, valmistamist või mõlemat. Igasugune toidu töötlemine rikub toitu. Toidu töötlemise toitu kahjustavad meetodid:
+
+1. puhastamine,
+
+2. säilitamine kuumutamise ja suhkru, soola vm säilitusaine lisamise kaudu,
+
+3. metallkonteineris säilitamine.
+
+Nimetatud toidu töötlemise meetodeid on siiski vaja kasutada varude omamiseks. Võib juhtuda, et teatud tingimustes ei ole inimesel ligipääsu terviklikule toidule ja siis ta saab selliselt töödeldud toitu ajutiselt tarbida, et mitte nälga surra. Kaua ainult sellist toitu tarbida inimese keha ei suuda.
+
+Toiduaineid kiputakse palsameerima säilitusainetega, et kaitsta neid riknemise, bakterite degeneratsiooni või oksüdeerumise eest. Kuid kui miski ei sobi bakterile, ei sobi see ka inimesele.
+
+Meetodid, mille kasutamise puhul toit jääb terviklikuks:
+
+1. pähklite koorimine ja vaakumpakendamine kasvõi lämmastikukeskkonnas,
+
+2. kuivatamine,
+
+3. vähese veesisaldusega või väga õlise tekstuuriga toitude nagu nt datlite, kuivatatud puuviljade, pähklite ja seemnete külmutamine,
+
+4. pähklite ja seemnete säilitamine nende koores kuivas õhus,
+
+5. katmine parafiini, õlide, vahade või muude säilitusainetega, kui need ei tungi läbi toidu enda kaitsva kihi ja need saab eemaldada nt vannis soolhappe, äädika, kloroksi või isegi väga sooja vee lahuses.
+
+Vahelduseks on tore riivida, tükeldada, lõigata, koorida ja segada, aga enamjaolt peaks toitu tarbima seda eelnevalt töötlemata kujul. On ka olukordi, milles on purustamine lausa kasulik. Nt seesamiseemned on nii pisikesed, et inimesed ei pruugi neid läbi mäluda ja seetõttu on kasulikum need eelnevalt pulbristada.
+
+Inimesele eelistatum on süüa tavatooteid, st sellist sööki, mille kasvatamiseks on nt rakendatud pestitsiide, töötlemata kujul kui mahetoodangut töödeldud kujul.
+
+Inimene suudab vastu pidada $\num{2}$ kuni $\num{3}$ korda nii kaua oma rasvavarude baasil kui olles täielikul lihadieedil. Inimene suudab konverteerida ainult $\qty{30}{\percent}$ valke oma kütuseks süsivesikuteks. Seejuures on see konverteerimismäär puuviljade suhkrute puhul $\qtyrange{90}{95}{\percent}$.
+
+Inimesele sobilik toit on meeldiv töötlemata olekus ja seda ei pea töötlema, et oleks meeldiv. Nt klorofüll on mõru maitsega, mistõttu ei ole lehtede ja rohu söömine inimesele sobilik.
+
+Inimesele on kasulik vaid väike kogus õli.
+
+Puuvilju tuleb süüa vahetult, mitte juua nende mahlu.

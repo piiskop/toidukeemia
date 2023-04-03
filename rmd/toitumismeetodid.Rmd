@@ -1,0 +1,79 @@
+# Meetodid
+
+## Meetodite paljusus
+
+Sõltuvalt sellest, kuidas teatud toiduainete tööstuste esindajad finantseerivad haridusasutusi ja õpikute koostajaid, turundatakse erinevaid toitumise nõuandeid [@fry_the]. Seetõttu on olulises osas toitumine dikteeritud mitte füsioloogiliste võimete ja vajaduste, vaid äri poolt.
+
+Peavoolu järgi on jagatud söögid nelja rühma:
+
+1. piim: piim ja selle tooted,
+
+2. liha: liha, munad, kala, kaunviljad ja pähklid,
+
+3. leib-teravili: teraviljad ja teraviljatooted,
+
+4. puuviljad-juurviljad: puuviljad ja juurviljad, välja arvatud pähklid ja kaunviljad.
+
+Sellist rühmitust nimetatakse tasakaalustatud toitumiseks, kuigi see paistab olevat pigem tasakaalustatud söögitootjate turg.
+
+Toitumine varieerub sõltuvalt maailma piirkonnast. Kui Põhja-Ameerikas toitutakse omnivoorina väga mitmekülgselt ja tervistkahjustavalt, siis laplased ja eskimod on enamjaolt karnivoorid ja ekvatoriaalpiirkonna inimesed kipuvad olema frugivoorid. Ka sõna paradiis tuleneb puuvilja kandvast puust.
+
+Kui inimesed elasid aladel, kus puuviljad olid aastaringselt kättesaadavad, ei olnud neil põhjust oma loomulikku toitumist muuta. Uudishimu ajas inimesed liikvele piirkondadesse, kus tingimused toidukasvatamiseks ei olnud soodsad. Nii hakati toituma käepärastest vahenditest, et elus püsida. Mõned inimrühmad võtsid need harjumused kaasa tingimustesse, kus neid enam vaja polnud, mõned aga naasid loomuliku toitumise juurde.
+
+## Taimetoitlus
+
+Taimetoitluse liigid:
+
+pooltaimetoitlus
+: aeg-ajalt liha/linnuliha/kala söömine[@1715228520050601, lk 135]
+
+*Pesco*-taimetoitlus
+: liha ja linnuliha välistamine, kuid kala (ja
+võib-olla ka muude mereandide) kaasamine, võib sisaldada piimatooteid ja mune
+
+*Lakto-ovo*-taimetoitlus
+: kõikide lihatoitude välistamine, sisaldab piimatooteid ja mune
+
+*ovo*-taimetoitlus
+: kõikide lihatoodete ja piimatoodete välistamine, munade kaasamine
+
+veganlus
+: kõikide loomse päritoluga söökide välistamine
+
+makrobiootiline taimetoitlus
+: kümme järjestikuste piirangutega toitumisrežiimi, kaasatud on liha või kala, kui
+metsik/kütitud madalaimas (kõige vähem piiratud) toitumisrežiimis, põhineb tavaliselt pruunil riisil koos mõne puuvilja, köögivilja ja kaunviljaga, viimane etapp koosneb täisteratoodetest ja piiratud koguses vedelikest
+
+limavaba dieet
+: toitumine mitteõlistest puuviljadest ja juurviljadest[@fry_the]
+
+*päikesevalguse toitumine*
+: toitumine kuumtöötlemata
+köögiviljadest ja puuviljadest[@edsswe.oai.DiVA.org.lnu.2241620050101, lk 267].
+
+*väärlanderlus*
+: toitumine värsketest juur- ja puuviljadest ning konservatiivselt valmistatud teraviljadest
+
+loodushügienism
+: toitumine peamiselt töötlemata puuviljadest, juurviljadest, pähklitest, seemnetest ja idudest, kohati ka juustust ja toorest munakollasest arvestades toidu kombineerimist
+
+fruitaarne taimetoitlus
+: toitumine värsketetest ja kuivatatud puuviljadest, pähklitest,
+seemnetest ja mõnedest köögiviljadest, üldiselt toitumine ainult toiduainetest, mis ei tapa taime
+päritolu
+
+Ürtidesse uskujad tarvitavad neid igapäevaselt. Kui inimene toituks ainult ürtideks, ei peaks keha kuigi kaua vastu. Lisaks on väga lihtne saada ürtidest üledoosi.
+
+Leidub ka inimesi, kes usuvad toitu kui ravimit arvestamata, et toit on ainult materjal.
+
+Mahlaterapistid toituvad peamiselt puuviljade ja juurviljade mahladest. Mahladega on aga probleem, et need oksüdeeruvad kiiresti. Apelsinimahl kaotab $\qty{60}{\percent}$ oma C-vitamiini sisaldust tunniga, katkilõigatud õuna koorealuse osa värv muutub kiiresti, sest raud oksüdeerub. Porgandimahla joojad on ülesööjad.
+
+Leidub ka inimesi, kes soovitavad süüa kolm korda päevas kokkusegatud salatit. Sellega on sama oksüdeerumise probleem
+
+Taimetoitluse skaala on kõige väiksematest piirangutest, mille puhul süüakse ka liha, kõige suuremate piiranguteni, mille puhul süüakse ainult taimseid tooteid[@1715228520050601, lk 136].
+
+## Toidulisandite ja eritoitude propageerimine
+
+Toidulisandite ja eritoitude propageerijad hoolitsevad selle eest, et inimese kehas ei oleks ühestki ainest puudust[@fry_the]. Nende soovitused võivad ületada rohkem kui sajakordselt piisavat kogust. Siiski, kui keha saab aineid, mida juba on piisavalt, siis on vaja kulutada lisaenergiat, et ülejäägist lahti saada või see kuidagi talletada ja kaasas kanda.
+
+
