@@ -214,3 +214,20 @@ render_color <- function(color, text) {
 ```
 
 # Sissejuhatus {-}
+
+```{r label = "convert-from-pounds-to-kg"}
+pound_to_kg <- 4.5359237e-1
+
+#' This function converts a value from pounds to kilograms.
+#' 
+#' @param pounds the value in pounds
+#' 
+#' @returns the value in kilograms
+convert_from_pounds_to_kg <- function(pounds) {
+  
+  return(pounds * pound_to_kg)
+}
+
+```
+
+Üks nael on $\qty{`r as.character(pound_to_kg)`}{\kg}$[@haynes_2014_crc, lk 1-34].
