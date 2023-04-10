@@ -86,11 +86,36 @@ Looduslikud toidud inimestele vastavad järgmistele kriteeriumidele:
 
 12. peavad olema ainevahetusreaktsioonides aluselised.
 
+Ensüümi võib määratleda füsioloogilise katalüsaatorina. Paljud ained, mis tavaliselt üksteisega kokku puutudes ei ühine, võivad sellega kokku puutuda kolmanda ainega. See kolmas aine ei osale mingil viisil kombinatsioonis ega osale reaktsioonis; selle ainuüksi olemasolu näib tekitavat reaktsiooni. Sellist ainet nimetatakse katalüsaatoriks ja protsessi nimetatakse katalüüsiks.
+
+Iga ensüüm on oma tegevuses spetsiifiline, mis tähendab, et see mõjutab ainult ühte toiduainete klassi. Ensüümid, mis toimivad süsivesikutele, ei toimi valkudele ega sooladele ega rasvadele. Näiteks disahhariidide seedimisel ei ole maltoosile mõjuv ensüüm võimeline toimima laktoosile. Pole selgeid tõendeid selle kohta, et ükski ensüüm võib tekitada rohkem kui üht tüüpi fermentatsiooni.
+
+Ensüümide rakendamisel on oluline järjekord: kui näiteks pepsiin pole valke peptoonideks muutnud, ei saa peptoone aminohapeteks muundavad ensüümid valkudele mõjuda.
+
+substraat
+: aine, millele ensüüm toimib
+
+Nt tärklis on ptüaliini substraat.
+
+Maomahl ulatub peaaegu neutraalsest tugevalt happeliseks olenevalt söödava toidu iseloomust. See sisaldab kolme ensüümi: 
+
+1. pepsiini, mis toimib valkudele;
+
+2. lipaasi, millel on nõrk toime rasvadele; ja
+
+3. renniini, mis kalgendab piima.
+
+Madal temperatuur aeglustab ja isegi peatab pepsiini toime ning alkohol sadestab selle ensüümi.
+
 Toksiline on söök, mille seedimiseks ei leidu sobilikku ensüümi.
 
 Inimesel ei pea olema abivahendeid, et süüa.
 
 Toidu lõhn ja maitse peavad olema meeldivad.
+
+Nii nagu toidu nägemine, lõhn või mõte võib põhjustada süljevoolu, võivad samad tegurid põhjustada maomahla voolu, see tähendab "mao vesistamist". Toidu maitse on süljevoolu esilekutsumisel kõige olulisem. Ei toimu sekretsiooni, kui suhu võetud aineid ei saa seedida. Oma katsetes "tingitud refleksi" uurimisel märkis Pavlov, et maomahla väljavoolu tekitamiseks ei ole vaja toitu suhu võtta. Ta leidis, et isegi müra või mõni muu toitmisajaga seotud tegevus põhjustab sekretsiooni voolu.
+
+Mao sekretsioonid on umbes viie miljoni mikroskoopilise näärme saadused, mis on paigutatud mao seintesse ja millest mitmed eritavad maomahla erinevaid osi. Maomahla koostisesse sisenevate elementide erinevad kogused ja proportsioonid annavad erineva iseloomuga erinevate toiduainete seedimiseks kohandatud mahla. Mahl võib olla reaktsioonis peaaegu neutraalne või nõrgalt happeline või tugevalt happeline. Pepsiini kogus sõltub vajadusest. Oluline on ka ajastus. Mahla iseloom võib ühes seedimisetapis olla väga erinev sellest, mis see on teises. Nõrgad happed põhjustavad rikkalikku süljevoolu, aga nõrgad leelised ei põhjusta süljeeritust. Ebameeldivad ja kahjulikud ained põhjustavad süljeeritust rikkuva materjali eemaldamiseks. Kui suus on vähemalt kaks erinevat tüüpi nääret, mis on võimelised toimima, on lõpuks väljutatava segasekreedi iseloomu osas võimalik märkimisväärseid erinevusi.
 
 Energiakulu seedimisele peab olema minimaalne. Nt arbuusist $\num{400}$ kalori omastamiseks, närimiseks, imendumiseks, transportimiseks ja assimileerimiseks kulutab inimene $\num{30}$ kalorit energiat, aga sama koguse energia hõivamiseks lihast kulutab inimene seedimisele $\num{280}$ kalorit energiat. Arbuusi seedimiseks läheb vaja väga vähe närvienergiat, kuid söögi töötlemiseks, mis pole meile loomuomane, kulutame võrdlemisi palju närvienergiat.
 
@@ -230,7 +255,7 @@ Magusad puuviljad liiguvad eri kiirusega läbi seedetrakti. Kui melonid töödel
 
 Inimese organism on mõeldud söömaks peamiselt puuvilju. Piiratult saame me süüa ka muud. $\qtyrange{85}{90}{\percent}$ ulatuses katavad puuviljad inimese vajadused, millest peamine on energiavajadus. Osa eluteadlasi leiavad, et mida kirevam on toiduvalik, seda kasulikum, ning et saada kätte ka asendamatuid aminohappeid, vitamiine ja mineraalsoolasid, on vaja süüa ka rohelisi lehti ja muid köögivilju, kuid väidetavalt eksivad, et ei piisa ainult puuviljadest.
 
-Inimese keha kasutab ainevahetuseks \num{`r as.character(signif(11 / convert_from_pounds_to_kg(pounds = 1), digits = 2))`} kalorit keha kilogrammi kohta päevas. Seda arvväärtust kinnitavad ka rühm inimesi teoses *Eesti toitumis- ja liikumissoovitused*[@a2015_eesti, lk 75]. Keha on seda tõhusam, mida vähem toitu sellele teatud määrani antakse[@fry_the].
+Üks kalor on soojushulk, mis on vajalik ühe kilogrammi vee temperatuuri tõstmiseks ühe kraadi võrra Celsiuse järgi. Soojushulka, mis vabaneb toidu täielikul lagunemisel selle ainevahetuse lõpptoodeteks, väljendatakse kalorites. Inimese keha kasutab ainevahetuseks \num{`r as.character(signif(11 / convert_from_pounds_to_kg(pounds = 1), digits = 2))`} kalorit keha kilogrammi kohta päevas. Seda arvväärtust kinnitavad ka rühm inimesi teoses *Eesti toitumis- ja liikumissoovitused*[@a2015_eesti, lk 75]. Keha on seda tõhusam, mida vähem toitu sellele teatud määrani antakse[@fry_the].
 
 Inimene võib oma jõu kolmekümnekordistada tarbides ainult puuvilju.
 

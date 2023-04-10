@@ -1,0 +1,256 @@
+# Süsivesikud
+
+Süsivesikud on ühendid, mis koosnevad süsiniku, vesiniku ja hapniku aatomitest[@fry_the]. Ka rasvad koosnevad nende elementide aatomitest, aga nende hapnikuosa on väiksem.
+
+Süsivesikud moodustavad koos valkude ja rasvadega elusaine põhikomponente. Süsivesikuid kasutatakse raku funktsionaalse aktiivsuse säilitamiseks ning rakkude varu- ja struktuurimaterjalidena.
+
+Süsivesikutest saab inimkeha energia igasuguseks eluliseks tegevuseks: seedimiseks, mõtlemiseks, liigutamiseks, jalutamiseks, südametööks, vereringeks jm. Kui keha ei saa piisavalt süsivesikuid, konverteeritakse rasvavarusid süsivesikuteks ja aminohappeid kasutatakse süsivesikutena glükoneogeneesi, milles aminohapped deamineeritakse, kaudu valkude tegemise asemel. Pea kõik rasvavarud saab niimoodi ära kasutada. Nii on võimalik hoida paastu ajal normaalset veresuhkru taset, normaalset neuroloogilist talitlust ja rahuldada keha erinevaid energiavajadusi.
+
+Süsivesikud valmistatakse fotosüntessi käigus rohelistes taimedes. Inimesed saavad oma süsivesikute vajaduse kaetud kõige tõhusamalt taimemaailmast.
+
+Süsivesikud ehk sahhariidid jaotatakse vastavalt üksikute süsivesikute molekulide arvule ühendis:
+
+1. ühe molekuliga on monosahhariidid,
+
+2. kahe molekuliga on disahhariidid,
+
+3. enama kui kahe molekuliga on polüsahhariidid.
+
+Kõik süsivesikud on kas monosahhariidid või neid saab monosahhariidideks hüdrolüüsida neid lõhustades. Samuti saab mono- ja disahhariide kombineerida polüsahhariidiks.
+
+Mono- ja disahhariidid on vees lahustuvad, maitsevad magusalt on kristallilise struktuuriga. Neid kutsutakse suhkruteks ja nende nimetuse lõpus on *-oos*, mis tähendab *suhkur*. Polüsahhariidid vees ei lahustus, ei maitse magusalt ega oma kristallilist struktuuri.
+
+Inimese keha saab omastada ainult monosahhariide ja selleks on keerulisema struktuuriga sahhariidid vaja lõhustada monosahhariidiks. Toitumisteaduse seisukohalt on olulised monosahhariidid glükoos (ka dekstroos või viinamarja suhkur), fruktoos ja galaktoos.
+
+Glükoosi kasutab inimkeha vahetult kütusena. Glükoos tekib järgmiselt:
+
+1. di- ja pülüsahhariididest nagu tärklisest, dekstriinist, maltoosist, sukroosist ja laktoosist hüdrolüüsis,
+
+2. fruktoosist peamiselt imendudes,
+
+3. fruktoosist ja galaktoosist maksas ainevahetuses,
+
+4. keha süsivesikust glükogeenist lõhustudes,
+
+5. mittesüsivesinikest nagu valkude teatud aminohapped, rasva glütserool ja kaudselt rasva rasvhapped.
+
+Glükoosi võib valmistada ka tärklise töötlemisel väävelhappega suure temperatuuriga. 
+
+Vastavalt vajadusele keha otsustab, kas kasutada süsivesikuid otse energiaks, konverteerib ja säilitab glükogeenina või konverteerib rasvaks ja säilitab rasvkoes.
+
+Glükoosi leidub puumahlades, puuviljades, köögiviljades ja kõigis taimedes.
+
+Fruktoos ehk levuloos ehk puuvilja suhkur ja galaktoos on sama keemilise valemiga, aga nende struktuur on erinev. Fruktoos on kõikidest suhkrutest kõige magusam. Seda leidub puuviljades, köögiviljades ja lillede nektaris. Inimese kehas toodetakse fruktoosi disahhariid sukroosi hüdrolüüsimise kaudu.
+
+Galaktoosi looduses ei leidu. Seda toodab inimkeha disahhariid laktoosi seedimise kaudu. Seda kristalset glükoosi saadakse piimasuhkru töötlemisel lahjendatud hapetega.
+
+Toitumisteaduse seisukohalt on olulised disahhariidid sukroos, maltoos ja laktoos.
+
+Sukroos koosneb glükoosis ja fruktoosist. Sukroosi leidub puu- ja köögiviljades. Eriti palju on seda suhkrupeedi juures ja suhkruroo lehes. Töödeldud valge ja pruun suhkur on peaaegu täielikult sukroos, sest kõik muu on sellest eemaldatud.
+
+Maltoosi ehk linnasesuhkrut leidub idandatud terades. Inimese kehas on maltoos polüsahhariid tärklise seedimise vaheprodukt.
+
+Laktoosi ehk piimasuhkrut leidub ainult piimas. Inimese piimas on seda \qty{48}{\kg\per\cubic\meter}, lehma omas \qty{68}{\kg\per\cubic\meter}. Laktoos hüdrolüüsub ensüüm laktaasi, mida inimkeha toodab garanteeritult kolmanda eluaastani, toimel glükoosiks ja galaktoosiks.
+
+Polüsahhariidid koosnevad kuni \num{60000} lihtsast süsivesiku molekulist, mis on kokku ühendatud pikkadeks hargnemata või hargnenud ahelateks. Toitumisteaduse seisukohalt on olulised polüsahhariidid tärklis, dekstiin, glükogeen ja tselluloos.
+
+Tärklist leidub granuleeritud kujul taimerakkudes. Neid graanuleid näeb mikroskoobiga ja need erinevad suuruse, kuju ja märgistuse poolest. Nt nisu tärklisegraanulid on ovaalsed, maisi tärklisegraanulid aga väikesed ümarad nurgelised. Tärklisegraanulid asuvad taimede säilitusorganites seemnetes, mugulates, juurtes ja varresüdames. Enamus tärklisemolekule on koosnevad amüloosist ja amülopektiinist. Amüloosi struktuur on lineaarne, amülopektiini oma hargnenud või põõsasstruktuur. Kartulitärklises ja enamuses teravilja tärklises on \qtyrange{15}{30}{\percent} amüloosi, vahajased teravilja terad, sealhulgas mõned maisisordid, riis ja sorgo, sisaldavad tärklist peamiselt amülopektiinina, rohelises hernes ja mõnes magusa maisi sordis on tärklis peamiselt amüloosina. Tärklist saab kuumas vees hajutada, mille tulemusel graanulid paisuvad ja želatiniseeruvad muutudes jahtudes pastaks. Seejuures amüloos toetab tarretamist, amülopektiin aga viskoossust ja sidusust.
+
+Dekstriine on palju. Dekstriine saadakse järgnevalt:
+
+1. tärklise kuumutamisel,
+
+2. tärklise seedimisel amülaasi toimel.
+
+Dekstriini saab hüdrolüüsida maltoosiks.
+
+Glükogeen on inimeste varusüsivesik. Nagu taimedel on energia salvestatud tärklisena, loomadel on energia salvestatud glükogeenina. Glükogeeni suhteline aatommass on võrdlemisi suur ja hargnenud struktuuris on tuhandeid glükoosi molekule. Glükogeen sarnaneb amülopektiinile omades lühemaid harusid ja kompaktsemat põõsasstruktuuri olles seetõttu paremini lahustuv oma omades väiksemat viskoossust. Glükogeeni hoitakse kahe kolmandiku ulatuses lihastes ja ühe kolmandiku ulatuses maksas.
+
+Nagu ka tärklis ja glükogeen koosneb tselluloos tuhandetest glükoosi molekulidest ja selle lõhustamiseks puudub inimese kehas vastav ensüüm, mistõttu läbib tselluloos seedetrakti muutmatuna. Tselluloosis on üle 50% taimestiku süsinikku olles kõige rikkalikum looduslikult esinev orgaaniline aine. Tselluloos on taimede rakuseinte struktuurne koostisosa. Tselluloos ei lahustu, on püsiv ja jäik.
+
+Inimorganism vajab lisaks energiale ehitusmaterjale, mistõttu ei piisa ainult süsivesikutest, vaid vaja on ka valke, vett, vitamiine, mineraale, rasvu jm. Seetõttu ei sobi inimesele toituda nt ainult töödeldud suhkrust või riisist, jahutoodetest.
+
+Süsivesikute talitluslikkused:
+
+1. energiaga varustamine,
+
+2. kesknärvisüsteemi toitmine,
+
+3. lihassüsteemi toitmine,
+
+4. valkude alleshoidmine,
+
+5. kiudainega varustamine.
+
+Glükoos voolab veres ja lümfis. Kui glükoosi molekul lõhutakse ja selle väiksemad osad oksüdeeritakse, vormub vesi ja vabaneb ports energiat.
+
+Närvikudedes olevast glükogeenist ei tehta glükoosi. Seega, kui paastutakse kolm või enam nädalat, hakkab kesknärvisüsteem kasutama glükoosi asemel ketooni kehasid, mida sünteesitakse maksas rasvade ainevahetuse käigus.
+
+Kuigi lihasharjutusteks pakuvad vajaliku energia ka valgud ja rasvad, on neid siiski vaja eelnevalt lõhustada süsivesikuteks, nii et kõige kiiremini saavad lihasrakud energia kätte ikkagi süsivesikutest. Lihasrakud saavad glükoosi tõhusamalt kätte glükogeenist kui verest, sest verest kättesaamiseks on omakorda energiat vaja. Kui inimene puhkab, varustatakse lihased glükogeeniga.
+
+Kui ei sööda piisavalt süsivesikuid, põhjustab raske töö massilise rasvade ja valkude lõhkumise. Valkude lõhkumise tunneb ära suurema lämmastiku sisalduse kaudu uriinis. Rasvade lõhkumise tunneb ära suurema ketooni kehade sisalduse kaudu veres ja uriinis. Kummalgi juhul on veresuhkru tase madalam.
+
+Keha toimib paremini saades vahetult süsivesikuid, sest nende hankimiseks valkudest ja rasvadest maksas ja rasvkoes on vaja omakorda teha tööd.
+
+Kui veresuhkrut ja glükogeeni pole piisavalt, saab keha seega abi valkude ja rasvade kasutamisest:
+
+1. Organismis on hädaolukordades palju varukoosseisu, kui piisavad süsivesikud pole.
+
+2. Optimaalse tervise ja heaolu saavutamiseks tuleks püüda leida sobiv tasakaal kehavajaduste ja energia kulutamise vahel.
+
+On leitud, et inimesed, kes on harjunud tegema pikaajalist või pingutavat tööd, omavad suuremat glükogeenivaru, mistõttu on kasulik keha treenida.
+
+Kuna valgud on mõeldud ennekõike kudede ehituseks ja hoolduseks, tuleks keha jaoks vajalik energia ammutada süsivesikutest, et mitte kasutada energia saamiseks valke.
+
+Kui kiudained on looduslikud, siis nende tarbimine inimesele sobiliku toidu koosseisus ei kahjusta keha. Need lihtsalt väljutatakse. Kuna rafineeritud suhkrus ja toodetes, mis sisaldavad rafineeritud suhkrut, samuti rafineeritud jahutooteid, ei ole vitamiine ja mineraalaineid nende loomulikul kujul, mis on ainus viis inimese jaoks nende kasutamiseks, võetakse nende toiduainete seedimiseks nt kaltsiumi luudest. Lääne-India põliselanikul kulub tund aega, et närida \num{18} tolli suhkruroogu, millest ta saab ühe suure suhkrutüki – vähem, kui keskmine kohvijooja oma lemmikmürki tassi sisse paneb. Sel viisil oma suhkrut kindlustades tagab roosööja mineraalid ja vitamiinid, mida tavaliselt suhkrutega seostatakse – ta ei söö "puhastatud" toodet.
+
+Kõigi söödud toitude põhjalikuks ja täielikuks seedimiseks peavad olema täidetud järgmised tingimused:
+
+1. peamiselt (või ainult) hõlpsasti seeditud ja tüsistamatute toitude, näiteks puuviljade söömine,
+
+2. ühilduvate toidukombinatsioonide söömine,
+
+3. mõõduka koguse toitude söömine,
+
+4. söömine hästi asetatud söögikordadel,
+
+5. hoidumine joomisest söömise kestel või liiga lühikese ajavahemiku möödudes enne või pärast söömist ja
+
+6. hoidudes söömisest kui ollakse stressis või emotsionaalselt ärritunud.
+
+Kui toitu põhjalikult või täielikult ei seedita, juhtub üks järgmistest nähtustest:
+
+1. suhkrud võivad käärida,
+
+2. valgud võivad mädaneda.
+
+Toit tuleb seedida enne, kui soolestikus pesitsevad bakterid jõuavad toitu lõhustama hakata.
+
+Seedimine on nii mehhaaniline (närimine) kui keemiline (ensüümide toime) protsess. Ensüümid, mis hüdrolüüsivad süsivesikuid, on süsihüdraasid. Nende hulka kuulub amülaas. Igat tüüpi toitude seedimine algab suus närimise näol. Ainsad toitained, mille keemiline seedimine algab suus, on tärklised ja dekstriinid. Nende seedimiseks eritavad parotiidnäärmed sülje amülaasi ehk ptüaliini, mis konverteerib glükogeeni, tärklise ja dekstriini maltoosiks. Mis juhtub, kui konverteerimata glükogeen, tärklis või dekstriin liigub suust edasi ja mis juhtub maltoosiga, kui need suuremad süsivesikud jõuavad makku, sõltub järgmistest teguritest:
+
+1. milliseid muid toitaineid söödi koos tärklisega,
+
+2. kui palju toitu söödi,
+
+3. kui kiiresti söödi,
+
+4. milline oli sööja emotsionaalne seisund,
+
+5. milline oli sööja seedesüsteemi seisund.
+
+Kui süüa kartuleid eraldi või tärklist mittesisaldavate köögiviljadega ja valke ei tarbita, ptüaliin jätkab tärklise ja dekstriini seedimist maos tükk aega. Hea tervise jaoks on vajalik see pikaajaline ptüaliini mõju, mistõttu ei tohi tärklist sisaldavaid toite süüa koos happeliste toitudega ega valkudega. Valgu seedimiseks hakkab keha eritama maohapet ja kui süüakse tärklist koos valguga, jääb osa tärklist seedimata, sest maohape hävitab ptüaliini. Tulemusena liigub tärklise osa enne maost edasi, kui jõutakse see lõhustada monosahhariidideks.
+
+Tärklist sisaldavate toitudega ei tohi süüa happelisi toite nagu tomatid, marjad, apelsinid, greibid, sidrunid, laimid, ananassid, hapud viinamarjad, äädikas jms.
+
+Vedelike manustamine söömise kestel või vahetult enne või selle järel põhjustab ensüümide lahustamise ja nendest seedetrakti loputamise, mille tulemusel liigub toit kiiremini läbi seedekulgla kui seda jõutakse seedida.
+
+Oluline on, et võimalikult palju toitu seeditaks võimalikult vara, sest siis on tõenäosus selle fermenteerimisele väike. Seetõttu on oluline toitu korralikult närida, et aidata seda lõhustada.
+
+Kui toit jõuab soolde enne fermenteerimist, siis asub selle kallale peensoole esimeses osas kaksteistsõrmiksooles kõhunäärme amülaas, mis konverteerib järelejäänud tärklise ja dekstriini maltoosiks. Sooles saab amülaas toimida, kuna seal on aluselisem keskkond. Järgnevalt konverteerib maltaas maltoosi, sukraas sukroosi ja laktaas laktoosi monosahhariidideks. Neid ensüüme eritab peensool.
+
+Kuigi vesi, etüülalkohol, väikesed kogused monosahhariide suudavad imenduda läbi mao limaskesta vereringesse, toimub põhiline lahustuvate toodete imendumine peensooles, kus imev pind suureneb \num{600} korda tänu hattude olemasolule. Igas hatus on lümfisoone ümber kapillaaride võrgustik ja iga hatu rakk koosneb mikrohattudest. Ained pääsevad läbi soolemembraani osmoosi kaudu:
+
+1. difundeerudes või
+
+2. aktiivse transpordi kaudu.
+
+Ained, mille kontsentratsioon on suurem kui teisel pool membraani veres ja lümfis, difundeeruvad. Selle jaoks energiat ei kulutata. Nii absorbeerub fruktoos. Tegusat transporti läheb vaja siis, kui on vaja liigutada aine väiksema kontsentratsiooniga piirkonnast suurema kontsentratsiooniga piirkonda. Selle jaoks on vaja nii energiat kui transportööri, milleks on valk või lipoproteiin ehk valgu ja rasva ühend. Niiviisi absorbeeruvad glükoos ja galaktoos. Monosahhariidid imenduvad kapillaaridesse ja liiguvad sealt portaalveeni, kust omakorda maksa.
+
+Ainevahetus toimub pärast toitainete imendumist kehha. Ainevahetuse faasid:
+
+1. anabolism, mis tähendab haldust ehk kulunud materjali väljavahetamist, samuti kasvu ehk uue rakumaterjali loomist ning
+
+2. katabolism, mis tähendab rakumaterjali lõhkumist väiksemateks üksusteks.
+
+Anabolismis nt luuakse glükogeeni varusid, katabolismis neid glükogeeni varusid kasutatakse. Anabolism ja katabolism toimuvad pidevalt.
+
+Maks, kõhunääre ja neerupealised hoiavad veresuhkru taseme umbes \qty{0,9}{\kg\per\cubic\metre} peal. Portaalveenis on suhkru kontsentratsioon umbes \qty{1,8}{\kg\per\cubic\metre}. Sellest glükoosist kaks kolmandikku maks eemaldab ja talletab glükogeeniks. Ülejäänud kolmandik glükoosi stimuleerib kõhunääret, mis eritab insuliini, mis aitab transportida glükoosi läbi veresoonkonna rakkudeni ja ka imenduda läbi rakumembraani, kus glükoosiga juba edasi tegeletakse. Vaid väike kogus glükoosi suudab ühenduda transportööriga ja liikuda sihtkohta, kuid kui kaasatakse insuliin, kiireneb glükoosi transport kolm kuni viis korda. Neerupealised eritavad hormoone norepinefriin ja epinefriin, kõhunääre hormooni glükagon. Nende hormoonide abil lõhustatakse maksas glükogeen glükoosiks ja suunatakse verre. Nii taastub vere normaalne suhkrutase.
+
+Energia saadakse glükoosist kätte kahel viisil:
+
+1. oksüdatsiooniga ja
+
+2. glükolüüsiga.
+
+Enamasti kasutatakse energia eraldamiseks hapnikku, kuid saab ka ilma.
+
+Kui süsivesikuid tarbitakse liiga palju, konverteeritakse ülejääk rasvaks ja säilitatakse rasvkoes.
+
+Süsivesikute ainevahetuses mängivad olulist rolli B-kompleksi vitamiinid ja kaltsium. Kui need saadakse kätte loomulikul teel töötlemata toidust, ei ole probleemi. Kui aga nt kaltsiumi ei saada loomulikul teel, võetakse seda luudest ja tulemuseks võib olla luude hõrenemine.
+
+Süsivesikuid saab kõikidest toiduainetest.
+
+Peamised süsivesikud on:
+
+1. puuviljad: banaanid, kõik magusad puuviljad, kõrvits jne.,
+
+2. pähklid: mõned sordid - tammetõrud, kastanid ja kookospähklid,
+
+3. mugulad: kartul, bataat, porgand, artišokk, pastinaak jne.,
+
+4. kaunviljad: enamik ube, välja arvatud mõned sojaubade sordid, kõik herned, maapähklid ning
+
+5. teravili: kõik teraviljad ja teraviljatooted, välja arvatud gluteenleib.
+
+Terad ja kaunviljad liigitatakse nii valkudeks kui süsivesikuteks. Pähkleid liigitatakse nii valkude kui ka rasvade hulka. Enamik toiduaineid sisaldab mõningaid rasvu, kuid seda pole enamikus puuviljades ega köögiviljade rohelistes lehtedes.
+
+Tärklist sisaldavad:
+
+1. tärkliserikkad köögiviljad: kartulid, jamsid, talvised kabatšokid, kõrvits, kaladiumi juur, taro juur, kassava juur ja Jeruusalemma artišokid,
+
+2. kergelt tärkliserikkad köögiviljad: porgandid, lillkapsas, peet, rutabaga ja soolad,
+
+3. teraviljad: nisu, rukis, oder, riis, hirss, tatar ja kaer ning
+
+4. kaunviljad: maapähklid, läätsed, herned ja oad.
+
+Puuviljadest sisaldavad süsivesikuid peamiselt magusad puuviljad:
+
+1. magusad puuviljad,
+
+2. alahapeid,
+
+3. happelised puuviljad ja
+
+4. melonid.
+
+Tasub pigem süüa puuvilju kui tärklist sisaldavaid toite, sest tärklise lõhustamiseks on vaja energiat, puuviljadest saame aga energia ilma keemilise seedimiseta kätte. Nii jääb rohkem energiat muudeks tegevusteks.
+
+Tärklise graanuli olemuse tõttu saab vaid väikese osa tärklist seedida toorelt. Isegi kui väga hoolikalt närida, saame kätte vaid väikese osa tärklist nendest graanulitest. Kuigi graanuli kest on õhuke, on see tugev, sest on loodud kaitsma taime jaoks vajalikku energiat. Neid tselluloosist graanuleid inimese seedesüsteem ei seedi ja kuuluvad muutmata kujul väljutamisele, mis on kehale lisakoormus, sest sealt ei saada energiat kätte. Et teha need graanulid kergemini purunevaks, kuumutatakse sööki. Kuumutades konverteerub ka osa tärklist dekstriiniks. Kuigi niimoodi saadakse süsivesikud paremini kätte, hävineb osa muid toitaineid. Mõned vitamiinid hävinevad osaliselt või täielikult, mineraalained muudetakse kasutuks, valgud deamineeritakse. Seetõttu ei soovita eluteadlased tärkliserikkaid sööke üldse mitte tarbida.
+
+Kaunviljade puhul soovitavad eluteadlased idandamist. Idandamises konverteeritakse tärklis vähemalt osaliselt dekstriiniks. Töötlemata teravilju saab ka idandada, aga need kipuvad enne konverteerimist hapuks minema. Eluteadlased soovitavad tärkliserikkast toidust tarbida üksnes idandatud läätsi, idanenud mungube või idanenud adzuki ube.
+
+Enamik tärkliserikkaid toiduaineid ei maitse toorena hästi. Porgandid, bataadid ja jamsid sisaldavad lisaks tärklisele küll piisavalt suhkruid, et need maitseksid magusalt, aga probleem seisneb selles, et tärklist seeditakse kauem kui suhkruid ja kuna need koos sisenevad seedetrakti, jäävad suhkrud tärklise tõttu vangistusse ja algab käärimine. Pigem tasub neid toiduaineid mahlaks teha ja süüa eraldi või pool tundi enne ühilduvate toitude sööki. Riivitud porgandid ja/või lillkapsa lilled on toredad lisandid köögivilja salatisse, ent selline salat ei tohi sisaldada seemneid, pähkleid, tomateid.
+
+Eluteadlased ei soovita süüa kergelt tärkliserikast juuretoitu peeti, millel on eriline probleem: see sisaldab liiga palju oblikhapet, mille organism kaltsiumi sidudes neutraliseerib.
+
+Meie toidus peaksid olema ülekaalus aluselised toidud. Enamik teravilju ja kaunvilju on hapet moodustavad ja seetõttu tuleks neid süüa äärmiselt mõõdukalt, kui üldse. Terad sisaldavad fütiinhapet, ainet, mis seob kaltsiumi ja rauda nii terades endas kui ka nende mineraalide kehas. Süsivesikute saamine värsketest puuviljadest ja tumeroheliste lehtköögiviljade tarbimine koos pähklite, seemnete ja/või avokaadodega tagab piisava kasutatava kaltsiumi tarbimise.
+
+Puuvilju loevad eluteadlased inimese jaoks ideaalseks toiduks, sest
+
+1. läbivad seedetrakti kiiresti eraldades monosahhariididest energiat, mida jääb üle muudeks tegevusteks kui seedimiseks,
+
+2. sisaldavad piisavas koguses maitsvat vett, kui tegemist pole just kuivatatud puuviljadega või datlitega,
+
+3. neid pole vaja maitsestada ning
+
+4. nendes on sobilikus proportsioonis süsivesikud, valgud, vitamiinid ja mineraalained.
+
+Kui süüa valgulisi/rasvaseid toite, nagu pähklid, seemned ja/või avokaadod ja/või mittemagusad puu- ja/või köögiviljad, ei tohiks neid süüa koos magusate puuviljadega, vahetult pärast seda või vähem kui neli tundi enne seda, et tagada kõikide asjassepuutuvate toitude korralik seedimine ja eelkõige tagada, et puuviljad jõuaksid maost kiiresti soolestikku, et see imenduks, mitte ei jääks maos aeglasemalt seeditavate toiduainete ja käärimise tõttu kinni.
+
+Eluteadlastele tundub veider, et inimesed tarbivad lehmapiima ning et enda liigikaaslase piima tarbimine on mõeldud teatud vanuseni. Üle selle vanuse ei soovita nad tarbida piima ega piimatooteid ühelgi kujul ja viitavad laktoositalumatuse probleemile, mis avaldub kõhuvalu, kõhulahtisuse ja kõhupuhitusena.
+
+Galaktoseemia on teine haigusseisund, mis on seotud piima või laktoosi tarbimisega, ja seda nimetatakse "ebatavaliseks pärilikuks häireks", esineb imikutel. Galaktoseemia on üks haigusi, mis väidetavalt tuleneb "kaasasündinud ainevahetuse vigadest". Selles seisundis puudub spetsiifiline ensüüm (p-galaktoos-uridüültransferaas), mistõttu imik ei saa piimas sisalduvat monosahhariid-galaktoosi, mida looduses vabana ei esine, vaid mis tekib piimast pärit laktoosi hüdroliseerumisel, ei saa muuta glükoosiks, seedida. Selle häirega imikud oksendavad, kui neid toidetakse piima ja muude piimatoodetega, muutuvad loiuks ega võta kaalus juurde, nende maks ja põrn suurenevad (ületöötamisest), tekib katarakt ja nad muutuvad vaimselt alaarenguks, rasketel juhtudel surevad. Eluteadlased soovitavad galaktoseemia puhul hooajal värskelt valmistatud puuviljamahlu, võib-olla koos (muidugi eraldi toitmise korral) koduse pähkli-, seemne- või sojapiimaga, olenevalt imiku taluvusest nende suhtes.
+
+Värsketes küpsetes puuviljades, isegi väga magusates puuviljades, nagu datlid ja kuivatatud puuviljad, sisalduvad suhkrud ei põhjusta kunagi hammaste lagunemist. Hambakaariest põhjustab rafineeritud suhkrute ja muude rafineeritud toitude, näiteks rafineeritud jahu ja valge või poleeritud riisi tarbimine. Samuti soodustab hammaste lagunemist liha, piimatoodete ja muude happeid moodustavate toitude tarbimine suures koguses aluselise toiduga (puu- ja köögiviljad toores olekus). Kaltsium, mis on vajalik süsivesikute ainevahetuses, puudub rafineeritud toidus. Keha on sunnitud kaltsiumi ammutama oma varudest ja need varud ammenduvad üsna kiiresti, kui rafineeritud toitu süüakse liiga palju. Kui see juhtub, peab keha vajaliku kaltsiumi ammutama oma luudest ja hammastest, millest tulenevad hambaaugud. Liha ja piimatooted ning täisteratooted teevad organismi happeliseks. Kaltsium on vajalik happesuse neutraliseerimiseks ja vere normaalse leeliselisuse pH'ga \num{7,40} säilitamiseks. Keha kaltsiumisisalduse säilitamise seisukohalt oleks tärklisesisaldusega toiduainete parim valik mugulad: kartul, bataat, jamss ja porgand.
+
+suhkrutõbi
+: suhkru metaboliseerimiseks vajaliku insuliini ebapiisav tootmine
+
+Suhkrutõve põhjuseks on ebatervislik toitumine, mis sisaldab rafineeritud suhkruid, jahu, teravilja ja muid ebatervislikke aineid. Need, kes kasutavad insuliini, eriti suurtes kogustes, peaksid enne väga suurte muudatuste tegemist dieedis konsulteerima kogenud hügieenispetsialistiga.
+
+Hüpoglükeemia ehk madal veresuhkur on sageli diabeedi eelkäija. Tõeline hüpoglükeemia on põhjustatud samadest asjadest, mis põhjustavad diabeeti, ja sellest lahtisaamiseks piisab paastumisest.
+
+Kuidas katta kogu maailma inimeste vajadus puhta inimesele mõeldud toidu järele? Selleks peavad toidukasvatajad (talupidajad ja viljapuuaiapidajad) tagama, et inimesed saaksid piisavalt toitu. Puuviljakultuur ja maheaiandus suudaksid maailma rahvastikku enam kui piisavalt toita, kui praegu toiduainete töötlemiseks (hävitamiseks) kuluvat raha ja tööjõudu kasutataks hoopis puuviljade kasvatamiseks. Üleminek sellisele kultuurile peaks toimuma järk-järgult ja see on võimalik, kui sellega nõustub piisavalt inimesi. Kogu maailmast võib saada aed. Eluteadlased püstitavad küsimuse, kas puuvilja- ja pähklipuuaiad ning viinamarjaistandused poleks meeltele igas mõttes atraktiivsemad kui toidurafineerimistehased ja tehased. Inimeste tervis võib selle tulemusel nii palju paraneda, et ka ravimitööstus saaks suunata oma raha ja tööjõudu tervislikele püüdlustele. Haiglad saaks muuta koolideks, hotellideks, spordisaalideks. Maa on piisavalt varustatud puuvilja- ja pähklipuude ning köögiviljade kasvatamiseks. Toiduga saaks varustada ka neid piirkondi, kus mõnel aastaajal saab vähe või üldse mitte toitu kasvatada, kasutades selleks tööjõudu tõhusaks toidujagamiseks. Pähklid, seemned, datlid, kuivatatud puuviljad ning seemned ja idandamiseks sobivad oad säilivad suhteliselt hästi.
+
+Õige toitumise korral võib inimene olla kindel, et ta kehas toimub kõik nii, nagu peab, sest kehale on omane intelligentsus. Inimese ainus kohustus on rahuldada normaalsed eluvajadused ja siis lihtsalt elada. Keha hoolitseb oma vajaduste eest ise.
