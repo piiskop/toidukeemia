@@ -1,5 +1,7 @@
 # Toitumispõhimõtted
 
+## Toitumise olemus
+
 toitumine
 : kõikide protsesside summa, mis varustavad, arendavad ja säilitavad organismi võimeid ja funktsioone optimaalsel eksisteerimistasemel[@fry_the].
 
@@ -24,6 +26,8 @@ Orgaaniline eksistents tähendab igavest loomist ja uuenemist, mis toimub toitum
 Toitumine sõltub tervisest ja tervis sõltub toitumisest. Toit on inimese kehale toormaterjal. Toit ei mõjuta inimese organismi ise, vaid inimese organism lõhub toidu mehhaaniliselt ja keemiliselt, et selle najal elus püsida. Seda saab inimese keha teha tõhusalt üksnes siis, kui tervis on korras. Kui tervis ei ole korras, tuleb toidu tarbimisest loobuda, sest sellises olekus ei suuda inimese organism toitu korralikult töödelda. Seega on keha ise toitumisspetsialist.
 
 Veri transpordib inimkehas kõiki toitaineid. Veri filtreeritakse koevedelikku, millest organid ammutavad just neile vajalikke toitaineid. Kui see protsess toimub inimkehale sobilikult, ei taju inimene mittekorrasoleku sümptomeid. Kui aga seedimine on häiritud, siis on sümptomid ka tunda. Sümptomeid saab küll alla suruda droogidega, kuid need ei kõrvalda sümptomite põhjust. Et kõrvaldada sümptomite põhjus, on vaja korda seada toitumine.
+
+## Toitumise liigid
 
 Tarbitav toit sõltub isendite liigist:
 
@@ -103,6 +107,8 @@ päritolu
 
 Taimetoitluse skaala on kõige väiksematest piirangutest, mille puhul süüakse ka liha, kõige suuremate piiranguteni, mille puhul süüakse ainult taimseid tooteid[@1715228520050601, lk 136].
 
+## Inimesele sobilik toit
+
 Inimesele sobilik looduslik toit vastab järgmistele kriteeriumidele:
 
 1. ei ole toksiline,
@@ -162,7 +168,12 @@ Mao sekretsioonid on umbes viie miljoni mikroskoopilise näärme saadused, mis o
 
 Energia, mille keha kulutab, peab tulema toidust. Selleks sobib hästi suure monosahhariidide sisaldusega toit nagu magusad puuviljad.
 
-Frugivoorid tavaliselt vett ei joo, sest saavad kogu vajaliku vee puuviljadest.
+Frugivoorid tavaliselt vett ei joo, sest saavad kogu vajaliku vee puuviljadest. Kui siiski on soov juua, siis joogi temperatuur peab olema suurem kui jää sulamistemperatuur, kuid mitte suurem kui kehatemperatuur (joonis \@ref(fig:drink) leheküljel `r render_pageref(reference = "fig:drink")`).
+
+```{r label = "drink", echo=FALSE, fig.cap = "Sobiliku joogitemperatuuri näitlikustamine: Sobilik joogitemperatuur on jää sulamistemperatuurist suurem, kuid mitte suurem kui kehatemperatuur."}
+include_external_graphics("rmd/jook.png")
+
+```
 
 Puuvilju tuleb süüa vahetult, mitte juua nende mahlu.
 
@@ -213,7 +224,7 @@ Valkude seedimise kohta toovad loodushügienistid välja järgmised aspektid:
 
 3. proteiini denatureerimise jääkproduktidest lahtisaamiseks kulutab keha tohutu hulga närvienergiat, mis sel ajal küll stimuleerib, kuid siiski kurnab keha.
 
-```{r}
+```{r label = "daily-quantity-of-fruits"}
 daily_quantity_of_fruits <- daily_protein_need / .01
 
 ```
@@ -258,6 +269,22 @@ Loodushügienistid kritiseerivad peavoolu toitumissoovitusi järgmiselt:
 
 Toidulisandite ja eritoitude propageerijad hoolitsevad selle eest, et inimese kehas ei oleks ühestki ainest puudust[@fry_the]. Nende soovitused võivad ületada rohkem kui sajakordselt piisavat kogust. Siiski, kui keha saab aineid, mida juba on piisavalt, siis on vaja kulutada lisaenergiat, et ülejäägist lahti saada või see kuidagi talletada ja kaasas kanda.
 
+Ürtidesse uskujad tarvitavad neid igapäevaselt. Kui inimene toituks ainult ürtidest, ei peaks keha kuigi kaua vastu. Lisaks on väga lihtne saada ürtidest üledoosi.
+
+Leidub ka inimesi, kes usuvad toitu kui ravimit arvestamata, et toit on ainult materjal.
+
+Inimene suudab vastu pidada $\num{2}$ kuni $\num{3}$ korda nii kaua oma rasvavarude baasil kui olles täielikul lihadieedil. Inimene suudab konverteerida ainult $\qty{30}{\percent}$ valke oma kütuseks süsivesikuteks. Seejuures on see konverteerimismäär puuviljade suhkrute puhul $\qtyrange{90}{95}{\percent}$.
+
+Austraalia inimeste seas tehtud uuringus selgitati välja, et inimeste heaolu tunne suurenes minnes üle puuviljade ja köögiviljade dieedile[@11679570220160801].
+
+Kui inimene on harjunud tarbima liha, siis minnes üle puuvilja toidule tajub ta näljatunnet. See tuleneb sellest, et toit on lahkunud maost ja keha on alustanud puhastusprotsessi eelneva ebasobiliku dieedi jääkidest vabakssaamiseks. See puhastusprotsess tekitab ebameeldiva tunde. Sellise tunde leevendamiseks soovib inimene taas midagi süüa ja kui ta seda teeb, siis puhastusprotsess peatub, et keha saaks taas tegeleda seedimisega. See toimub samamoodi nagu pohmeluse sümptomite leevendamiseks mõni inimene tahab õlut peale juua, sest siis peatub puhastusprotsess ja ebameeldiv tunne kaob. Kui keha on piisavalt puhastunud, ei ole enam seda ebameeldivat tunnet ja inimene võib rahulikult nautida puuvilja dieeti.
+
+*Life Science Health System*is on esitatud Herbert Sheltoni artikkel, milles oletatakse, et inimesele sobilikuks toitumiseks on vajalik ka elada inimesele sobilikes klimaatilistes tingimustes, kus aastaringselt valmivad puuviljad[@fry_the].
+
+Inimorganismile on kasulik, kui süüa toitu, mis pärineb erinevalt pinnaselt.
+
+## Kombineerimine
+
 Loodushügienistid peavad oluliseks toitude kombineerimist. On toite, mis omavahel kokku ei sobi, on ka neid, mis sobivad.
 
 Tärkliserikka toidu seedimiseks kasutab inimese organism ensüümi ptüaliin, mis eritub suus ja asub tärklist lõhustama. Ptüaliin toimib aluselises keskkonnas ja alla pH 4 tärklist ei lõhustata. Valkude seedimiseks kasutab organism ensüümi pepsiin, mis toimib happelises keskkonnas. Selline keskkond on maos, kus katalüsaatoriks on maohape. Pepsiin ei toimi suurema pH kui 3 puhul. Kui süüa koos tärkliserikast ja valgurikast toitu, siis maos ei pruugi tulemusena olla piisavalt happeline keskkond, et seedida valke.
@@ -269,6 +296,8 @@ Kui süüakse korraga magusaid ja hapusid puuvilju, siis on samuti seedimine pä
 Magusad puuviljad liiguvad eri kiirusega läbi seedetrakti. Kui melonid töödeldakse kiiresti, siis banaanide, õunte ja viinamarjade töötlemine kestab kordades kauem, mistõttu kui viimaseid süüa koos meloniga, on meloni edasiliikumine pärsitud ja tekib käärimisoht ja kõht võib korrast ära minna.
 
 Inimesed kipuvad kasutama maitsete lisamiseks või muutmiseks maitseaineid. Viimaseid eraldi ja ainult tarbides ei pea keha kaua vastu, sest need ei ole toit. Kui segada kokku banaani- ja mangoviilud või juurviljasalatisse tomatit ja pähkleid, siis on tegemist tervikliku toiduga, kuna ka kõiki neid komponente eraldi süües on tegemist toitumisega. Kui aga lisada toidule suhkrut, sidrunimahla, soola, pipart, äädikat, sibulat, basiilikut, münti, küüslauku vms, siis koormatakse keha ainetega, mida vaja pole, kuid millest on vaja vabaneda.
+
+## Töötlemine
 
 Toitu kiputakse töötlema, et
 
@@ -322,25 +351,13 @@ Inimesele sobilik toit on meeldiv töötlemata olekus ja seda ei pea töötlema,
 
 Inimesele eelistatum on süüa tavatooteid, st sellist sööki, mille kasvatamiseks on nt rakendatud pestitsiide, töötlemata kujul kui mahetoodangut töödeldud kujul.
 
-Ürtidesse uskujad tarvitavad neid igapäevaselt. Kui inimene toituks ainult ürtideks, ei peaks keha kuigi kaua vastu. Lisaks on väga lihtne saada ürtidest üledoosi.
-
-Leidub ka inimesi, kes usuvad toitu kui ravimit arvestamata, et toit on ainult materjal.
-
 Puuviljad pakuvad inimese kehale toitaineid sobilikus suhtes, nii et pole vaja muretseda ja arvutada, kas midagi saadakse ehk liiga palju või vähe. Sellised suhted on nt naatrium/kaalium, kaltsium/fosfor, raud/vask, E-vitamiin/seleen, tsink/molübdeen ja C-vitamiin/bioflavinoidid. Töödeldud toitudes võib toitainete suhe olla ebasobilik. Kui inimkeha saab liiga palju fosforit, suudab keha omastada liiga vähe kaltsiumi isegi, kui ollakse söönud piisav kogus kaltsiumi. Lihtsalt fosfor võtab kaltsiumi koha endale. Samamoodi juhtub, kui inimkeha tarbib liiga palju tiamiini - niatsiinile jääb liiga vähe ruumi. Kui on puudu vaske, on pärsitud raua kasutamine. Inimkeha talub teatud piirini väävlit sisaldavaid aminohappeid ja liigne nende tarbimine koormab üle maksa ning nii on parem omastada metioniini ja muid väävlit sisaldavaid aminohappeid taimedest kui loomadest.
 
 Tärklist sisaldavast toidust saab inimene kätte väga vähe tärklist, sest inimene ei suuda toota selle seedimiseks piisavalt sülje amülaasi või ptüaliini. Keedetud tärklised dekstriniseeritakse ja nii saame küll nendest rohkem energiat, aga rohkem energiat kulub ka kuumtöötlemise tõttu degenereeritud toiduainete väljutamisele.
 
-Inimene suudab vastu pidada $\num{2}$ kuni $\num{3}$ korda nii kaua oma rasvavarude baasil kui olles täielikul lihadieedil. Inimene suudab konverteerida ainult $\qty{30}{\percent}$ valke oma kütuseks süsivesikuteks. Seejuures on see konverteerimismäär puuviljade suhkrute puhul $\qtyrange{90}{95}{\percent}$.
-
-Austraalia inimeste seas tehtud uuringus selgitati välja, et inimeste heaolu tunne suurenes minnes üle puuviljade ja köögiviljade dieedile[@11679570220160801].
-
-Kui inimene on harjunud tarbima liha, siis minnes üle puuvilja toidule tajub ta näljatunnet. See tuleneb sellest, et toit on lahkunud maost ja keha on alustanud puhastusprotsessi eelneva ebasobiliku dieedi jääkidest vabakssaamiseks. See puhastusprotsess tekitab ebameeldiva tunde. Sellise tunde leevendamiseks soovib inimene taas midagi süüa ja kui ta seda teeb, siis puhastusprotsess peatub, et keha saaks taas tegeleda seedimisega. See toimub samamoodi nagu pohmeluse sümptomite leevendamiseks mõni inimene tahab õlut peale juua, sest siis peatub puhastusprotsess ja ebameeldiv tunne kaob. Kui keha on piisavalt puhastunud, ei ole enam seda ebameeldivat tunnet ja inimene võib rahulikult nautida puuvilja dieeti.
-
-*Life Science Health System*is on esitatud Herbert Sheltoni artikkel, milles oletatakse, et inimesele sobilikuks toitumiseks on vajalik ka elada inimesele sobilikes klimaatilistes tingimustes, kus aastaringselt valmivad puuviljad[@fry_the].
-
-Inimorganismile on kasulik, kui süüa toitu, mis pärineb erinevalt pinnaselt.
-
 Teravilju ei saa inimene toorelt süüa ja töödeldud kujul ei saada peaaegu üldse nende gluteenikomponenti seedida.
+
+## Toitumine mittetoidust
 
 Inimese keha toitub lisaks toidule muudest materjalidest, nt õhust.
 
