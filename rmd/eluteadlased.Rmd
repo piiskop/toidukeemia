@@ -1,281 +1,51 @@
-# Toitumine eluteadlaste tervishoiusüsteemi järgi
+# Natural Hygiene
 
-## Eluteadlased
+*loomulik*
+: see, millega me põliselt looduses elades harjusime ja millega meie keha on kohanenud[@fry_the]
 
-Life Science ei teeni ärihuve, mistõttu puudub huvide konflikt valeõpetuse edastamiseks, küll aga on olemas kasu tõe tundmisest.
+*Natural Hygiene*
+: liikumine, mis on pühendatud tervisele looduslike vahenditega
 
-Eluteadlased kritiseerivad peavoolu toitumissoovitusi järgmiselt:
+*Life Science*
+: terviseteadus[@fry_the]
 
-1. need toitumissoovitused sõltuvad uuringutest,
+Nimetan edaspidi *Natural Hygiene*-i looduslikuks hügieeniks ja selle järgijaid loodushügienistideks. Samuti nimetatakse seda liikumist kui *Life Science*, *ortopaatia*[@a2020_orthopathy] või lihtsalt *hügieen*.
 
-2. vastavalt nendele toitumissoovitustele ületatakse inimkeha vajadusi mitmekordselt,
+Loodushügieeni põhimõtted:
 
-3. need soovitused baseeruvad töödeldud söögil.
+1. Elu peaks olema tähendusrikas ja täis ilu, headust ja õnne.
 
-Terve kehaga inimene, kes toitub puhtast inimesele loomulikult sobilikust toidust, vajab vaid murdosa toitu peavoolu soovitatust.
+2. Inimesed on oma olemuselt head, õiglased ja vooruslikud ning nende ülev iseloom realiseerub ideaalsetes elutingimustes.
 
-## Toitumine
+3. Ülim heaolu on inimese eksistentsi jaoks normaalne ja vajalik kõrgeimate inimideaalide elluviimiseks.
 
-> Toitumine on kõigi protsesside summa, mis varustavad, arendavad ja säilitavad organismi võimeid ja funktsioone optimaalsel eksisteerimistasemel[@fry_the].
+4. Kõrgeimat inimlikku tipptaset saab realiseerida ainult nendes, kes võtavad omaks need ettekirjutused ja tavad, mis toovad kaasa heaolu.
 
-Elusorganism on koostöö mudel: kopsud võtavad hapnikku kogu keha jaoks, mitte ainult iseenda jaoks; magu seedib toitu kogu organismi jaoks, mitte ainult oma toiduvajaduste rahuldamiseks; süda võtab vastu ja ringleb verd kogu kehas, mitte ainult oma kudede kaudu.
+5. Kõike, mis mõjutab inimese heaolu, on ainus viis inimeksistentsi kõrgeima võimaliku korra elluviimiseks.
 
-Toitumisega muudetakse toit taimede puhul mahlaks, viljalihaks, puitkiuks, lehtedeks, õiteks, puuviljadeks ja seemneteks ning loomade puhul vereks, lihaseks, luuks, närviks ja näärmeks. See on protsess, mille käigus elusorganismid arenevad, kasvavad, paranevad ja hooldavad end, paranevad haavad ja luumurrud, jätkatakse funktsioone ja toimub paljunemine, toit muutub rakuaineks.
+6. Loodushügieen on loodusega kooskõlas, elutähtsa orgaanilise eksistentsi põhimõtetega kooskõlas, teaduses korrektne, filosoofias ja eetikas mõistlik, terve mõistusega kooskõlas ning praktikas edukas ja inimkonnale õnnistuseks.
 
-Rakud nii võtavad toitaineid kui väljutavad seda, mida enam pole vaja. See protsess on pidev olles sõltuvalt olukorrast eri intensiivsusega. *Life Science Health System*is esitatakse võrdlus laoga, millel on tagaruum varude säilitamiseks. Kui tarbija võtab riiulilt mingi toote, siis pannakse säilitusruumist uus asemele. Kui saabub uus kaup, pannakse see tallele säilitusruumi. Kui on tarneraskused, täidetakse tühjenevaid riiuleid säilitusruumi varudega.
+7. Inimkeha on täielikult isemajandav organism, ennastjuhtiv, isekonstrueeriv, ennastsäilitav ja isetervendav ning võimeline hoidma end suurepärases töökorras, täiesti vabana haigusest, kui selle vajadused on täidetud. Nendest vajadustest on esikohal värske õhk, puhas vesi, puhkus ja uni, täisväärtuslik toit, puhtus, mugav temperatuur, päikesepaiste, liikumine, konstruktiivne töö, emotsionaalne tasakaalukus, enesevalitsemine, puhkus ja meeldiv keskkond.
 
-Orgaaniline eksistents tähendab igavest loomist ja uuenemist, mis toimub toitumise kaudu.
+8. Inimesed on põhiseaduslikult kohanenud puu-, juurvilja-, pähkli- ja seemnete toitumisega, mida süüakse sobivates kombinatsioonides värskes, toores ja naturaalses olekus.
 
-Toitumine sõltub tervisest ja tervis sõltub toitumisest. Toit on inimese kehale toormaterjal. Toit ei mõjuta inimese organismi ise, vaid inimese organism lõhub toidu mehhaaniliselt ja keemiliselt, et selle najal elus püsida. Seda saab inimese keha teha tõhusalt üksnes siis, kui tervis on korras. Kui tervis ei ole korras, tuleb toidu tarbimisest loobuda, sest sellises olekus ei suuda inimese organism toitu korralikult töödelda. Seega on keha ise toitumisspetsialist.
+9. Haigused on põhjustatud ebaõigest eluviisist, eriti toitumisharjumustest. Haigus tuleneb närvienergia vähenemisest ja sellest tulenevalt toksoosist. Ebapiisav närvienergia tuleneb hajumisest, stressist, ülepakkumisest, normaalsete eluks vajalike asjade üle- või alatarbimisest või keha saastumisest ainetega, mis ei ole normaalsed. Seega on haigusest taastumine võimalik ainult selle põhjuste kõrvaldamise ja paranemiseks soodsate tingimuste loomisega.
 
-Veri transpordib inimkehas kõiki toitaineid. Veri filtreeritakse koevedelikku, millest organid ammutavad just neile vajalikke toitaineid. Kui see protsess toimub inimkehale sobilikult, ei taju inimene mittekorrasoleku sümptomeid. Kui aga seedimine on häiritud, siis on sümptomid ka tunda. Sümptomeid saab küll alla suruda droogidega, kuid need ei kõrvalda sümptomite põhjust. Et kõrvaldada sümptomite põhjus, on vaja korda seada toitumine.
+10. Põhjalik puhkus, mis hõlmab ka paastu, on kõige soodsam olek, mille korral haige keha saab end puhastada ja parandada.
 
-Inimese keha toitub lisaks toidule muudest materjalidest, nt õhust.
+11. Kõrget heaolu on võimalik saavutada ja säilitada ainult bioloogiliselt õigete eluviiside abil. Loodushügieen, ei ole ravikunst ega ravikultus. Haigusi ei saa ennetada ega nendest üle saada meie loomulikust olemusest ebanormaalsed vahendid. Tagasi lükatakse kõik ravimid, ravimid, vaktsineerimised ja ravimeetodid, kuna need kahjustavad tervist, segades või hävitades elutähtsaid kehaprotsesse ja kudesid.
 
-ortotroofia
-: õige söötmine
+Keha ja vaim on indiviidi olemuse puutumatuks pühamu. Igaühel on võõrandamatu õigus puhtale ja saastamata kehale, vabale ebanormaalsetest sundustest ja piirangutest ning vabadusele vastutustundliku ühiskonnaliikmena oma vajadusi rahuldada.
 
-aristofaagia
-: parim söömine
+Loodushügieeni kui formaliseeritud elufilosoofia aluspanijaks loetakse Isaac Jenningsit, kes selle põhimõtted väidetavalt 1822. aastal formuleeris, kuus aastat, enne kui temast sai ametlikult õppinud arst[@orcutt_1880_the, lk 602]. Ajapikku leidis ta, et loodus suudab tõhusamalt ravida kui tabletid ja pulbrid, mistõttu ta loobus meditsiinist ja asus inimesi aitama leivatablettidest või värvitud veest koosneva platseeboga leides, et see toimis paremini kui meditsiinimeetodid. Isaac Jenningsi keharavi koolkond oli tuntud kui ortopaatia,
+"meditsiin puudub" või "uus praktika"[@robertsamuelfletcher_1943_a, lk 334].
 
-Tarbitav toit sõltub isendite liigist:
+Nii nagu Isaac Jennings hoidus alkoholist ja leidis, et see on inimese organismile kahjulik tarbida, tegi seda ka Sylvester Graham, kes juurutas oma loodushügienistide koolkonna nimega *Grahamism*, milles pandi rõhku vegetaarlusele[@wikipediacontributors_2019_sylvester].
 
-1. Herbivoorid nagu nt lambad toituvad rohust ja juurviljadest.
+Ka Russell Thacher Trall keelitas inimesi alkoholist eemale hoiduma[@a2023_russell]. Tema järgis Sylvester Grahami juhiseid ja täiendas neid veeraviga.
 
-2. Graminisööjad nagu nt linnud toituvad teraviljadest.
+Nii Sylvester Graham kui Russell Thacher Trall mõjutasid Herbert McGolfin Sheltonit, keda on kirjeldatud kui "kahekümnenda sajandi peamist looduslikku hügienisti" ja kes nimetas ortopaatia ümber "looduslikuks hügieeniks".
 
-3. Putuktoidulised nagu nt nahkhiired toituvad putukatest.
+1970\. aastal sai Terry Fry'st tervisepedagoog[@the]. 1976. aastal asutas ta terviseteaduste instituudi ja töötas välja terviseteaduste kursuse *Life Science Health System*, mis tõlgiti mitmesse keelde ja võeti vastu Pariisi ülikooli õppekavasse.
 
-4. Frugivoorid nagu nt inimesed toituvad puuviljadest, mille hulka kuuluvad ka avokaadod ja pähklid.
-
-5. Lihasööjad nagu nt kassid toituvad teiste loomade lihast, luudest, rupsist jm.
-
-6. Kõigesööjad nagu nt sead toituvad puu-, köögivilja-, teravilja-, liha-, rups- jne segatoidust.
-
-Toitu tarbib organism vastavalt vajadusele säilitades või väljutades ülejäägi.
-
-Toitumine tähendab protsesse, milles keha rakud omastavad toidu komponente, mitte eeltööd selleks, mis teevad toitumise võimalikuks. Toitumine algab, kui toitained on difundeerunud ja aktiivselt transporditud koevedelikust ujutades rakud rakud raku protoplasmasse. See on toitumistöö algus, sest alles siin saab keha söödud toidust tegelikku kasu. Senimaani on kulutatud energiat toidu hankimiseks ja töötlemiseks, mis nüüd rakutasandil kompenseeritakse.
-
-Johns Hopkins University' antropoloog Alan Walker uuris fossiilide hambaid ja jõudis järeldusele, et inimeste eelkäijad hominiidid olnud eksklusiivselt frugivoorid[@rensberger_1979_teeth]. Nendele järgnenud Homo erectused olnud aga eksklusiivselt omnivoorid. Taimede rakkudes vormuvad eri tüüpi ränidioksiidi kristallid fütoliidid, mis on hambavaabast tugevamad ning rohtu või lehti närides jätavad fütoliidid hammastele erinevaid silmale nähtamatuid kriime. Rohus olevad fütoliidid on tugevamad kui lehtedes olevad fütoliidid. Puuviljades fütoliidid peaaegu puuduvad. Seetõttu on frugivooride hambad kõrgelt poleeritud. Kuigi lihas fütoliidid puuduvad, on lihasööjate hammastel kahjustusi, mis on tingitud konti hammustamisest.
-
-Kuigi inimesed on võimelised sööma väljaspool oma toitumisharjumusi, ei ole toimunud füsioloogilist muutust, mis sellist eritoitumist toetaks[@fry_the]. Arvatakse, et inimesed õppisid sõdima siis, kui neil oli vaja hakata jahti pidama seoses rändamisega karmimatesse kliimaoludesse või kliimamuutustega nende elupaigas. Sellest johtuvalt püütakse seostada inimese sõjakust lihasöömisega, kuigi on ka rahumeelseid lihasööjate inimeste rahvaid nagu eskimod. *Life Science Health System*is mainitakse sakslaste eksperimenti ainult kookospähklitest. Kuigi eksperiment kulges edukalt, lasti kõik eksperimendis osalenud mehed, naised ja lapsed keisri käsul maha, sest nad olid patsifistid ja keeldusid sõdimast Esimeses maailmasõjas.
-
-Looduslikud toidud inimestele vastavad järgmistele kriteeriumidele:
-
-1. ei tohi olla toksiline,
-
-2. peab olema seeditav toorena,
-
-3. peab sensoorselt meeldima,
-
-4. eraldi või õigesti kombineerituna süües peab toit olema kergesti seeditav,
-
-5. seedimine peab olema tõhus,
-
-6. peab sisaldama piisavalt valke,
-
-7. peab sisaldama piisavalt vitamiine,
-
-8. peab sisaldama piisavalt mineraalsoolasid,
-
-9. peab sisaldama asendamatuid rasvhappeid,
-
-10. peab rahuldama meie vajadusi energeetiliselt,
-
-11. sisaldavad piisavas koguses vett,
-
-12. peavad olema ainevahetusreaktsioonides aluselised.
-
-Ensüümi võib määratleda füsioloogilise katalüsaatorina. Paljud ained, mis tavaliselt üksteisega kokku puutudes ei ühine, võivad sellega kokku puutuda kolmanda ainega. See kolmas aine ei osale mingil viisil kombinatsioonis ega osale reaktsioonis; selle ainuüksi olemasolu näib tekitavat reaktsiooni. Sellist ainet nimetatakse katalüsaatoriks ja protsessi nimetatakse katalüüsiks.
-
-Iga ensüüm on oma tegevuses spetsiifiline, mis tähendab, et see mõjutab ainult ühte toiduainete klassi. Ensüümid, mis toimivad süsivesikutele, ei toimi valkudele ega sooladele ega rasvadele. Näiteks disahhariidide seedimisel ei ole maltoosile mõjuv ensüüm võimeline toimima laktoosile. Pole selgeid tõendeid selle kohta, et ükski ensüüm võib tekitada rohkem kui üht tüüpi fermentatsiooni.
-
-Ensüümide rakendamisel on oluline järjekord: kui näiteks pepsiin pole valke peptoonideks muutnud, ei saa peptoone aminohapeteks muundavad ensüümid valkudele mõjuda.
-
-substraat
-: aine, millele ensüüm toimib
-
-Nt tärklis on ptüaliini substraat.
-
-Maomahl ulatub peaaegu neutraalsest tugevalt happeliseks olenevalt söödava toidu iseloomust. See sisaldab kolme ensüümi: 
-
-1. pepsiini, mis toimib valkudele;
-
-2. lipaasi, millel on nõrk toime rasvadele; ja
-
-3. renniini, mis kalgendab piima.
-
-Madal temperatuur aeglustab ja isegi peatab pepsiini toime ning alkohol sadestab selle ensüümi.
-
-Toksiline on söök, mille seedimiseks ei leidu sobilikku ensüümi.
-
-Inimesel ei pea olema abivahendeid, et süüa.
-
-Toidu lõhn ja maitse peavad olema meeldivad.
-
-Nii nagu toidu nägemine, lõhn või mõte võib põhjustada süljevoolu, võivad samad tegurid põhjustada maomahla voolu, see tähendab "mao vesistamist". Toidu maitse on süljevoolu esilekutsumisel kõige olulisem. Ei toimu sekretsiooni, kui suhu võetud aineid ei saa seedida. Oma katsetes "tingitud refleksi" uurimisel märkis Pavlov, et maomahla väljavoolu tekitamiseks ei ole vaja toitu suhu võtta. Ta leidis, et isegi müra või mõni muu toitmisajaga seotud tegevus põhjustab sekretsiooni voolu.
-
-Mao sekretsioonid on umbes viie miljoni mikroskoopilise näärme saadused, mis on paigutatud mao seintesse ja millest mitmed eritavad maomahla erinevaid osi. Maomahla koostisesse sisenevate elementide erinevad kogused ja proportsioonid annavad erineva iseloomuga erinevate toiduainete seedimiseks kohandatud mahla. Mahl võib olla reaktsioonis peaaegu neutraalne või nõrgalt happeline või tugevalt happeline. Pepsiini kogus sõltub vajadusest. Oluline on ka ajastus. Mahla iseloom võib ühes seedimisetapis olla väga erinev sellest, mis see on teises. Nõrgad happed põhjustavad rikkalikku süljevoolu, aga nõrgad leelised ei põhjusta süljeeritust. Ebameeldivad ja kahjulikud ained põhjustavad süljeeritust rikkuva materjali eemaldamiseks. Kui suus on vähemalt kaks erinevat tüüpi nääret, mis on võimelised toimima, on lõpuks väljutatava segasekreedi iseloomu osas võimalik märkimisväärseid erinevusi.
-
-Energiakulu seedimisele peab olema minimaalne. Nt arbuusist $\num{400}$ kalori omastamiseks, närimiseks, imendumiseks, transportimiseks ja assimileerimiseks kulutab inimene $\num{30}$ kalorit energiat, aga sama koguse energia hõivamiseks lihast kulutab inimene seedimisele $\num{280}$ kalorit energiat. Arbuusi seedimiseks läheb vaja väga vähe närvienergiat, kuid söögi töötlemiseks, mis pole meile loomuomane, kulutame võrdlemisi palju närvienergiat.
-
-```{r label = "daily-protein-need"}
-daily_protein_need <- 25
-
-```
-
-Inimene vajab proteiine vastavalt eluteadlaste tervishoiusüsteemile $\qty{`r as.character(daily_protein_need)`}{\gram\per\day}$, kuid vastavalt World Health Organizationile on see vajadus hoopis sõltuvuses inimese omadustest ja taustast $\qty{0,83}{\g\per\kg\per\day}$[@human_2007_protein, lk 126]. Keskmine inimene kasutab umbes \qty{75}{\g} valke päevas[@fry_the]. Selleks $\qty{`r as.character(daily_protein_need)`}{\gram\per\day}$ saab inimene väljastpoolt ja ülejäänu on tal seesmiselt juba taaskasutatavana olemas. Nagu maja ehitatakse teatud arvu telliskividega ja hiljem on vaja remontimiseks mõned telliskivid asendada, kuid mitte kõik.
-
-Valkude seedimise kohta toovad eluteadlased välja järgmised aspektid:
-
-1. keha saab taaskasutada enda vajaduste rahuldamiseks kaks kolmandikku valgujääke,
-
-2. valgu energiasisaldusest $\qty{70}{\percent}$ kulub valgu seedimisele,
-
-3. proteiini denatureerimise jääkproduktidest lahtisaamiseks kulutab keha tohutu hulga närvienergiat, mis sel ajal küll stimuleerib, kuid siiski kurnab keha.
-
-```{r}
-daily_quantity_of_fruits <- daily_protein_need / .01
-
-```
-
-Peaaegu iga loomulik toit inimese jaoks sisaldab $\qty{4}{\percent}$ valke kuivkaaluna. Keskmine puuvili sisaldab $\qty{1}{\percent}$ valke. See tähendab, et peaksime igapäevaselt sööma \qty{`r as.character(daily_quantity_of_fruits)`}{\g} puuvilju.
-
-Eri tüüpi vitamiine vajab inimese keha umbes $\num{30}$.
-
-Mineraalaineid peaks inimene saama ainult toidust.
-
-Toiduosad, mida keha vajab, aga ei suuda ise sünteesida, on asendamatud. Asendamatud rasvhapped:
-
-1. linool-,
-
-2. linoleen- ja
-
-3. arahhidoonhape.
-
-Asendamatud rasvhapped on küllastumata rasvad.
-
-Energia, mille keha kulutab, peab tulema toidust. Selleks sobib hästi suure monosahhariidide sisaldusega toit nagu magusad puuviljad.
-
-Frugivoorid tavaliselt vett ei joo, sest saavad kogu vajaliku vee puuviljadest.
-
-Isegi kui tarbitav toit on happeline, peab see toit muutuma aluseliseks nt seda toitu koos aluselise toiduga süües.
-
-Kõiki 12 inimese jaoks loodusliku toidu kriteeriumi rahuldavad üksnes puuviljad.
-
-Tegurid, mis mõjutavad inimese toitumist, kuid ei ole toit:
-
-1. päikese- ja loomulik valgus,
-
-2. värske õhk ja selles sisalduv hapnik,
-
-3. puhas vesi,
-
-4. treenimine, mängimine ja vaba aeg,
-
-5. puhkamine ja lõdvestumine,
-
-6. magamine,
-
-7. tundeline tasakaalukus,
-
-8. muud eluks vajalikud rekvisiidid ja
-
-9. üldised kehaseisundid.
-
-Inimesed kipuvad kasutama maitsete lisamiseks või muutmiseks maitseaineid. Viimaseid eraldi ja ainult tarbides ei pea keha kaua vastu, sest need ei ole toit. Kui segada kokku banaani- ja mangoviilud või juurviljasalatisse tomatit ja pähkleid, siis on tegemist tervikliku toiduga, kuna ka kõiki neid komponente eraldi süües on tegemist toitumisega. Kui aga lisada toidule suhkrut, sidrunimahla, soola, pipart, äädikat, sibulat, basiilikut, münti, küüslauku vms, siis koormatakse keha ainetega, mida vaja pole, kuid millest on vaja vabaneda.
-
-Kuumutatud toidu söömine võib põhjustada järgmise protsessi:
-
-1. toitainete häirimine ja hävitamine,
-
-2. häiritud toitainete muutumine keha jaoks mürgiseks,
-
-3. lisaenergia kulutamine mürkainetest vabanemiseks.
-
-Keha ei saa ehitada päris terveid rakke ja kudesid kehva kvaliteediga materjalist. Kuumutamine vähendab materjali kvaliteeti.
-
-Toitu kiputakse töötlema, et
-
-1. anda toidule pikem säilivusaeg,
-
-2. see muudetud struktuuriga paremini turustatavaks,
-
-3. teha seda maitsvamaks,
-
-4. tugevdada selle maitset
-
-jm.
-
-Toidu töötlemine tähendab selle muutmist, valmistamist või mõlemat. Igasugune toidu töötlemine rikub toitu. Toidu töötlemise toitu kahjustavad meetodid:
-
-1. puhastamine,
-
-2. säilitamine kuumutamise ja suhkru, soola vm säilitusaine lisamise kaudu,
-
-3. metallkonteineris säilitamine.
-
-Nimetatud toidu töötlemise meetodeid on siiski vaja kasutada varude omamiseks. Võib juhtuda, et teatud tingimustes ei ole inimesel ligipääsu terviklikule toidule ja siis ta saab selliselt töödeldud toitu ajutiselt tarbida, et mitte nälga surra. Kaua ainult sellist toitu tarbida inimese keha ei suuda.
-
-Toiduaineid kiputakse palsameerima säilitusainetega, et kaitsta neid riknemise, bakterite degeneratsiooni või oksüdeerumise eest. Kuid kui miski ei sobi bakterile, ei sobi see ka inimesele.
-
-Meetodid, mille kasutamise puhul toit jääb terviklikuks:
-
-1. pähklite koorimine ja vaakumpakendamine kasvõi lämmastikukeskkonnas,
-
-2. kuivatamine,
-
-3. vähese veesisaldusega või väga õlise tekstuuriga toitude nagu nt datlite, kuivatatud puuviljade, pähklite ja seemnete külmutamine,
-
-4. pähklite ja seemnete säilitamine nende koores kuivas õhus,
-
-5. katmine parafiini, õlide, vahade või muude säilitusainetega, kui need ei tungi läbi toidu enda kaitsva kihi ja need saab eemaldada nt vannis soolhappe, äädika, kloroksi või isegi väga sooja vee lahuses.
-
-Vahelduseks on tore riivida, tükeldada, lõigata, koorida ja segada, aga enamjaolt peaks toitu tarbima seda eelnevalt töötlemata kujul. On ka olukordi, milles on purustamine lausa kasulik. Nt seesamiseemned on nii pisikesed, et inimesed ei pruugi neid läbi mäluda ja seetõttu on kasulikum need eelnevalt pulbristada.
-
-Inimesele eelistatum on süüa tavatooteid, st sellist sööki, mille kasvatamiseks on nt rakendatud pestitsiide, töötlemata kujul kui mahetoodangut töödeldud kujul.
-
-Inimene suudab vastu pidada $\num{2}$ kuni $\num{3}$ korda nii kaua oma rasvavarude baasil kui olles täielikul lihadieedil. Inimene suudab konverteerida ainult $\qty{30}{\percent}$ valke oma kütuseks süsivesikuteks. Seejuures on see konverteerimismäär puuviljade suhkrute puhul $\qtyrange{90}{95}{\percent}$.
-
-Inimesele sobilik toit on meeldiv töötlemata olekus ja seda ei pea töötlema, et oleks meeldiv. Nt klorofüll on mõru maitsega, mistõttu ei ole lehtede ja rohu söömine inimesele sobilik.
-
-Inimesele on kasulik vaid väike kogus õli.
-
-Puuvilju tuleb süüa vahetult, mitte juua nende mahlu.
-
-Eluteadlased peavad oluliseks toitude kombineerimist. On toite, mis omavahel kokku ei sobi, on ka neid, mis sobivad.
-
-Tärkliserikka toidu seedimiseks kasutab inimese organism ensüümi ptüaliin, mis eritub suus ja asub tärklist lõhustama. Ptüaliin toimib aluselises keskkonnas ja alla pH 4 tärklist ei lõhustata. Valkude seedimiseks kasutab organism ensüümi pepsiin, mis toimib happelises keskkonnas. Selline keskkond on maos, kus katalüsaatoriks on maohape. Pepsiin ei toimi suurema pH kui 3 puhul. Kui süüa koos tärkliserikast ja valgurikast toitu, siis maos ei pruugi tulemusena olla piisavalt happeline keskkond, et seedida valke.
-
-Niisamuti ei sobi korraga süüa õlirikast ja suhkrurikast toitu, sest kui suhkru seedimine kestab lühikest, reeglina alla tunni, siis õli jääb makku tundideks ja pärsib suhkrute edasisaatmist, mistõttu võib alata fermentatsioon ja seega toidu riknemine.
-
-Kui süüakse korraga magusaid ja hapusid puuvilju, siis on samuti seedimine pärsitud. Magusaid puuvilju seeditakse happelises keskkonnas, misjärel on toitanete omastamiseks vaja keskkond muuta aluseliseks. See võtab aega, mille kestel ei pääse muidu kiirestiseeditavad magusad puuviljad mööda seedetrakti edasi ja hakkavad fermenteeruma.
-
-Magusad puuviljad liiguvad eri kiirusega läbi seedetrakti. Kui melonid töödeldakse kiiresti, siis banaanide, õunte ja viinamarjade töötlemine kestab kordades kauem, mistõttu kui viimaseid süüa koos meloniga, on meloni edasiliikumine pärsitud ja tekib käärimisoht ja kõht võib korrast ära minna.
-
-Inimese organism on mõeldud söömaks peamiselt puuvilju. Piiratult saame me süüa ka muud. $\qtyrange{85}{90}{\percent}$ ulatuses katavad puuviljad inimese vajadused, millest peamine on energiavajadus. Osa eluteadlasi leiavad, et mida kirevam on toiduvalik, seda kasulikum, ning et saada kätte ka asendamatuid aminohappeid, vitamiine ja mineraalsoolasid, on vaja süüa ka rohelisi lehti ja muid köögivilju, kuid väidetavalt eksivad, et ei piisa ainult puuviljadest.
-
-Üks kalor on soojushulk, mis on vajalik ühe kilogrammi vee temperatuuri tõstmiseks ühe kraadi võrra Celsiuse järgi. Soojushulka, mis vabaneb toidu täielikul lagunemisel selle ainevahetuse lõpptoodeteks, väljendatakse kalorites. Inimese keha kasutab ainevahetuseks \num{`r as.character(signif(11 / convert_from_pounds_to_kg(pounds = 1), digits = 2))`} kalorit keha kilogrammi kohta päevas. Seda arvväärtust kinnitavad ka rühm inimesi teoses *Eesti toitumis- ja liikumissoovitused*[@a2015_eesti, lk 75]. Keha on seda tõhusam, mida vähem toitu sellele teatud määrani antakse[@fry_the].
-
-Inimene võib oma jõu kolmekümnekordistada tarbides ainult puuvilju.
-
-Puuviljad pakuvad inimese kehale toitaineid sobilikus suhtes, nii et pole vaja muretseda ja arvutada, kas midagi saadakse ehk liiga palju või vähe. Sellised suhted on nt naatrium/kaalium, kaltsium/fosfor, raud/vask, E-vitamiin/seleen, tsink/molübdeen ja C-vitamiin/bioflavinoidid. Töödeldud toitudes võib toitainete suhe olla ebasobilik. Kui inimkeha saab liiga palju fosforit, suudab keha omastada liiga vähe kaltsiumi isegi, kui ollakse söönud piisav kogus kaltsiumi. Lihtsalt fosfor võtab kaltsiumi koha endale. Samamoodi juhtub, kui inimkeha tarbib liiga palju tiamiini - niatsiinile jääb liiga vähe ruumi. Kui on puudu vaske, on pärsitud raua kasutamine. Inimkeha talub teatud piirini väävlit sisaldavaid aminohappeid ja liigne nende tarbimine koormab üle maksa ning nii on parem omastada metioniini ja muid väävlit sisaldavaid aminohappeid taimedest kui loomadest.
-
-Tärklist sisaldavast toidust saab inimene kätte väga vähe tärklist, sest inimene ei suuda toota selle seedimiseks piisavalt sülje amülaasi või ptüaliini. Keedetud tärklised dekstriniseeritakse ja nii saame küll nendest rohkem energiat, aga rohkem energiat kulub ka kuumtöötlemise tõttu degenereeritud toiduainete väljutamisele.
-
-Inimese keha toodab vesinikkloriidhapet piisavalt, et suuta töödelda piisavas koguses valke taimsest toidust. Tiiger, kes ei pruugi liha läbigi närida, peab samuti suutma toidu seedida, mistõttu on tema vesinikkloriidhappe kontsentratsioon \qty{1100}{\percent} inimese oma.
-
-Kui inimene on harjunud tarbima liha, siis minnes üle puuvilja toidule tajub ta näljatunnet. See tuleneb sellest, et toit on lahkunud maost ja keha on alustanud puhastusprotsessi eelneva ebasobiliku dieedi jääkidest vabakssaamiseks. See puhastusprotsess tekitab ebameeldiva tunde. Sellise tunde leevendamiseks soovib inimene taas midagi süüa ja kui ta seda teeb, siis puhastusprotsess peatub, et keha saaks taas tegeleda seedimisega. See toimub samamoodi nagu pohmeluse sümptomite leevendamiseks mõni inimene tahab õlut peale juua, sest siis peatub puhastusprotsess ja ebameeldiv tunne kaob. Kui keha on piisavalt puhastunud, ei ole enam seda ebameeldivat tunnet ja inimene võib rahulikult nautida puuvilja dieeti.
-
-Kui inimene sööb midagi, mis ei ole inimese jaoks mõeldud sobilik toit, siis sellise söögi kasutegur inimese jaoks on väiksem kui sobiliku toidu puhul, sest oluline osa sissesöödud energiast kulub sissesöödud söögi töötlemisele ja selle väljutamisele. Seetõttu, kui inimene toitub inimesele mittesobilikust söögist, suureneb tema energiavajadus.
-
-Ainult puuviljadest toituval inimesel ei ole B-12 puudust, sest inimese soolestikus olevad bakterid sünteesivad seda vitamiini. Aneemia ja B-12 vitamiini puudust on tuvastatud pigem lihasööjatel inimestel kui vegetaarlastel.
-
-Inimorganismile on kasulik, kui süüa toitu, mis pärineb erinevalt pinnaselt.
-
-Teravilju ei saa inimene toorelt süüa ja töödeldud kujul ei saada peaaegu üldse nende gluteenikomponenti seedida.
-
-Austraalia inimeste seas tehtud uuringus selgitati välja, et inimeste heaolu tunne suurenes minnes üle puuviljade ja köögiviljade dieedile[@11679570220160801].
-
-*Life Science Health System*is on esitatud Herbert Sheltoni artikkel, milles oletatakse, et inimesele sobilikuks toitumiseks on vajalik ka elada inimesele sobilikes klimaatilistes tingimustes, kus aastaringselt valmivad puuviljad[@fry_the].
-
+Loodushügienistidel ei ole mängus ärilised huvid, mistõttu puudub huvide konflikt valeõpetuse edastamiseks, küll aga on olemas kasu tõe tundmisest.

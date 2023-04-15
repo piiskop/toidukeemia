@@ -3,8 +3,8 @@ new_session: false
 delete_merged_file: true
 rmd_files: [
   "index.Rmd",
-  "rmd/toitumismeetodid.Rmd",
   "rmd/eluteadlased.Rmd",
+  "rmd/toitumismeetodid.Rmd",
   "rmd/süsivesikud.Rmd",
   "references.Rmd"
 ]
