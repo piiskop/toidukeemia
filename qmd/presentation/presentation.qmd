@@ -1,262 +1,385 @@
 ---
+title: Süsivesikute tarbimine vastavalt <br/> looduslikule hügieenile
 author:
   - name: 'peacecop kalmer:'
+institute: Tallinna Ülikool
+date: 2023-05-08
+
 bibliography: presentation.bib
 csl: ../../apa-numeric-superscript-brackets.csl
-title: |
-    | Individual experiences with
-    | chlorine dioxide solution
-    | (CDS)
+link-citations: yes
+
 output-file: presentation.html
 format:
   revealjs:
-    # chalkboard: true
+    self-contained: true
+    theme: [olis.scss]
+    slide-number: true
+    logo: logo.jpg
     incremental: true
-    multiplex:
-      url: 'http://manual-for-rstudio.tennis24.ee:1948/'
-      secret: "16759825730498538629"
-      socketId: "f3edf0ff0d09982e"
-    # revealjs-plugins:
-    #   - seminar
-    # attributes:
-    #   quarto-reveal:
-    #     data-seminar-remote: true
-    #     data-seminar-controls: true
+multiplex:
+  url: 'http://manual-for-rstudio.tennis24.ee:1948/'
+  secret: "16759825730498538629"
+  socketId: "f3edf0ff0d09982e"
 
 ---
 
-## *Quarto*
+## *Natural Hygiene*
 
-- does not link between files,
-- every presentation is separate,
-- looks so much better than *bookdown*-presentations.
+- on liikumine,
 
-What version of *Quarto* do I have[@how]?
+- mis on pühendatud tervisele
 
-```
-quarto check
+- looduslike vahenditega.
 
-```
+## Ajalugu
 
-## Setup
+- Prantsusmaa: loobumine ravimitest ning toetumine "loodusele" ja "heale põetamisele"[@chapter],
 
-1. For every presentation a subfolder inside the subfolder *qmd*.
+- Saksamaa: veeravi,
 
-2. Link to the presentation in *js.js*:
+- Rootsi: *Swedish Movement Cure*[@wikipediacontributors_2020_massage],
 
-```
-  let nameOfPresentation = "<name-of-presentation>";
-  createLink(div, "presentation-" + nameOfPresentation, nameOfPresentation + ".html", "<The title of the presentation>");
+- Britannia: füsioloogilised viisid enda eest hoolitsemiseks.
 
-```
+## Hygienic Review
 
-## Preparing for remote controlling
+![Kaanepilt[@hygienic_review].](hygienic-review.jpg){height=100%, fig-align="left"}
 
-1. Cloning *multiplex* [@a2023_multiplex].
+## Isaac Jennings
 
-2.  In the *multiplex*'s folder:
+![Loodushügieeni kui formaliseeritud elufilosoofia aluspanija ortopaatiana ja 1822. a reeglite formuleerija[@a2023].](Isaac-Jennings.jpg){height=100%, fig-align="left"}
 
-    ```
-    npm install reveal-multiplex
+## Sylvester Graham
+
+![*Grahamism*i juurutaja: vegetaarlus[@sylvester_graham].](sylvester-graham-resize.jpg){height=100%, fig-align="left"}
+
+## Russell Thacher Trall
+
+![Meditsiiniteaduse filosoofia avastaja ja hügieenilise meditsiini süsteemi isa[@the].](R-T-Trall.jpg)
+
+## Herbert McGolfin Shelton
+
+![Kahekümnenda sajandi peamine looduslik hügienist, kes nimetas ortopaatia ümber looduslikuks hügieeniks[@herbert_mcgolfin_shelton].](Shelton.jpg){height=100%, fig-align="left"}
+
+## Terry Fry
+
+![1970. a tervisepedagoog ja 1976. a asutas terviseteaduste instituudi[@terry_fry].](terry-fry.jpg){height=100%, fig-align="left"}
+
+## *Life Science Health System*
+
+![1976. a Terry Fry poolt loodud[@fry_the].](lshs.jpg){height=100%, fig-align="left"}
+
+## 11 põhimõtet
+
+- Mõtted elust,
+
+- sotsiaalsetest suhetest,
+
+- tervisest,
+
+- bioloogiast ja
+
+- toitumisest.
+
+Igaühel on õigus puhtale ja saastamata kehale ning vabadusele ebanormaalsetest sundustest ja piirangutest.
+
+## Toitumine
+
+- Kõikide protsesside summa,
+
+- mis varustavad,
+
+- arendavad
+
+- ja säilitavad
+
+- organismi võimeid ja funktsioone
+
+- optimaalsel eksisteerimistasemel.
+
+## Toidu töö
+
+- Toidu komponentide omastamine rakkude poolt.
+
+- Mitte toidu eeltöötlemine.
+
+## Häiritud seedimine
+
+- Kõrvaldada põhjused,
+
+- mitte sümptomid!
+
+## Inimestele sobilik looduslik toit
+
+- Ei ole toksiline.
+
+- Söödav toorelt.
+
+- Seeditav kergesti ja tõhusalt.
+
+- Põhjustab aluselisi ainevahetusreaktsioone.
+
+- Meeldiv.
+
+- Sisaldab asendamatuid rasvhappeid, piisavalt valke, vitamiine, mineraalaineid ja vett.
+
+- Rahuldab energiavajadusi.
+
+## Toidu kombineerimine
+
+- Kombinatsioonid,
+
+- järjekord,
+
+- ajavahemikud
+
+vältimaks ensüümide mõju
+tühistamist ja seedimistõrkeid.
+
+## Maomahl
+
+- Pepsiin, mis toimib valkudele,
+
+- lipaas, millel on nõrk toime
+rasvadele
+
+- ja renniin, mis kalgendab piima.
+
+## Ensüümid
+
+- Maltaas toimib maltoosile, aga mitte laktoosile.
+
+- Madal temperatuur aeglustab ja
+isegi peatab pepsiini toime ning
+alkohol sadestab selle.
+
+- Pepsiin -> valk -> peptoon -> aminohape.
+
+- Ptüaliin - pH $\geq 4$, pepsiin - pH $\leq 3$.
+
+- Maomahl -> ptüaliin: tärklis happeline toit, valk.
+
+- Kaksteistsõrmiksooles amülaas aluselises keskkonnas: tärklis ja dekstriin -> maltoos.
+
+- Peensooles maltaas maltoosi, laktaas laktoosi, sukraas sukroosi monosahhariidideks.
+
+## Sülg
+
+- Nõrgad happed põhjustavad
+rikkalikku süljevoolu, aga nõrgad
+leelised ei põhjusta süljeeritust.
+
+- Ebameeldivad ja kahjulikud ained
+põhjustavad süljeeritust rikkuva
+materjali eemaldamiseks.
+
+## Joogi temperatuur
+
+![Sobiliku joogitemperatuuri näitlikustamine: Sobilik joogitemperatuur on jää sulamistemperatuurist suurem, kuid mitte suurem kui kehatemperatuur.](../../rmd/jook.png){height=100%, fig-align="left"}
+
+## Ajavahemik joogi suhtes
+
+![Manustatavate toitainete liigist sõltub ajaline vahe joomise ja söömise vahel.](../../rmd/toit-vahe-jook.png){height=100%, fig-align="left"}
+
+## Seedimisaeg
+
+Porgandid, bataadid ja jamsid sisaldavad
+lisaks tärklisele küll piisavalt suhkruid, et need maitseksid magusalt,
+aga probleem seisneb selles, et
+tärklist seeditakse kauem kui
+suhkruid ja kuna need koos sisenevad seedetrakti, jäävad suhkrud
+tärklise tõttu vangistusse ja algab
+käärimine.
+
+## Energia
+
+![Arbuusist 400 kalori omastamiseks, närimiseks, imendumiseks, transportimiseks ja assimileerimiseks kulutab inimene 30 kalorit energiat, aga sama koguse energia hõivamiseks lihast kulutab inimene seedimisele 280 kalorit energiat.](arbuus.webp){height=100%, fig-align="left"}
+
+## Süsivesikud
+
+Ühendid, mis koosnevad süsiniku, vesiniku ja hapniku aatomitest[@fry_the]:
+
+- mono-,
+
+- di- ja
+
+- polüsahhariidid.
+
+## Suhkrud
+
+*-oos*-sufiksiga:
+
+- glükoos,
+
+- laktoos,
+
+- fruktoos,
+
+- virtuoos,
+
+- tuberkuloos,
+
+- olen vist liiga hoos.
+
+## Suhkrud
+
+::: {.nonincremental}
+
+*-oos*-sufiksiga:
+
+- glükoos,
+
+- laktoos,
+
+- fruktoos,
+
+- ~~virtuoos~~,
+
+- ~~tuberkuloos~~,
+
+- ~~olen vist liiga hoos~~.
+
+:::
+
+## Talitlus
+
+- Raku funktsionaalse aktiivsuse säilitamiseks
+
+- ning rakkude varu- ja struktuurimaterjalina.
+
+## Monosahhariidid
+
+- Glükoos,
+
+- fruktoos,
+
+- galaktoos.
+
+## Disahhariidid
+
+- Sukroos,
+
+- maltoos,
+
+- laktoos.
+
+## Polüsahhariidid
+
+Koosnevad kuni
+60000-st lihtsast süsivesiku molekulist, mis on kokku ühendatud
+pikkadeks hargnemata või hargnenud ahelateks:
+
+- tärklis,
+
+- dekstriin,
+
+- glükogeen,
+
+- tselluloos.
+
+## Süsivesikute allikad
+
+- Puuviljad,
+
+- pähklid,
+
+- mugulad,
+
+- kaunviljad
+
+- ja teraviljad.
+
+## Puuviljade liigitus
+
+- Magusad puuviljad:
     
-    ```
+    - magusad
     
-3.  Creating the service:
-
-    ```
-    sudo emacs /etc/systemd/system/multiplex.service
+    - ja alahappelised
     
-    ```
-    
-4.  Starting the server:
+- ning happelised puuviljad
 
-    ```
-    sudo systemctl start multiplex.service
-    
-    ```
+- ja melonid.
 
-5. Directing traffic to port 1948 into the server machine.
+2,5 kg päevas.
 
-## Remote controlling
+## Puuviljad kui inimesele ideaalne toit
 
-1.  Configuring:
+- Läbivad
+seedetrakti kiiresti eraldades monosahhariididest energiat, mida
+jääb üle muudeks tegevusteks kui
+seedimiseks.
 
-    ```
-    format:
-  revealjs:
-    multiplex:
-      url: 'http://manual-for-rstudio.tennis24.ee:1948/'
-      secret: "16759825730498538629"
-      socketId: "f3edf0ff0d09982e"
-      
-    ```
+- Sisaldavad piisavas
+koguses maitsvat vett, kui tegemist
+pole just kuivatataud puuviljade
+või datlitega.
 
-2. Opening the main presentation HyperText Markup Language file for the audience.
+- Neid pole vaja maitsestada.
 
-3. Opening the file with the ending "-speaker.html" for remote controlling.
+- Nendes on sobilikus
+proportsioonis süsivesikud, valgud,
+vitamiinid ja mineraalained.
 
-## Metadata: author
+- Suurem heaolu tunne[@11679570220160801].
 
-```
-    author:
-      - name: <the name of the first author>
-      - name: '<the name of the second author>'
-    <further names if necessary>
+## Söögikolmnurk
 
-```
+![Loodushügienistide jaoks ideaalselt sobilik toit puuviljad moodustab vähemuse peavoolu söömissoovitustest[@a2015_eesti].](söögikolmnurk.webp){height=100%, fig-align="left"}
 
-## Metadata: title
+## Oblikhappe ja kaltsiumi vahekord toiduainetes grupiti[@Noonan1999-ws(lk 67)]
 
-```
-title: |
-    | <first line of the title>
-    | <second line of the title>
+| Toiduaine | Grupp | $\frac{\frac{\mathrm{Oksalaat}}{`r if (knitr::is_html_output()) { "\\require{mhchem}" }`\ce{Ca}}}{\mathrm{mEq}}$ |
+|---------|-----:|-:|
+| punase peedi juur  | 1   | 5,09 |
+| India pähklid | 1 | 2,5 |
+| kartul | 2 | 1,62 |
+| tee | 2 | 1,14 |
+| õun | 3 | 0,67 |
+| tomat | 3 | 0,58 |
 
-```
+## Diabeet
 
-## Metadata: output file
+![Väidetavalt suhkruvaba jook[@nocco].](NOCCO-Caribbean-kofeiinivaba.webp){height=100%, fig-align="left"}
 
-```
-    output-file: ../../_book/<the-name-of-the-output-file>.html
+## Muud haigused
 
-```
+- Kaariese, suhkrutõve ja
+hüpoglükeemia vältimiseks
 
-## Metadata: format
+- tuleb
+hoida töödeldud suhkrute ja muude töödeldud toitude tarbimisest.
 
-```
-    format:
-      revealjs:
-        incremental: true
-        self-contained: true
+## Toidu päritolu
 
-```
+- Aastaringne viljade valmimine.
 
-`incremental: true` displays list items one by one [@quarto]
+- Eri pinnased.
 
-`self-contained: false` results with missing files or undated content
+## Toidu piisavus
 
-## Table
+- Puuviljakultuur ja maheaiandus
 
-```
-| Product | Price |
-|---------|-----:|
-| SET: NaClO2 Mouth Rinse and HCl Hair Rinse      | 25.00   |
-| DMSO (DIMETHYLSULFOXIDE)     | 24.00  |
+- suudaksid maailma rahvastikku
+enam kui piisavalt toita,
 
-: The reagents for making CDS with their prices were bought on 2021/05/04.
+- kui praegu
+toiduainete töötlemiseks kuluvaid
+finantse ja tööjõudu kasutataks
 
-```
+- hoopis puuviljade kasvatamiseks
+ja transportimiseks.
 
-| Product | Price |
-|---------|-----:|
-| SET: NaClO2 Mouth Rinse and HCl Hair Rinse      | 25.00   |
-| DMSO (DIMETHYLSULFOXIDE)     | 24.00  |
+## Kokkuvõte
 
-: The reagents for making CDS with their prices were bought on 2021/05/04.
+Õige toitumise korral võib inimene
+olla kindel, et ta kehas toimub kõik
+nii, nagu peab.
 
-## Figures
+[Süsivesikute tarbimine vastavalt looduslikule hügieenile](/)
 
-With a caption:
-
-```
-![Pillikeel ja lainepikkus.](vibstr1.gif)
-
-```
-
-![Pillikeel ja lainepikkus.](vibstr1.gif)
-
-Without a caption:
-
-```
-![](vibstr1.gif)
-
-```
-
-![](vibstr1.gif)
-
-## Managing external references
-
-A separate BIB-file in the subfolder of the presentation with records like this:
-
-```
-@misc{silent,
-  title = {Silent Teacher},
-  url = {https://silentteacher.toxicode.fr/},
-  urldate = {2022-09-29},
-  organization = {silentteacher.toxicode.fr}
-}
-
-```
-
-In the metadata:
-
-```
-    bibliography: <the-name-of-the-presentation>.bib
-
-```
-
-A reference:
-
-```
-@quarto
-
-```
-
-@quarto
-
-```
-[@quarto]
-
-```
-
-[@quarto]
-
-```
-[@quarto(p. 41)]
-
-```
-
-[@quarto(p. 41)]
-
-## List of references at the end
-
-````
-[<The name of the main site>](/)
-
-## External references
-
-```{=tex}
-\hyphenpenalty=10000
-\fontspec{Symbola}
-
-```
-
-````
-
-## List
-
-```
--   no instructions:
-
-    - no formulas,
-  
-    - no theorems,
-
--   no explanations
-
-```
-
--   no instructions:
-
-    - no formulas,
-  
-    - no theorems,
-
--   no explanations
-
-[Manual for RStudio Server](/)
-
-## External references
+## Välised allikad
 
 ```{=tex}
 \hyphenpenalty=10000

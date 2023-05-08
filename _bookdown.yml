@@ -6,5 +6,6 @@ rmd_files: [
   "rmd/eluteadlased.Rmd",
   "rmd/toitumismeetodid.Rmd",
   "rmd/süsivesikud.Rmd",
+  "rmd/kokkuvõte.Rmd",
   "references.Rmd"
 ]

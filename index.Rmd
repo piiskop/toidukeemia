@@ -213,4 +213,25 @@ render_color <- function(color, text) {
 
 ```
 
+\twocolumn
+
 # Sissejuhatus {-}
+
+2014\. aasta esimeses aprillipäevas postitas Lilleke Mari asukohaga Guttenberg, NJ, United States oma Facebooki seinale veganite hümni teksti  (joonis \@ref(fig:vegan-anthem) leheküljel `r render_pageref(reference = "fig:vegan-anthem")`)[@_2014_vegan]. Selle teises reas kuulutatakse munad ja mesi ebasobilikuks toiduaineks. Uurisin talt, miks mesi ebasobilik on. Viis päeva hiljem saatis ta mulle tema sõbralt Jonaselt, keda olevat sünnist saadik toorveganina kasvatatud, saadud ingliskeelse teksti, milles oli selgitatud mee kahjulikku mõju inimorganismi tervisele. Kasutades otsingumootorit leidsin selle teksti päritolu veebisaidi[@a2013_why] ja hiljem e-raamatu *Life Science Health System*[@fry_the], kust olid kõik sellised tekstid seal saidil pärit. Asusin seda e-raamatut agaralt lugema, kuid sisutiheduse ja ajapuuduse tõttu edenesin jõudsasti. Leidsin, et see teos on justkui inimese tervisesüsteemi seadus. Selle järgi on elamine väga lihtne ja loogiline ning seda kõike selgitatakse füsioloogiliselt. Nüüd aastaid hiljem, kui olen jõudnud ülikoolis integreeritud loodusteaduste õppekava järgi õppides keemia toiduharuni, võtsin selle teose taas lahti, et selle põhjal üks jupp ettekandeks kirjutada. Teos ise on liiga mahukas, et seda tervenisti refereerida.
+
+```{r label = "vegan-anthem", echo=FALSE, fig.cap = "2014. aasta esimeses aprillipäevas Lilleke Mari poolt oma Facebooki seinale postitatud veganite hümni sõnad."}
+include_external_graphics("rmd/vegan-anthem.jpg")
+
+```
+
+Kuna toitumine ja tervis on omavahel lahutamatult seotud, on *Life Science Health System*is \num{101}'st peatükist \num{45} toitumisele. Toiduainekeemia kursuse maht on liiga väike, et refereerida tervet loodushügienistide toitumise osa. Kui olin uuesti läbi lugenud süsivesikute peatüki, otsustasin selles kohas peatuma jääda, sest refereering ainuüksi selle peatükini annab piisava ülevaate, millega on tegemist.
+
+Kuna õpikus ei ole ainsatki joonist, asusin vähehaaval teost illustreerima ning illustratsioone hankima, millest kaks endatehtut esitan ka käesolevas referaadis.
+
+Referaat on jaotatud kolme peatükki, millest esimeses tutvustan *Natural Hygiene*'i liikumist, teises loodushügienistide toitumispõhimõtteid ja kolmandas annan ülevaate süsivesikutest nii üldises kui loodusliku hügieeni plaanis.
+
+Loodushügienistide õpikut lugedes tekkis mul aegajalt tahtmine võrrelda teatud fakte nendega, mis on kirjas teadusartiklites või raportites. Nii leidsin põneva ja kasuliku raporti oblikhappe ja kaltsiumi suhtelise sisalduse kohta toidus ja selle mõjust inimorganismile, mida õpikus süsivesikute peatükis ainult ühe lausega kirjeldatakse. Samuti võrdlen arvnäitajaid Eestis propageeritavatega.
+
+Kõik referaadis viidatud teosed ei ole minu poolt läbi loetud, vaid mõnda teost kasutasin vaid mingi väite täpsustamiseks või võrdlemiseks. Kuna nii mõnigi neist on väga huvitav, soovin need tervenisti läbi lugeda.
+
+Võib oletada, et 1976. aastas välja antud õpik on aegunud ja nii mõnigi selle õpiku tõde ei ole enam tõde. Isegi kui see nii on, siis üldine loogika, millele kogu looduslike hügienistide reeglistik põhineb, on lihtne ja mõistuspärane, samuti inimsõbralik.

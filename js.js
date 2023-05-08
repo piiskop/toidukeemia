@@ -38,10 +38,10 @@ function setTargets() {
   document.getElementById("book-source").target = "GitHub";
   
   let div = document.getElementById("main-nav").getElementsByTagName("nav")[0].getElementsByClassName("book-extra")[0];
-  createLink(div, "book-print", "toidukeemia.pdf", "View printable book");
+  createLink(div, "book-print", "toidukeemia.pdf", "trükiteisend");
   let nameOfPresentation = "presentation";
-  // createLink(div, "presentation-" + nameOfPresentation, "qmd/" + nameOfPresentation + "/" + nameOfPresentation + ".html", "Presentation");
-  // createLink(div, "presentation-speaker-" + nameOfPresentation, "qmd/" + nameOfPresentation + "/" + nameOfPresentation + "-speaker.html", "Remote control");
+  createLink(div, "presentation-" + nameOfPresentation, "qmd/" + nameOfPresentation + "/" + nameOfPresentation + ".html", "esitlus");
+  createLink(div, "presentation-speaker-" + nameOfPresentation, "qmd/" + nameOfPresentation + "/" + nameOfPresentation + "-speaker.html", "kaugjuhtimine");
 }
 
 window.onload = function () {

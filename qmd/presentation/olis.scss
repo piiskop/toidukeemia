@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+$body-bg: #fff;
+$body-color: #262314;
+$link-color: #9c0010;
+
+/*-- scss:rules --*/
+
+.reveal .slide p{
+  color: #262314;
+}
+
+.reveal h2 {
+  color: #9c0010;
+}
+
+.reveal .slide-logo {
+ /* width: 1397px;
+  height: 351px;
+  max-height: 20% !important;
+  left: 50%;
+  transform: translate(-100%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, -0%);
+  -moz-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);*/
+}

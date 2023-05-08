@@ -1,6 +1,6 @@
 # Toitumispõhimõtted
 
-## Toitumise olemus
+## Toitumine
 
 toitumine
 : kõikide protsesside summa, mis varustavad, arendavad ja säilitavad organismi võimeid ja funktsioone optimaalsel eksisteerimistasemel[@fry_the].
@@ -107,7 +107,7 @@ päritolu
 
 Taimetoitluse skaala on kõige väiksematest piirangutest, mille puhul süüakse ka liha, kõige suuremate piiranguteni, mille puhul süüakse ainult taimseid tooteid[@1715228520050601, lk 136].
 
-## Inimesele sobilik toit
+## Inimsõbralik toit
 
 Inimesele sobilik looduslik toit vastab järgmistele kriteeriumidele:
 
@@ -199,7 +199,7 @@ convert_from_pounds_to_kg <- function(pounds) {
 
 ```
 
-Üks nael on $\qty{`r as.character(pound_to_kg)`}{\kg}$[@haynes_2014_crc, lk 1-34].
+Üks nael on $\qty{`r as.character(signif(pound_to_kg, digits = 1))`}{\kg}$[@haynes_2014_crc, lk 1-34].
 
 Soojushulka, mis vabaneb toidu täielikul lagunemisel selle ainevahetuse lõpptoodeteks, väljendatakse kalorites. Inimese keha kasutab ainevahetuseks \num{`r as.character(signif(11 / convert_from_pounds_to_kg(pounds = 1), digits = 2))`} kalorit keha kilogrammi kohta päevas. Seda arvväärtust kinnitavad ka rühm inimesi teoses *Eesti toitumis- ja liikumissoovitused*[@a2015_eesti, lk 75]. Keha on seda tõhusam, mida vähem toitu sellele teatud määrani antakse[@fry_the].
 
@@ -297,6 +297,43 @@ Magusad puuviljad liiguvad eri kiirusega läbi seedetrakti. Kui melonid töödel
 
 Inimesed kipuvad kasutama maitsete lisamiseks või muutmiseks maitseaineid. Viimaseid eraldi ja ainult tarbides ei pea keha kaua vastu, sest need ei ole toit. Kui segada kokku banaani- ja mangoviilud või juurviljasalatisse tomatit ja pähkleid, siis on tegemist tervikliku toiduga, kuna ka kõiki neid komponente eraldi süües on tegemist toitumisega. Kui aga lisada toidule suhkrut, sidrunimahla, soola, pipart, äädikat, sibulat, basiilikut, münti, küüslauku vms, siis koormatakse keha ainetega, mida vaja pole, kuid millest on vaja vabaneda.
 
+\onecolumn
+
+## Seedimine
+
+Kõigi söödud toitude põhjalikuks ja täielikuks seedimiseks peavad olema täidetud järgmised tingimused:
+
+1. peamiselt (või ainult) hõlpsasti seeditud ja tüsistamatute toitude, näiteks puuviljade söömine,
+
+2. ühilduvate toidukombinatsioonide söömine,
+
+3. mõõduka koguse toitude söömine,
+
+4. söömine hästi asetatud söögikordadel,
+
+5. hoidumine joomisest söömise kestel või liiga lühikese ajavahemiku möödudes enne või pärast söömist ja
+
+6. hoidudes söömisest kui ollakse stressis või emotsionaalselt ärritunud.
+
+Kui toitu põhjalikult või täielikult ei seedita, juhtub üks järgmistest nähtustest:
+
+1. suhkrud võivad käärida,
+
+2. valgud võivad mädaneda.
+
+Toit tuleb seedida enne, kui soolestikus pesitsevad bakterid jõuavad toitu lõhustama hakata.
+
+Vedelike manustamine söömise kestel või vahetult enne või selle järel põhjustab ensüümide lahustamise ja nendest seedetrakti loputamise, mille tulemusel liigub toit kiiremini läbi seedekulgla kui seda jõutakse seedida. Sobilikud ajavahemikud söömise ja joomise vahel on esitatud joonisel \@ref(fig:food-break-drink) leheküljel `r render_pageref(reference = "fig:food-break-drink")`.
+
+```{r label = "food-break-drink", echo=FALSE, fig.cap = "Manustatavate toitainete liigist sõltub ajaline vahe joomise ja söömise vahel."}
+include_external_graphics("rmd/toit-vahe-jook.png")
+
+```
+
+Oluline on, et võimalikult palju toitu seeditaks võimalikult vara, sest siis on tõenäosus selle fermenteerimisele väike. Seetõttu on oluline toitu korralikult närida, et aidata seda lõhustada.
+
+\twocolumn
+
 ## Töötlemine
 
 Toitu kiputakse töötlema, et
@@ -357,7 +394,7 @@ Tärklist sisaldavast toidust saab inimene kätte väga vähe tärklist, sest in
 
 Teravilju ei saa inimene toorelt süüa ja töödeldud kujul ei saada peaaegu üldse nende gluteenikomponenti seedida.
 
-## Toitumine mittetoidust
+## Mõjurid
 
 Inimese keha toitub lisaks toidule muudest materjalidest, nt õhust.
 
